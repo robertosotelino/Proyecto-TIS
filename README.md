@@ -83,6 +83,6 @@ Con todo esto, las tablas que se extraen de nuestro diagrama son las siguientes:
 
 ![Marcas](Marcas.png) 
 
-![Marcas_Articulos](Marcas_Articulos.png) 
+![Marcas_Aticulos](Marcas_Aticulos.png) 
 
 ![Articulos](Articulos.png) 
