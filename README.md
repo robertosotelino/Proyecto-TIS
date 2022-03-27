@@ -7,5 +7,5 @@
 Nuestro proyecto consiste en hacer una base de datos de una cadena de boutiques multimarca de lujo, cada una con su determinado tipo de articulos a la venta como pueden ser: calzado de hombre, calzado de mujer y accesorios, ropa de mujer o ropa de hombre.
 
 ## Diagrama entidad - relación y tablas
-![Image text] (https://github.com/robertosotelino/Proyecto-TIS/blob/main/DiagramaER.jpg)
+![DiagramaER](DiagramaER.jpg) 
 
