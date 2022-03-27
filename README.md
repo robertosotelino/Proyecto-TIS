@@ -79,7 +79,7 @@ Con todo esto, las tablas que se extraen de nuestro diagrama son las siguientes:
 
 ![clientes](clientes.png) 
 
-![Tiendas_clientes](Tiendas.png) 
+![Tiendas_clientes](Tiendas_clientes.png) 
 
 ![Marcas](Marcas.png) 
 
