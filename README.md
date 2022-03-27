@@ -6,6 +6,46 @@
 
 Nuestro proyecto consiste en hacer una base de datos de una cadena de boutiques multimarca de lujo, cada una con su determinado tipo de articulos a la venta como pueden ser: calzado de hombre, calzado de mujer y accesorios, ropa de mujer o ropa de hombre.
 
+## Diagrama UML de casos de uso
+
+En nuestro diagrama UML tenemos 3 objetos
+-Actores
+-Casos de uso
+-Sistema
+Procederemos a la explicación detallada de cada uno de ellos.
+
+![UML](https://user-images.githubusercontent.com/55441866/160293752-7a0bce72-f707-47b5-98c0-5cc7f97923f4.jpeg)
+
+Primeramente, en nuestro diagrama observamos la existencia de tres actores que desempeñan diferentes papeles:
+
+El cliente: Al tratarse de un grupo de tiendas, necesitamos tener clientes que compren en cada una de ellas.
+El empresario: Se trata de una empresa y por lo tanto es necesaria una figura como la del empresario que se encargue de gestionar las necesidades de la empresa y el que llevará nuestra base de datos.
+Y, por último, un proveedor, el cuál aportará mercancía a la tienda.
+
+A continuación, comentamos los casos de uso de nuestro sistema.
+Son acciones que realizan nuestros actores y se representan como óvalos.
+
+Los actores están asociados con casos de uso.
+El Cliente tiene tres asociaciones con casos de uso, que son: 
+-Comprar, el cliente compra artículos.
+-Devolución, el cliente puede devolver un artículo y que se le devuelva el dinero.
+-Cambio, el cliente puede intercambiar un artículo por otro.
+
+El Empresario tiene tres asociaciones con casos de uso:
+-Vende, el empresario vende artículos a los clientes.
+-Paga, el empresario paga al proveedor por la mercancía
+-Actualiza Stock, el empresario es el encargado de registrar los cambios referidos al stock de artículos.
+
+El Proveedor tiene dos asociaciones de casos de uso:
+-Suministra mercancía, el proveedor es el encargado de aportar mercancía a nuestras tiendas.
+-Cobra, el proveedor cobra por suministrar mercancía.
+
+Observamos una dependencia entre el caso de uso Paga, del Empresario y el caso de uso Cobra, del Proveedor. Por ello aparecen asociados mediante un <<a>> indicando que el Empresario paga al Proveedor y que este Cobra
+
+Por último, nuestro sistema (ZR FASHION) que lo utilizamos para definir el alcance de los casos de uso y aparece representado como un rectángulo.
+ 
+ 
+
 ## Diagrama entidad - relación y tablas
 
 Presentamos el diagrama entidad relación de nuestro proyecto. 
