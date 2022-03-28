@@ -14,7 +14,7 @@ En nuestro diagrama UML tenemos 3 objetos
 -Sistema
 Procederemos a la explicación detallada de cada uno de ellos.
 
-![UML](https://user-images.githubusercontent.com/55441866/160293752-7a0bce72-f707-47b5-98c0-5cc7f97923f4.jpeg)
+![UML_proyectoTIS](UML_proyectoTIS.png) 
 
 Primeramente, en nuestro diagrama observamos la existencia de tres actores que desempeñan diferentes papeles:
 
@@ -42,7 +42,7 @@ El Proveedor tiene dos asociaciones de casos de uso:
 
 Observamos una dependencia entre el caso de uso Paga, del Empresario y el caso de uso Cobra, del Proveedor. Por ello aparecen asociados mediante un <<a>> indicando que el Empresario paga al Proveedor y que este Cobra
 
-Por último, nuestro sistema (ZR FASHION) que lo utilizamos para definir el alcance de los casos de uso y aparece representado como un rectángulo.
+Por último, nuestro sistema (R.I.P FASHION) que lo utilizamos para definir el alcance de los casos de uso y aparece representado como un rectángulo.
  
  
 
