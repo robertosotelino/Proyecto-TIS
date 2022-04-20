@@ -71,7 +71,7 @@ public class Articulo {
 		
 	}
 	
-	public boolean isSexo() {
+	public boolean getSexo() {
 		
 		return sexo;
 		
