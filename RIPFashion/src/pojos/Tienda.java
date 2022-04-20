@@ -25,6 +25,16 @@ public class Tienda {
 		
 	}
 
+	public Tienda(String nombreTienda, String horario, String ubicacion, String categoria) {
+		
+		super();
+		this.nombreTienda = nombreTienda;
+		this.horario = horario;
+		this.ubicacion = ubicacion;
+		this.categoria = categoria;
+
+	}
+	
 	public String getNombreTienda() {
 		
 		return nombreTienda;
