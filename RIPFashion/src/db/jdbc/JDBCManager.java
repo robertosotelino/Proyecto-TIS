@@ -20,7 +20,7 @@ import java.util.ArrayList;
 public class JDBCManager {
 
     private static Connection c;
-    private static final String DB_LOCATION = "/Users/robertosotelino/OneDrive\\ -\\ Fundación\\ Universitaria\\ San\\ Pablo\\ CEU/CEU/3º\\ curso/2º\\ cuatri/BASES\\ DE\\ DATOS/Proyecto/RIPFashion.db \n"
+    private static final String DB_LOCATION = "/Users/robertosotelino/OneDrive\\ -\\ Fundacion\\ Universitaria\\ San\\ Pablo\\ CEU/CEU/3º\\ curso/2º\\ cuatri/BASES\\ DE\\ DATOS/Proyecto/RIPFashion.db \n"
     		+ "";
     
     // codigo SQL a usar 
