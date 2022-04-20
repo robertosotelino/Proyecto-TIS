@@ -261,9 +261,9 @@ public class JDBCManager {
     }
     
     /*
-     * Obtengo informacion sobre las tiendas
+     * Obtengo informacion sobre las tiendas con capital ( para administrador )
      */
-    public ArrayList <Tienda> getInfoTiendas (){
+    public ArrayList <Tienda> getInfoTiendasConCapital (){
     	
     	ArrayList <Tienda> tiendas = new ArrayList <Tienda>();
     	
@@ -292,6 +292,37 @@ public class JDBCManager {
     	
     }
     
+    /*
+     * Obtengo informacion sobre las tiendas sin capital ( para clientes )
+     */
+    public ArrayList <Tienda> getInfoTiendasSinCapital (){
+    	
+    	ArrayList <Tienda> tiendas = new ArrayList <Tienda>();
+    	
+        try (ResultSet rs = stmt.executeQuery(sqlGetTiendas)){
+            
+            while (rs.next()) {
+            	
+              String nombreTienda = rs.getString("Nombre_tienda");
+              String horario = rs.getString("Horario");
+              String ubicacion = rs.getString("Ubicacion");
+              String categoria = rs.getString("Categoria");
+
+              
+              tiendas.add(new Tienda(nombreTienda, horario, ubicacion , categoria));
+              
+            }
+            
+            rs.close();
+            
+        } catch (SQLException e) {
+           
+        }
+        
+        return tiendas;
+    	
+    	
+    }
     /*
      * Eliminar un articulo de la base de datos en funcion de un id conocido
      */

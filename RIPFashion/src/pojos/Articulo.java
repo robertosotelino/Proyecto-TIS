@@ -25,6 +25,7 @@ public class Articulo {
 		
 	}
 
+	
 	public String getCategoria() {
 		
 		return categoria;
