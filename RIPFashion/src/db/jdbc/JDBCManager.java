@@ -24,7 +24,7 @@ public class JDBCManager {
     		+ "";
     
     private static Statement stmt;
-    private static final String sqlAddArticulo = "INSERT INTO Articulos (Categoria,Campaña,Color,Sexo,Precio) VALUES (?,?,?,?,?);";
+    private static final String sqlAddArticulo = "INSERT INTO Articulos (Categoria,Campana,Color,Sexo,Precio) VALUES (?,?,?,?,?);";
     private static final String sqlAddCliente = "INSERT INTO Clientes(Nombre,Apellido,Mail,Direccion) VALUES (?,?,?,?);";
     private static final String sqlAddEmpleado = "INSERT INTO Empleados (Tipo) VALUES (?);";
     private static final String sqlAddMarca = "INSERT INTO Marcas (Nombre) VALUES (?);";
@@ -33,7 +33,7 @@ public class JDBCManager {
     private static final String sqlGetArticulos ="SELECT * FROM Articulos;";
     private static final String sqlSearchArticuloByIdArt ="SELECT * FROM Articulos WHERE Id_art=?;";
     private static final String sqlDeleteArticuloById = "DELETE FROM Articulos WHERE Id_art=?;";
-    private static final String sqlUpdateArticulo = "UPDATE Articulos SET Categoria=?, Campaña=?, Color=?,Sexo=?, Precio=? WHERE Id_art=?;";
+    private static final String sqlUpdateArticulo = "UPDATE Articulos SET Categoria=?, Campana=?, Color=?,Sexo=?, Precio=? WHERE Id_art=?;";
     private static final String sqlGetMarcas = "SELECT * FROM Marcas;";
     private static final String sqlGetTiendas = "SELECT * FROM Tiendas;";
     
