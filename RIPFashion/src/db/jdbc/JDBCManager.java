@@ -14,10 +14,12 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+import db.interfaces.DBManager;
 
 
 
-public class JDBCManager {
+
+public class JDBCManager implements DBManager {
 
     private static Connection c;
     private static final String DB_LOCATION = "/Users/robertosotelino/OneDrive\\ -\\ Fundacion\\ Universitaria\\ San\\ Pablo\\ CEU/CEU/3º\\ curso/2º\\ cuatri/BASES\\ DE\\ DATOS/Proyecto/RIPFashion.db \n"
@@ -423,7 +425,6 @@ public class JDBCManager {
         	
         	prep.setInt(1, t.getCapitalTienda());
             
-            int resultado = prep.executeUpdate();  /// ???????
             
             capital = t.getCapitalTienda();
             

@@ -30,12 +30,16 @@ public interface DBManager {
 	
 	ArrayList<Marca> getMarcas();
 	
-	ArrayList <Tienda> getInfoTiendas ();
+	ArrayList <Tienda> getInfoTiendasConCapital ();
+	
+	ArrayList <Tienda> getInfoTiendasSinCapital ();
 	
     ArrayList <Empleado> getEmpleados();
 	
 	boolean deleteArticuloById(int i);
 	
 	boolean updateArticulo(Articulo a);
+	
+	int consultarBalance(Tienda t);
 	
 }
