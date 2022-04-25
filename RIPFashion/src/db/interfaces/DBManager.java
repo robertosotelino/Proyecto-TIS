@@ -32,8 +32,10 @@ public interface DBManager {
 	
 	ArrayList <Tienda> getInfoTiendas ();
 	
+    ArrayList <Empleado> getEmpleados();
+	
 	boolean deleteArticuloById(int i);
 	
-	public boolean updateArticulo(Articulo a);
+	boolean updateArticulo(Articulo a);
 	
 }
