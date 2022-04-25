@@ -20,18 +20,22 @@ import java.util.ArrayList;
 public class JDBCManager {
 
     private static Connection c;
-    private static final String DB_LOCATION = "/Users/robertosotelino/OneDrive\\ -\\ Fundación\\ Universitaria\\ San\\ Pablo\\ CEU/CEU/3º\\ curso/2º\\ cuatri/BASES\\ DE\\ DATOS/Proyecto/RIPFashion.db \n"
+    private static final String DB_LOCATION = "/Users/robertosotelino/OneDrive\\ -\\ Fundacion\\ Universitaria\\ San\\ Pablo\\ CEU/CEU/3º\\ curso/2º\\ cuatri/BASES\\ DE\\ DATOS/Proyecto/RIPFashion.db \n"
     		+ "";
     
-    // codigo SQL a usar ¡¡¡ CONSULTAS SQL PROBAR EN LA BASE DE DATOS !!! ( incompletas )
-    
+
+    // codigo SQL a usar ¡¡¡ CONSULTAS SQL PROBAR EN LA BASE DE DATOS !!! 
+
     private static Statement stmt;
+
     private static final String sqlAddArticulo = "INSERT INTO Articulos (Categoria,Campana,Color,Sexo,Precio) VALUES (?,?,?,?,?);";;
+
     private static final String sqlAddCliente = "INSERT INTO Clientes(Nombre,Apellido,Mail,Direccion) VALUES (?,?,?,?);";
     private static final String sqlAddEmpleado = "INSERT INTO Empleados (Tipo) VALUES (?);";
     private static final String sqlAddMarca = "INSERT INTO Marcas (Nombre) VALUES (?);";
     private static final String sqlAddTienda = "INSERT INTO Tiendas (NombreTienda,Horario,Ubicacion,Categoria,CapitalTienda) VALUES (?,?,?,?,?);";
     
+
     private static final String sqlGetArticulos = "SELECT * FROM Articulos;";
     private static final String sqlSearchArticuloByIdArt = "SELECT * FROM Articulos WHERE Id_art=?;";
     private static final String sqlDeleteArticuloById = "DELETE FROM Articulos WHERE Id_art=?;";
