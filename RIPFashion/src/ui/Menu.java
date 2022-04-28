@@ -8,6 +8,9 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import db.interfaces.DBManager;
 import db.jdbc.JDBCManager;
+import pojos.Articulo;
+import pojos.Marca;
+import pojos.Tienda;
 
 
 
@@ -19,10 +22,10 @@ public class Menu {
 	private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	private final static DateTimeFormatter formatterFecha = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
 	private static final String[] MENU_ROL = { "1.-Rol Empresario", "2.-Rol Cliente","3.-Salir del programa"};
-	private static final String[] MENU_EMPRESARIO = { "1.-Consultar informacion de la tienda","Listar Articulos", 
-			"Consultar capital","Consultar articulo por id", "Añadir un articulo",
-			"Eliminar un articulo","Modificar articulo","Añadir marca","Añadir una tienda","Añadir un empleado",
-			"Listar empleados", "Salir"};
+	private static final String[] MENU_EMPRESARIO = { "1.-Consultar informacion de la tienda","2.- Listar Articulos", 
+			"3.- Consultar capital","4.- Consultar articulo por id", "5.- Añadir un articulo",
+			"6.- Eliminar un articulo","7.- Modificar articulo","8.- Añadir marca",
+			"9.- Listar empleados", "10.- Salir"};
 
 	public static void main (String[] args) throws IOException {
 		
@@ -51,7 +54,7 @@ public class Menu {
 	
 		}
 
-	private static void mostrarMenuEmpresario() {
+	private static void mostrarMenuEmpresario() throws IOException {
 		
 		System.out.println("/n/n*****MENU DEL EMPRESARIO*****/n/n");
 		
@@ -62,22 +65,313 @@ public class Menu {
 			
 			switch(respuesta) {
 			
-				case 1 -> consultarInformacion();
-			
+				case 1 -> consultarInformacionTiendas();
+				case 2 -> listarArticulos();
+				case 3 -> consultarCapital();
+				case 4 -> consultarArticuloPorId();
+				case 5 -> añadirArticulo(); 
+				case 6 -> eliminarArticulo();
+				case 7 -> modificarArticulo();
+				
 			}
 			
 		} while(respuesta != 0);
 		
 	}
 
-	private static void consultarInformacion() {
+	private static void modificarArticulo() throws IOException {
+		
+		System.out.println("Que artículo quieres modificar ( introduce su id )");
+		
+		
+		int idA ;
+		
+		listarArticulos();
+		boolean exito;
+		
+		do {
+			
+			idA = br.read();
+			exito = comprobarIdCorrecto(idA);
+			
+		}while(exito = true);
+		
+		System.out.println("El id es correcto");
+		
+		ArrayList <Articulo> articulo = dbman.searchArticuloByIdArt (idA);
+		
+		Articulo a = articulo.get(0);
+		
+		Articulo aModificado = updateArticulo (a);
+		
+		boolean b = dbman.updateArticulo(aModificado);
+		
+		if (b == true) {
+			
+			System.out.println("Articulo modificado correctamente");
+			
+		} else {
+			
+			System.out.println("No ha sido posible modificar el articulo; intentelo de nuevo");
+		}
+		
+	}
+	
+	private static Articulo updateArticulo(Articulo articulo) throws IOException {
+		
+		System.out.println("Categoria del artículo :");
+		
+		String categoria = br.readLine();
+		
+		System.out.println("Campaña del articulo");
+		
+		String campaña = br.readLine();
+		
+		System.out.println("Color del articulo");
+		
+		String color = br.readLine();
+		
+		System.out.println("Precio del articulo ( numero entero )");
+		
+		int precio = br.read();
+		
+		int exito = 1;
+		
+		Marca m = selecMarca();
+			
+		int sexo = 5;
+		
+		do {
+			
+		System.out.println("Sexo (introduzca 1 si es para hombre o 0 si es para mujer)");
+		
+		sexo = br.read();
+		
+		if (sexo == 1) {
+				
+			articulo.setSexo(true);
+			
+		}else if( sexo == 0) {
+			
+			articulo.setSexo(false);
+			
+		}else if (sexo != 1 || sexo != 0) {
+			
+			System.out.println("No ha introducido un dato válido");
+			
+		}
+		
+		}while (sexo != 1 || sexo != 0);
+
+		articulo.setCampaña(campaña);
+		articulo.setCategoria(categoria);
+		articulo.setColor(color);
+		articulo.setMarca(m); 
+		articulo.setPrecio(precio);
+		return articulo;
+	}
+	
+	
+	private static void eliminarArticulo() throws IOException {
+		
+		listarArticulos();
+		boolean exito = false;
+		int id ;
+		do {
+			
+		System.out.println("Id del articulo que desea eliminar");
+		
+	    id = br.read();
+		
+		exito = comprobarIdCorrecto(id);
+		
+		}while(exito = true);
+		
+		dbman.deleteArticuloById(id);
+		
+		System.out.println("Articulo eliminado correctamente");
+	}
+	
+	private static boolean comprobarIdCorrecto (int id) {
+		
+        ArrayList <Articulo> articulos = dbman.getArticulos();
+		
+        int i ;
+        boolean exito= false;
+        
+        for ( i = 0 ; i < articulos.size(); i ++) {
+        	
+        	if ( articulos.get(i).getIdArt() == id) {
+        		
+        		exito = true;
+        		
+        	}else {
+        		
+        		exito = false;
+        	}
+        	
+        }
+		
+		return exito;
+		
+	}
+
+	private static void añadirArticulo() throws IOException {
+
+		
+		Articulo articulo = newArticulo();
+		
+		dbman.addArticulo(articulo);
+		
+		System.out.println("Articulo añadido correctamente a la base de datos");
+	
+	}
+	
+	private static Articulo newArticulo() throws IOException {
+		
+		Articulo articulo = new Articulo();
+		
+		System.out.println("Categoria del artículo :");
+		
+		String categoria = br.readLine();
+		
+		System.out.println("Campaña del articulo");
+		
+		String campaña = br.readLine();
+		
+		System.out.println("Color del articulo");
+		
+		String color = br.readLine();
+		
+		System.out.println("Precio del articulo ( numero entero )");
+		
+		int precio = br.read();
+		
+		int exito = 1;
+		
+		Marca m = selecMarca();
+			
+		int sexo = 5;
+		
+		do {
+			
+		System.out.println("Sexo (introduzca 1 si es para hombre o 0 si es para mujer)");
+		
+		sexo = br.read();
+		
+		if (sexo == 1) {
+				
+			articulo.setSexo(true);
+			
+		}else if( sexo == 0) {
+			
+			articulo.setSexo(false);
+			
+		}else if (sexo != 1 || sexo != 0) {
+			
+			System.out.println("No ha introducido un dato válido");
+			
+		}
+		
+		}while (sexo != 1 || sexo != 0);
+
+		articulo.setCampaña(campaña);
+		articulo.setCategoria(categoria);
+		articulo.setColor(color);
+		articulo.setMarca(m); 
+		articulo.setPrecio(precio);
+		
+		return articulo;
+		
+	}
+
+	private static Marca selecMarca () throws IOException {
+		
+		ArrayList <Marca> marcas = dbman.getMarcas();
+		System.out.println("Nombre de la marca a la que pertenece ( existente )");
+		int j ;
+		
+		for ( j = 0 ; j < marcas.size() ; j++) {
+			
+			System.out.println(marcas.get(j).getNombre());
+			
+		}
+		
+		String marca;
+		
+		int i ;
+	
+		do {
+			
+		marca = br.readLine();
+		for (i=0 ; i< marcas.size(); i++) {
+			
+			if (marca == marcas.get(i).getNombre()) {
+				
+				System.out.println("Marca encontrada en la base de datos");
+				
+			}
+			
+		}
+		
+		}while (marcas.get(i).getNombre() != marca);
+		
+		return marcas.get(i);
+		
+	}
+	
+	private static void consultarArticuloPorId() throws IOException {
+		
+		System.out.println("Introduce un id");
+		
+		int a = br.read(); // verificacion de un id válido?
+		
+		ArrayList<Articulo> articulo = dbman.searchArticuloByIdArt(a);
+		
+		System.out.println(articulo.get(0).toString()); // posicion 0 ya que el arraylist solo deberia contener un articulo ya que los id son unicos
+		
+		
+	}
+
+	
+	private static void consultarCapital() throws IOException { // como especifico la tienda
+		
+		//int tienda = mostrarTiendas ();
+		
+		int capital = dbman.consultarBalance(null);
+		
+		System.out.println("El capital de la tienda seleccionada es : " + capital);
+		
+	}
+
+	private static void listarArticulos() { 
+		
+		ArrayList <Articulo> articulos = new ArrayList <Articulo>();
+		
+		articulos = dbman.getArticulos();
+		
+		int i = 0;
+		
+		for (i = 0 ; i < dbman.getArticulos().size() ; i ++) {
+			
+			System.out.println(articulos.get(i).toString());
+			
+		}
+		
+	}
+	
+
+	private static void consultarInformacionTiendas() {
 
 		int i ;
-		ArrayList<Tienda> tiendas = dbman.getInfoTiendasConCapital();
+		
+		ArrayList <Tienda> tiendas = new ArrayList <Tienda>();
+				
+		tiendas = dbman.getInfoTiendasConCapital();
 		
 		for ( i = 0 ; i < dbman.getInfoTiendasConCapital().size() ; i++) {
 			
-			System.out.println(dbman.getInfoTiendasConCapital());
+			System.out.println(tiendas.get(i).toString());
 			
 		}
 		
@@ -106,52 +400,6 @@ public class Menu {
 		
 	}
 	
-	/*private static void mostrarMenuEmpresario() throws IOException { // INCOMPLETO
-		
-		System.out.println(MENU_EMPRESARIO);
-		
-		int a = -1;
-
-		do {
-			
-			int opcion = br.read();
-			int b ; 
-			
-            switch (opcion) { // en cada case un metodo privado que hago en esta clase
-            
-            
-            case 1 :
-            	System.out.println(dbman.getInfoTiendasConCapital()); // consulto informacion de la tienda
-			case 2 :
-				dbman.getArticulos(); // consultar articulos
-			case 3 :
-				dbman.consultarBalance(null); // consultar capital  -> Como le paso la tienda?
-			case 4 : 
-				System.out.println("");
-			    System.out.println(dbman.searchArticuloByIdArt( b = br.read())); // consultar la informacion de un articulo determinado   
-			case 5 :
-				dbman.addArticulo(null);  // añadir un articulo
-			case 6 :
-				dbman.deleteArticuloById(0); // eliminar un articulo determinado -> metodo donde liste los productos y su id y seleccione el id del articulo en cuestion
-			case 7 :
-				dbman.updateArticulo(null); // modificar un articulo existente
-			case 8 : 
-				dbman.addMarca(null); // añadir una marca			
-			case 9 : 
-				dbman.addTienda(null); // añadir una tienda
-			case 10 :
-				dbman.addEmpleado(null); // añadir un empleado
-			case 11 :
-				dbman.getEmpleados(); // listar empleados
-			case 12 :
-				a = 0; // salir
-			
-			}
-			
-		}while (a != 0);
-		
-	}
-*/
 
 	}
 
