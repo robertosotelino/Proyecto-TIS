@@ -181,7 +181,7 @@ public class JDBCManager implements DBManager {
     /*
      * Obtengo los articulos
      */
-    public ArrayList<Articulo> getArticulos() {
+    public ArrayList<Articulo> getArticulos() { 
     	
         ArrayList<Articulo> articulos = new ArrayList<Articulo>();
         
@@ -226,6 +226,7 @@ public class JDBCManager implements DBManager {
               String color = rs.getString("Color");
               boolean sexo = rs.getBoolean("sexo");
               int precio = rs.getInt("Precio");
+              
               articulos.add(new Articulo(id, categoria, campaña , color, sexo, precio));
               
             }
@@ -253,8 +254,11 @@ public class JDBCManager implements DBManager {
             	
               int id = rs.getInt("Id_m");
               String nombre = rs.getString("Nombre_marca");
-             
-              marcas.add(new Marca(id, nombre));
+              Tienda tienda = new Tienda ();
+              String nombreTienda = rs.getString("Nombre_tienda");
+              tienda.setNombreTienda(nombreTienda);
+              
+              marcas.add(new Marca(id, nombre, tienda));
               
             }
             
@@ -324,6 +328,7 @@ public class JDBCManager implements DBManager {
             rs.close();
             
         } catch (SQLException e) {
+        	
            
         }
         
@@ -342,9 +347,11 @@ public class JDBCManager implements DBManager {
             	
               int id = rs.getInt("Id_empl");
               String tipo = rs.getString("Tipo");
+              Tienda tienda = new Tienda();
+              String nombre = rs.getString("Nombre_Tienda");
+              tienda.setNombreTienda(nombre);
 
-              
-              empleados.add(new Empleado(id, tipo));
+              empleados.add(new Empleado(id, tipo, tienda));
               
             }
             
@@ -357,6 +364,8 @@ public class JDBCManager implements DBManager {
         return empleados;
     	
     }
+    
+
     /*
      * Eliminar un articulo de la base de datos en funcion de un id conocido
      */
@@ -436,7 +445,7 @@ public class JDBCManager implements DBManager {
         return capital;
     		
     }
-    
+
     
     }
 
