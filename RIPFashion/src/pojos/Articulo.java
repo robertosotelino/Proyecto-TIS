@@ -8,15 +8,17 @@ public class Articulo {
 	private String color;
 	private boolean sexo;
 	private int precio;
+	private Marca marca;
 	
 	public Articulo() {
 	
 	}
 
-	public Articulo(int idArt, String categoria, String campaña, String color, boolean sexo, int precio) {
+	public Articulo(int idArt, Marca marca,String categoria, String campaña, String color, boolean sexo, int precio) {
 		
 		super();
 		this.idArt = idArt;
+		this.marca = marca;
 		this.categoria = categoria;
 		this.campaña = campaña;
 		this.color = color;
@@ -95,14 +97,29 @@ public class Articulo {
 		this.precio = precio;
 		
 	}
+	
+	
+
+	public Marca getMarca() {
+		
+		return marca;
+		
+	}
+
+	public void setMarca(Marca marca) {
+		
+		this.marca = marca;
+		
+	}
 
 	@Override
 	public String toString() {
-		
-		return "Articulo [categoria=" + categoria + ", idArt=" + idArt + ", campaña=" + campaña + ", color=" + color
-				+ ", sexo=" + sexo + ", precio=" + precio + "]";
-		
+		return "Articulo [idArt=" + idArt + ", categoria=" + categoria + ", campaña=" + campaña + ", color=" + color
+				+ ", sexo=" + sexo + ", precio=" + precio + ", marca=" + marca + "]";
 	}
+
+	
+
 	
 	
 	

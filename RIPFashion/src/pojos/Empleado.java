@@ -4,6 +4,7 @@ public class Empleado {
 
 	private int id;
 	private String tipo;
+	private Tienda tienda ;
 	
 	public Empleado() {
 		
@@ -11,11 +12,12 @@ public class Empleado {
 		
 	}
 	
-	public Empleado(int id, String tipo) {
+	public Empleado(int id, String tipo, Tienda tienda) {
 		
 		super();
 		this.id = id;
 		this.tipo = tipo;
+		this.tienda=tienda;
 		
 	}
 
@@ -40,13 +42,12 @@ public class Empleado {
 		
 		this.tipo = tipo;
 	}
-	
+
 	@Override
 	public String toString() {
-		
-		return "Empleado [id=" + id + ", tipo=" + tipo + "]";
-		
+		return "Empleado [id=" + id + ", tipo=" + tipo + ", tienda=" + tienda + "]";
 	}
+	
 	
 
 }

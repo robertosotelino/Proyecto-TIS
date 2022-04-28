@@ -4,20 +4,20 @@ public class Marca {
 	
 	private int idM;
 	private String nombre;
-	
-	
+	private Tienda tienda;
+	//private Articulo articulo;
 	public Marca() {
 		
 		super();
 		
 	}
 
-	public Marca(int idM, String nombre) {
+	public Marca(int idM, String nombre, Tienda tienda) {
 		
 		super();
 		this.idM = idM;
 		this.nombre = nombre;
-		
+		this.tienda = tienda;
 	}
 
 	public String getNombre() {
@@ -43,11 +43,26 @@ public class Marca {
 		this.idM = idM;
 	}
 	
+	
+
+	public Tienda getTienda() {
+		
+		return tienda;
+		
+	}
+
+	public void setTienda(Tienda tienda) {
+		
+		this.tienda = tienda;
+		
+	}
+
 	@Override
 	public String toString() {
-		return "Marca [nombre=" + nombre + ", idM=" + idM + "]";
+		return "Marca [idM=" + idM + ", nombre=" + nombre + ", tienda=" + tienda + "]";
 	}
 	
+
 	
 
 }
