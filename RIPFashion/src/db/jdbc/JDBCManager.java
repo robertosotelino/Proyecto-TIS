@@ -32,7 +32,7 @@ public class JDBCManager implements DBManager {
 
     private static final String sqlAddArticulo = "INSERT INTO Articulos (Categoria,Campana,Color,Sexo,Precio) VALUES (?,?,?,?,?);";;
 
-    private static final String sqlAddCliente = "INSERT INTO Clientes(Nombre,Apellido,Mail,Direccion) VALUES (?,?,?,?);";
+    private static final String sqlAddCliente = "INSERT ITO Clientes(Nombre,Apellido,Mail,Direccion) VALUES (?,?,?,?);";
     private static final String sqlAddEmpleado = "INSERT INTO Empleados (Tipo) VALUES (?);";
     private static final String sqlAddMarca = "INSERT INTO Marcas (Nombre) VALUES (?);";
     private static final String sqlAddTienda = "INSERT INTO Tiendas (NombreTienda,Horario,Ubicacion,Categoria,CapitalTienda) VALUES (?,?,?,?,?);";
@@ -191,7 +191,19 @@ public class JDBCManager implements DBManager {
             
             while(rs.next()){
             	
-                articulos.add(new Articulo(rs.getInt("Id_art"), rs.getString("Categoria"), rs.getString("Campaña"),rs.getString("Color"), rs.getBoolean("Sexo"), rs.getInt("Precio")));
+            
+            	int ida = rs.getInt("ID_art");
+            	int idM = rs.getInt("ID_m");
+            	String categoria = rs.getString("Categoria");
+            	String campana = rs.getString("Campaña");
+            	String color = rs.getString("Colo");
+            	boolean sexo = rs.getBoolean("Sexo");
+            	int precio = rs.getInt("Precio");
+            	
+            	Marca m = new Marca();
+            	m.setIdM(idM);
+            	Articulo a = new Articulo (ida , m , categoria, campana, color, sexo,precio );
+            	articulos.add(a);
                 
             }
             
@@ -221,13 +233,16 @@ public class JDBCManager implements DBManager {
             while (rs.next()) {
             	
               int id = rs.getInt("Id_art");
+              int idM = rs.getInt("ID_m");
               String categoria = rs.getString("Categoria");
               String campaña = rs.getString("Campaña");
               String color = rs.getString("Color");
               boolean sexo = rs.getBoolean("sexo");
               int precio = rs.getInt("Precio");
-              
-              articulos.add(new Articulo(id, categoria, campaña , color, sexo, precio));
+              Marca marca = new Marca();
+              marca.setIdM(idM);
+              Articulo a = new Articulo(id, marca, categoria, campaña, color , sexo ,precio);
+              articulos.add(a);
               
             }
             
