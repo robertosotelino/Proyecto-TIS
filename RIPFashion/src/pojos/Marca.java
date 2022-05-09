@@ -5,7 +5,7 @@ public class Marca {
 	private int idM;
 	private String nombre;
 	private Tienda tienda;
-	//private Articulo articulo;
+
 	public Marca() {
 		
 		super();
@@ -20,6 +20,13 @@ public class Marca {
 		this.tienda = tienda;
 	}
 
+	public Marca(String nombre, Tienda tienda) {
+		
+		super();
+		this.nombre = nombre;
+		this.tienda = tienda;
+	}
+	
 	public String getNombre() {
 		
 		return nombre;

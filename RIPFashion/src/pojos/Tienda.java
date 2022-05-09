@@ -1,5 +1,7 @@
 package pojos;
 
+import java.util.ArrayList;
+
 public class Tienda {
 
 	private String nombreTienda;
@@ -7,6 +9,7 @@ public class Tienda {
 	private String ubicacion;
 	private String categoria;
 	private int capitalTienda;
+	private ArrayList <Cliente> cliente ;
 	
 	public Tienda() {
 		
