@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import db.interfaces.DBManager;
 import db.jdbc.JDBCManager;
 import pojos.Articulo;
+import pojos.Empleado;
 import pojos.Marca;
 import pojos.Tienda;
 
@@ -20,7 +21,6 @@ public class Menu {
 	
 	
 	private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-	private final static DateTimeFormatter formatterFecha = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
 	private static final String[] MENU_ROL = { "1.-Rol Empresario", "2.-Rol Cliente","3.-Salir del programa"};
 	private static final String[] MENU_EMPRESARIO = { "1.-Consultar informacion de la tienda","2.- Listar Articulos", 
 			"3.- Consultar capital","4.- Consultar articulo por id", "5.- Añadir un articulo",
@@ -29,7 +29,7 @@ public class Menu {
 
 	public static void main (String[] args) throws IOException {
 		
-		//dbman.connect();
+		dbman.connect();
 		System.out.println("Bienvenido a nuestras tiendas");
 		
 		int a = -1;
@@ -49,7 +49,7 @@ public class Menu {
 		} while ( a != 0);
 			System.out.println("Saliendo.... Gracias");
 			
-			//dbman.disconnect();
+			dbman.disconnect();
 		
 	
 		}
@@ -61,21 +61,53 @@ public class Menu {
 		int respuesta = -1;
 		
 		do {
+			
 			respuesta = mostrarMenu(MENU_EMPRESARIO);
 			
 			switch(respuesta) {
 			
-				case 1 -> consultarInformacionTiendas();
-				case 2 -> listarArticulos();
-				case 3 -> consultarCapital();
-				case 4 -> consultarArticuloPorId();
-				case 5 -> añadirArticulo(); 
-				case 6 -> eliminarArticulo();
-				case 7 -> modificarArticulo();
-				
+				case 1 -> consultarInfoTiendasConCapital(); // done
+				case 2 -> listarArticulos(); // done
+				case 3 -> consultarCapital(); // done
+				case 4 -> consultarArticuloPorId(); // done
+				case 5 -> añadirArticulo();  // done
+				case 6 -> eliminarArticulo(); // done
+				case 7 -> modificarArticulo(); // done
+				case 8 -> añadirMarca(); // duda
+				case 9 -> listarEmpleados (); // done
+			
 			}
 			
 		} while(respuesta != 0);
+		
+	}
+
+	private static void listarEmpleados() {
+		
+		ArrayList <Empleado> empleados = dbman.getEmpleados();
+		
+		System.out.println("\n Información de empleados \n");
+		
+		int i ;
+		
+		for (i=0 ; i < empleados.size() ; i++) {
+			
+			System.out.println(empleados.get(i).toString());
+			
+		}
+		
+		
+	}
+
+	private static void añadirMarca() throws IOException {
+		
+		System.out.println("Introduzca el nombre de la marca");
+		
+		String nombre = br.readLine();
+		
+		Marca marca = new Marca (nombre, null); // le tengo que pasar un null o como??'
+		
+		dbman.addMarca(marca);
 		
 	}
 
@@ -94,7 +126,7 @@ public class Menu {
 			idA = br.read();
 			exito = comprobarIdCorrecto(idA);
 			
-		}while(exito = true);
+		}while(exito ==true);
 		
 		System.out.println("El id es correcto");
 		
@@ -134,8 +166,6 @@ public class Menu {
 		System.out.println("Precio del articulo ( numero entero )");
 		
 		int precio = br.read();
-		
-		int exito = 1;
 		
 		Marca m = selecMarca();
 			
@@ -322,9 +352,18 @@ public class Menu {
 	
 	private static void consultarArticuloPorId() throws IOException {
 		
+		boolean exito = false;
+		int a ;
+		
+		do {
+			
 		System.out.println("Introduce un id");
 		
-		int a = br.read(); // verificacion de un id válido?
+		a = br.read(); 
+		
+		exito = comprobarIdCorrecto (a);
+		
+		} while ( exito == true);
 		
 		ArrayList<Articulo> articulo = dbman.searchArticuloByIdArt(a);
 		
@@ -336,9 +375,27 @@ public class Menu {
 	
 	private static void consultarCapital() throws IOException { // como especifico la tienda
 		
-		//int tienda = mostrarTiendas ();
+		consultarInformacionTiendasSinCapital();
+		int r = 10;
+		Tienda t = new Tienda ();
 		
-		int capital = dbman.consultarBalance(null);
+		do {
+			
+		System.out.println("Seleccione la tienda de la que quiere consultar el capital");
+		System.out.println("1- Delfin&Maria n 2- Sterling \n 3- Delfin 1953");
+		 
+		r = br.read();
+		
+		switch(r) {
+		
+		case 1 -> t.setNombreTienda("Delfin&Maria");
+		case 2 -> t.setNombreTienda("Sterling");
+		case 3 -> t.setNombreTienda("Delfin 1953");
+		}
+		
+		}while  (r != 1 || r != 2 || r != 3);
+		
+		int capital = dbman.consultarBalance(t);
 		
 		System.out.println("El capital de la tienda seleccionada es : " + capital);
 		
@@ -359,9 +416,8 @@ public class Menu {
 		}
 		
 	}
-	
 
-	private static void consultarInformacionTiendas() {
+	private static void consultarInfoTiendasConCapital() {
 
 		int i ;
 		
@@ -376,8 +432,25 @@ public class Menu {
 		}
 		
 	}
+	
+	private static void consultarInformacionTiendasSinCapital() {
+
+		int i ;
+		
+		ArrayList <Tienda> tiendas = new ArrayList <Tienda>();
+				
+		tiendas = dbman.getInfoTiendasSinCapital();
+		
+		for ( i = 0 ; i < dbman.getInfoTiendasSinCapital().size() ; i++) {
+			
+			System.out.println(tiendas.get(i).toString());
+			
+		}
+		
+	}
 
 	private static int mostrarMenu(String[] opciones) {
+		
 		int respuesta = -1;
 		do {
 			System.out.println("\nElija una opción:");
