@@ -89,11 +89,13 @@ public class JDBCManager implements DBManager {
     	
         if (countElementsFromTable("Clientes") == 0) {
         	
-            for(int i = 0; i < NUM_CLIENTES; i++) {
+            for (int i = 0; i < NUM_CLIENTES; i++) {
             	
                 addCliente(Factory.generarClienteAleatorio());
+                
             }
         }
+        
         if (countElementsFromTable("Empleados") == 0) {
         	
             for(int i = 0; i < NUM_EMPLEADOS; i++) {
@@ -102,7 +104,6 @@ public class JDBCManager implements DBManager {
             
         }
             
-        //TODO A�adir empleados y asignarles una mesa
     }
 
     }
