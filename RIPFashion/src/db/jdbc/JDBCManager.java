@@ -15,6 +15,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 
 import db.interfaces.DBManager;
+import factory.Factory;
 
 
 
@@ -46,6 +47,12 @@ public class JDBCManager implements DBManager {
     private static final String sqlGetTiendas = "SELECT * FROM Tiendas;";
     private static final String sqlGetBalance = "";
     private static final String sqlGetEmpleados = "";
+    private static final String sqlCountElementsFromTable = "SELECT COUNT(*) AS Count FROM ";
+   
+    
+    private static final int NUM_CLIENTES = 100;
+    private static final int NUM_EMPLEADOS = 20;
+
     
     /*
      * Conexion con la base de datos
@@ -78,6 +85,27 @@ public class JDBCManager implements DBManager {
         }
     }
     
+    private void inicializarTablas() { // para insertar valores en las tablas
+    	
+        if (countElementsFromTable("Clientes") == 0) {
+        	
+            for(int i = 0; i < NUM_CLIENTES; i++) {
+            	
+                addCliente(Factory.generarClienteAleatorio());
+            }
+        }
+        if (countElementsFromTable("Empleados") == 0) {
+        	
+            for(int i = 0; i < NUM_EMPLEADOS; i++) {
+            	
+                addEmpleado(Factory.generarEmpleadoAleatorio());
+            
+        }
+            
+        //TODO A�adir empleados y asignarles una mesa
+    }
+
+    }
     /*
      * Añado un articulo nuevo
      */
@@ -461,8 +489,21 @@ public class JDBCManager implements DBManager {
     		
     }
 
-    
+    public int countElementsFromTable(String nombreTabla) {
+        int numElementos = 0;
+        try (ResultSet rs = stmt.executeQuery(sqlCountElementsFromTable + nombreTabla + ";");){
+            numElementos = rs.getInt("Count");
+            rs.close();
+        } catch (SQLException e) {
+          
+        }
+        return numElementos;
     }
+    
+    
+}
+
+    
 
 
 
