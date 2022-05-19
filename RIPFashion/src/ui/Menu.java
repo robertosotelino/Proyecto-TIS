@@ -19,7 +19,6 @@ public class Menu {
 
 	private static DBManager dbman = new JDBCManager(); 
 	
-	
 	private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	private static final String[] MENU_ROL = { "1.-Rol Empresario", "2.-Rol Cliente","3.-Salir del programa"};
 	private static final String[] MENU_EMPRESARIO = { "1.-Consultar informacion de la tienda","2.- Listar Articulos", 

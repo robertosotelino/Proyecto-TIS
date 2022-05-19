@@ -1,5 +1,8 @@
 package factory;
 
+import java.util.Random;
+
+import pojos.Articulo;
 import pojos.Cliente;
 import pojos.Empleado;
 import pojos.Marca;
@@ -18,13 +21,11 @@ public class Factory {
 	
 	private final static String [] MARCAS = {"YSL", "Balmain", "Balenciaga", "Gucci", "Golden Goose", "Moncler", "Valentino", "Dior", "Louis Vuitton", "Hermes", "Chanel"};
 	
-	private final static String [] CATEGORIAS = {"Sandalia", "Tacon", "Sneaker", "Bolso", "Foulard", "Cinturon", "Zapato de vestir", "Camiseta", "Sudadera", "Pantalon", "Blazer", "Plumifero", "100 gramos"};
+	private final static String [] CATEGORIA = {"Sandalia", "Tacon", "Sneaker", "Bolso", "Foulard", "Cinturon", "Zapato de vestir", "Camiseta", "Sudadera", "Pantalon", "Blazer", "Plumifero", "100 gramos"};
 	
 	private final static String [] CAMPAÑA = {"SS22", "FW22"};
 	
 	private final static String [] COLOR = {"Rojo", "Azul marino", "Azul celureo", "Multicolor", "Blanco", "Negro", "Amarillo", "Rosa", "Naranja", "Verde"};
-	
-	private final static String [] SEXO = {"1", "0"};
 	
 	public static Cliente generarClienteAleatorio() {
 		
@@ -54,11 +55,34 @@ public class Factory {
 		
 	}
 	
+	public static Articulo generarArticuloAleatorio() {
+		Articulo articulo = new Articulo();
+		
+		articulo.setCampaña(randomStringFromArray(CAMPAÑA));
+		articulo.setCategoria(randomStringFromArray(CATEGORIA));
+		articulo.setColor(randomStringFromArray(COLOR));
+		articulo.setMarca(null);
+		articulo.setPrecio(randomInt (10001));
+		articulo.setSexo(randomBoolean());
+		
+		return articulo;
+	}
+	
+	
 	private static String randomStringFromArray(String[] array) {
+		
 		return array[randomInt(array.length)];
 	}
 	
+
 	private static int randomInt(int max) {
+		
 		return (int) (Math.random() * max);
+	}
+	
+	private static boolean randomBoolean () {
+		
+		Random random = new Random();
+		return random.nextBoolean();
 	}
 }
