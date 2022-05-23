@@ -6,6 +6,9 @@ import pojos.Cliente;
 import pojos.Empleado;
 import pojos.Marca;
 import pojos.Tienda;
+
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -13,6 +16,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 import db.interfaces.DBManager;
 import factory.Factory;
@@ -23,9 +27,9 @@ import factory.Factory;
 public class JDBCManager implements DBManager {
 
     private static Connection c;
-    private static final String DB_LOCATION = "/Users/robertosotelino/OneDrive\\ -\\ Fundacion\\ Universitaria\\ San\\ Pablo\\ CEU/CEU/3º\\ curso/2º\\ cuatri/BASES\\ DE\\ DATOS/Proyecto/RIPFashion.db \n"
+    private static final String DB_LOCATION = "./db/RIPFashion.db"
     		+ "";
-    
+    private static final String ficheroInicializacion = "db\\ddl.sql";
 
     // codigo SQL a usar ¡¡¡ CONSULTAS SQL PROBAR EN LA BASE DE DATOS !!! 
 
@@ -50,9 +54,10 @@ public class JDBCManager implements DBManager {
     private static final String sqlCountElementsFromTable = "SELECT COUNT(*) AS Count FROM ";
    
     
-    private static final int NUM_CLIENTES = 100;
-    private static final int NUM_EMPLEADOS = 20;
-
+    private static final int NUM_CLIENTES = 10;
+    private static final int NUM_EMPLEADOS = 10;
+    private static final int MARCAS = 10;
+    private static final int ARTICULOS = 10;
     
     /*
      * Conexion con la base de datos
@@ -64,18 +69,23 @@ public class JDBCManager implements DBManager {
         Class.forName("org.sqlite.JDBC");
         c = DriverManager.getConnection("jdbc:sqlite:" + DB_LOCATION);
         stmt = c.createStatement();
+        createTables();
+        inicializarTablas();
  
 
     } catch (ClassNotFoundException | SQLException e) {
         
+    	System.out.println("Error:   "+e);
     }
+    
  }
     /*
      * Desconexion con la base de datos
      */
     public void disconnect() {
+
         try {
-        	
+        	System.out.println("hola");
             stmt.close();
             c.close();
             
@@ -85,7 +95,23 @@ public class JDBCManager implements DBManager {
         }
     }
     
+	private void createTables() throws SQLException{
+		File file = new File(ficheroInicializacion);
+	    try (Scanner scanner = new Scanner(file)){
+	    	String sqlInicializacion = "";
+	    	while (scanner.hasNextLine()) {
+	    		sqlInicializacion += scanner.nextLine();
+	    	}
+	    	stmt.executeUpdate(sqlInicializacion);
+		} catch (FileNotFoundException e) {
+			
+			System.out.println("Error "+e);
+		}
+	}
+	
     private void inicializarTablas() { // para insertar valores en las tablas
+    	
+    	ArrayList <Marca> marcas = new ArrayList <Marca>();
     	
         if (countElementsFromTable("Clientes") == 0) {
         	
@@ -101,12 +127,39 @@ public class JDBCManager implements DBManager {
             for(int i = 0; i < NUM_EMPLEADOS; i++) {
             	
                 addEmpleado(Factory.generarEmpleadoAleatorio());
-            
+            }   
         }
             
+        if (countElementsFromTable("Marcas") == 0) {
+            	
+             for(int i = 0; i < MARCAS; i++) {
+                	
+              Marca m = Factory.generarMarcasAleatorias();
+              
+              marcas.add(m);
+              addMarca(m);
+              
+            }
+        }
+    
+        
+        if (countElementsFromTable("Articulos") == 0) {
+         	
+    		for(int i = 0; i < ARTICULOS; i++) {
+                	
+            Articulo a = Factory.generarArticuloAleatorio();
+            
+            a.setMarca(marcas.get(i));
+       }
+    		
     }
-
-    }
+        
+        
+        
+        }
+        
+    
+           
     /*
      * Añado un articulo nuevo
      */
@@ -160,6 +213,7 @@ public class JDBCManager implements DBManager {
         	
             PreparedStatement prep = c.prepareStatement(sqlAddEmpleado);
             prep.setString(1, e.getTipo());
+            prep.setString(2, e.getTienda().getNombreTienda()); 
             prep.executeUpdate();
             prep.close();
             
@@ -221,8 +275,8 @@ public class JDBCManager implements DBManager {
             while(rs.next()){
             	
             
-            	int ida = rs.getInt("ID_art");
-            	int idM = rs.getInt("ID_m");
+            	int ida = rs.getInt("IdArt");
+            	int idM = rs.getInt("IdMarca");
             	String categoria = rs.getString("Categoria");
             	String campana = rs.getString("Campaña");
             	String color = rs.getString("Colo");
@@ -261,8 +315,8 @@ public class JDBCManager implements DBManager {
             
             while (rs.next()) {
             	
-              int id = rs.getInt("Id_art");
-              int idM = rs.getInt("ID_m");
+              int id = rs.getInt("IdArt");
+              int idM = rs.getInt("IdMarca");
               String categoria = rs.getString("Categoria");
               String campaña = rs.getString("Campaña");
               String color = rs.getString("Color");
@@ -296,10 +350,10 @@ public class JDBCManager implements DBManager {
             
             while (rs.next()) {
             	
-              int id = rs.getInt("Id_m");
-              String nombre = rs.getString("Nombre_marca");
+              int id = rs.getInt("IdMarca");
+              String nombre = rs.getString("NombreMarca");
               Tienda tienda = new Tienda ();
-              String nombreTienda = rs.getString("Nombre_tienda");
+              String nombreTienda = rs.getString("NombreTienda");
               tienda.setNombreTienda(nombreTienda);
               
               marcas.add(new Marca(id, nombre, tienda));
@@ -327,11 +381,11 @@ public class JDBCManager implements DBManager {
             
             while (rs.next()) {
             	
-              String nombreTienda = rs.getString("Nombre_tienda");
+              String nombreTienda = rs.getString("NombreTienda");
               String horario = rs.getString("Horario");
               String ubicacion = rs.getString("Ubicacion");
               String categoria = rs.getString("Categoria");
-              int capital = rs.getInt("Capital_tienda");
+              int capital = rs.getInt("Capital");
               
               tiendas.add(new Tienda(nombreTienda, horario, ubicacion , categoria, capital));
               
@@ -359,7 +413,7 @@ public class JDBCManager implements DBManager {
             
             while (rs.next()) {
             	
-              String nombreTienda = rs.getString("Nombre_tienda");
+              String nombreTienda = rs.getString("NombreTienda");
               String horario = rs.getString("Horario");
               String ubicacion = rs.getString("Ubicacion");
               String categoria = rs.getString("Categoria");
@@ -389,10 +443,10 @@ public class JDBCManager implements DBManager {
             
             while (rs.next()) {
             	
-              int id = rs.getInt("Id_empl");
+              int id = rs.getInt("IdEmpleado");
               String tipo = rs.getString("Tipo");
               Tienda tienda = new Tienda();
-              String nombre = rs.getString("Nombre_Tienda");
+              String nombre = rs.getString("NombreTienda");
               tienda.setNombreTienda(nombre);
 
               empleados.add(new Empleado(id, tipo, tienda));
@@ -505,6 +559,16 @@ public class JDBCManager implements DBManager {
 }
 
     
+
+
+
+
+    
+    
+
+
+
+
 
 
 
