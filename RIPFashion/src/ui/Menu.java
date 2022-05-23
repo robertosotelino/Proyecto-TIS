@@ -20,11 +20,11 @@ public class Menu {
 	private static DBManager dbman = new JDBCManager(); 
 	
 	private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-	private static final String[] MENU_ROL = { "1.-Rol Empresario", "2.-Rol Cliente","3.-Salir del programa"};
-	private static final String[] MENU_EMPRESARIO = { "1.-Consultar informacion de la tienda","2.- Listar Articulos", 
-			"3.- Consultar capital","4.- Consultar articulo por id", "5.- Añadir un articulo",
-			"6.- Eliminar un articulo","7.- Modificar articulo","8.- Añadir marca",
-			"9.- Listar empleados", "10.- Salir"};
+	private static final String[] MENU_ROL = { "-Rol Empresario", "-Rol Cliente","-Salir del programa"};
+	private static final String[] MENU_EMPRESARIO = { "-Consultar informacion de la tienda","- Listar Articulos", 
+			"- Consultar capital","- Consultar articulo por id", "- Añadir un articulo",
+			"- Eliminar un articulo","- Modificar articulo","- Añadir marca",
+			"- Listar empleados", "- Salir"};
 
 	public static void main (String[] args) throws IOException {
 		
@@ -74,10 +74,47 @@ public class Menu {
 				case 7 -> modificarArticulo(); // done
 				case 8 -> añadirMarca(); // duda
 				case 9 -> listarEmpleados (); // done
-			
+				case 10 -> añadirEmpleado (); // done
+				
 			}
 			
 		} while(respuesta != 0);
+		
+	}
+
+	private static void añadirEmpleado() throws IOException {
+		
+		System.out.println("\n ¿Cual sera el puesto del empleado? \n");
+		
+		String tipo = br.readLine();
+		 
+		int r ;
+		
+		Tienda t = new Tienda ();
+		
+		do {
+			
+			System.out.println("Seleccione la tienda en la que va a trabajar el nuevo empleado");
+			System.out.println("\n1- Delfin&Maria \n 2- Sterling \n 3- Delfin 1953");
+			 
+			r = br.read();
+			
+			switch(r) {
+			
+			case 1 -> t.setNombreTienda("Delfin&Maria");
+			case 2 -> t.setNombreTienda("Sterling");
+			case 3 -> t.setNombreTienda("Delfin 1953");
+			
+			}
+			
+		}while (r != 1 || r != 2 || r != 3);
+		
+		Empleado e = new Empleado ();
+		
+		e.setTienda(t);
+		e.setTipo(tipo);
+		
+		dbman.addEmpleado(e);
 		
 	}
 
@@ -98,7 +135,7 @@ public class Menu {
 		
 	}
 
-	private static void añadirMarca() throws IOException {
+	private static void añadirMarca() throws IOException { // DUDA NO COMPLETO
 		
 		System.out.println("Introduzca el nombre de la marca");
 		
@@ -200,8 +237,7 @@ public class Menu {
 		return articulo;
 	}
 	
-	
-	private static void eliminarArticulo() throws IOException {
+	private static void eliminarArticulo() throws IOException { 
 		
 		listarArticulos();
 		boolean exito = false;
@@ -275,8 +311,6 @@ public class Menu {
 		System.out.println("Precio del articulo ( numero entero )");
 		
 		int precio = br.read();
-		
-		int exito = 1;
 		
 		Marca m = selecMarca();
 			
@@ -372,16 +406,16 @@ public class Menu {
 	}
 
 	
-	private static void consultarCapital() throws IOException { // como especifico la tienda
+	private static void consultarCapital() throws IOException { 
 		
 		consultarInformacionTiendasSinCapital();
-		int r = 10;
+		int r ;
 		Tienda t = new Tienda ();
 		
 		do {
 			
 		System.out.println("Seleccione la tienda de la que quiere consultar el capital");
-		System.out.println("1- Delfin&Maria n 2- Sterling \n 3- Delfin 1953");
+		System.out.println("\n1- Delfin&Maria \n 2- Sterling \n 3- Delfin 1953");
 		 
 		r = br.read();
 		
