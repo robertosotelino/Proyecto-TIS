@@ -21,6 +21,18 @@ public class Empleado {
 		
 	}
 
+	
+	public Tienda getTienda() {
+		
+		return tienda;
+	}
+
+	public void setTienda(Tienda tienda) {
+		
+		this.tienda = tienda;
+		
+	}
+
 	public int getId() {
 		
 		return id;
