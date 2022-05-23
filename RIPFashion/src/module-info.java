@@ -1,4 +1,5 @@
-module RIPFashion {
+open module RIPFashion {
 	requires java.sql;
-	requires java.desktop;
+	requires java.instrument;
+	requires jakarta.persistence;
 }

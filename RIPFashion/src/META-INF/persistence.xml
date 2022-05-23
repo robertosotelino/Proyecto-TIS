@@ -3,7 +3,7 @@
   xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
   version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
  
-  <persistence-unit name="restaurante-provider" transaction-type="RESOURCE_LOCAL">
+  <persistence-unit name="RIPFashion-provider" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
  
     <class>pojos.Usuario</class>
@@ -12,7 +12,7 @@
     <properties>
       <!-- Connection properties -->
       <property name="jakarta.persistence.jdbc.driver" value="org.sqlite.JDBC" />
-      <property name="jakarta.persistence.jdbc.url" value="jdbc:sqlite:./db/restaurante.db" />
+      <property name="jakarta.persistence.jdbc.url" value="jdbc:sqlite:./db/RIPFashion.db" />
       <!-- JPA creates and destroys the schema -->
       <property name="eclipselink.ddl-generation" value="create-tables" />
     </properties>
