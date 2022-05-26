@@ -8,9 +8,10 @@ import java.time.format.DateTimeFormatter;
 import java.util.logging.*;
 
 public class Mylogger {
+	
     private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
     
-    private final static Level LOGGER_LVL = Level.ALL; // NIVEL POR ENCIMA DE TODOS
+    private final static Level LOGGER_LVL = Level.ALL; // NIVEL POR ENCIMA DE TODOSe
     private final static Level CONSOLE_LVL = Level.INFO; // solo aparece un mensaje informativo
     private final static Level FILE_LVL = Level.ALL;
     private final static String LOGGING_FILE = "./lib/logging.properties";
@@ -40,6 +41,7 @@ public class Mylogger {
             fileH.setLevel(FILE_LVL);
             LOGGER.addHandler(fileH);
         }
+        
         LOGGER.info("Logger is configured");
     }
 

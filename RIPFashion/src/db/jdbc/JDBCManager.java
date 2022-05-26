@@ -27,6 +27,7 @@ import factory.Factory;
 public class JDBCManager implements DBManager {
 
     private static Connection c;
+   // final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
     private static final String DB_LOCATION = "./db/RIPFashion.db"
     		+ "";
     private static final String ficheroInicializacion = "db\\ddl.sql";
