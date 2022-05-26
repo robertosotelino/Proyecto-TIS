@@ -73,16 +73,6 @@ También hay que tener en cuenta que en las relaciones 1-n, la clave primaria de
 
 Con todo esto, las tablas que se extraen de nuestro diagrama son las siguientes:
 
-![tiendas](tiendas.png) 
+![tablasER](tablasER.png) 
 
-![Empleados](Empleados.png) 
 
-![clientes](clientes.png) 
-
-![Tiendas_clientes](Tiendas_clientes.png) 
-
-![Marcas](Marcas.png) 
-
-![Marcas_Aticulos](Marcas_Aticulos.png) 
-
-![Articulos](Articulos.png) 
