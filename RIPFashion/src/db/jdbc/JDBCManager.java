@@ -6,7 +6,7 @@ import pojos.Cliente;
 import pojos.Empleado;
 import pojos.Marca;
 import pojos.Tienda;
-
+import java.util.logging.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.sql.Connection;
@@ -27,19 +27,18 @@ import factory.Factory;
 public class JDBCManager implements DBManager {
 
     private static Connection c;
-   // final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
-    private static final String DB_LOCATION = "./db/RIPFashion.db"
-    		+ "";
-    private static final String ficheroInicializacion = "db\\ddl.sql";
+    final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME); 
+    private static final String DB_LOCATION = "./db/RIPFashion.db";
+    private static final String ficheroInicializacion = "./db/ddl.sql";
 
     // codigo SQL a usar ¡¡¡ CONSULTAS SQL PROBAR EN LA BASE DE DATOS !!! 
 
     private static Statement stmt;
 
-    private static final String sqlAddArticulo = "INSERT INTO Articulos (Categoria,Campana,Color,Sexo,Precio) VALUES (?,?,?,?,?);";;
+    private static final String sqlAddArticulo = "INSERT INTO Articulos (Categoria,Campaña,Color,Sexo,Precio) VALUES (?,?,?,?,?);";
 
     private static final String sqlAddCliente = "INSERT ITO Clientes(Nombre,Apellido,Mail,Direccion) VALUES (?,?,?,?);";
-    private static final String sqlAddEmpleado = "INSERT INTO Empleados (Tipo) VALUES (?);";
+    private static final String sqlAddEmpleado = "INSERT INTO Empleados (Tipo, NombreTienda) VALUES (?,?);";
     private static final String sqlAddMarca = "INSERT INTO Marcas (Nombre) VALUES (?);";
     private static final String sqlAddTienda = "INSERT INTO Tiendas (NombreTienda,Horario,Ubicacion,Categoria,CapitalTienda) VALUES (?,?,?,?,?);";
     
@@ -72,11 +71,11 @@ public class JDBCManager implements DBManager {
         stmt = c.createStatement();
         createTables();
         inicializarTablas();
- 
+        LOGGER.info("Se ha configurado la base de datos con éxito");
 
     } catch (ClassNotFoundException | SQLException e) {
         
-    	System.out.println("Error:   "+e);
+    	LOGGER.severe("Error al inicializar la base de datos\n" + e.toString());
     }
     
  }
@@ -89,10 +88,12 @@ public class JDBCManager implements DBManager {
         	System.out.println("hola");
             stmt.close();
             c.close();
+            LOGGER.info("Se ha desconectado de la base de datos con éxito");
             
         } catch (SQLException e) {
             
-        
+        	LOGGER.warning("Error al desconectarse la base de datos\n" + e.toString());
+        	
         }
     }
     
@@ -106,7 +107,7 @@ public class JDBCManager implements DBManager {
 	    	stmt.executeUpdate(sqlInicializacion);
 		} catch (FileNotFoundException e) {
 			
-			System.out.println("Error "+e);
+			LOGGER.severe("Error al leer fichero sql\n" + e.toString());
 		}
 	}
 	
@@ -151,6 +152,8 @@ public class JDBCManager implements DBManager {
             Articulo a = Factory.generarArticuloAleatorio();
             
             a.setMarca(marcas.get(i));
+            
+            addArticulo(a); // cuando en factory genero un articulo, 
        }
     		
     }
@@ -174,6 +177,7 @@ public class JDBCManager implements DBManager {
         	prep.setString(3, a.getColor());
         	prep.setBoolean(4, a.getSexo());
         	prep.setInt(5, a.getPrecio());
+        	prep.setInt(6, a.getMarca().getIdM());
         	prep.executeUpdate();
             prep.close();
 
@@ -383,10 +387,11 @@ public class JDBCManager implements DBManager {
             while (rs.next()) {
             	
               String nombreTienda = rs.getString("NombreTienda");
+              int capital = rs.getInt("Capital");
               String horario = rs.getString("Horario");
               String ubicacion = rs.getString("Ubicacion");
               String categoria = rs.getString("Categoria");
-              int capital = rs.getInt("Capital");
+              
               
               tiendas.add(new Tienda(nombreTienda, horario, ubicacion , categoria, capital));
               
