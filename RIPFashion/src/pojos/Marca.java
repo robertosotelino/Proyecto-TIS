@@ -27,6 +27,13 @@ public class Marca {
 		this.tienda = tienda;
 	}
 	
+	public Marca(String nombre) {
+		
+		super();
+		this.nombre = nombre;
+		
+	}
+
 	public String getNombre() {
 		
 		return nombre;
