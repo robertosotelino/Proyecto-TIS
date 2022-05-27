@@ -20,11 +20,11 @@ public class Menu {
 	private static DBManager dbman = new JDBCManager(); 
 	
 	private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-	private static final String[] MENU_ROL = { "-Rol Empresario", "-Rol Cliente","-Salir del programa"};
-	private static final String[] MENU_EMPRESARIO = { "-Consultar informacion de la tienda","- Listar Articulos", 
+	private static final String[] MENU_ROL = { "-Salir del programa", "-Rol Empresario","-Rol Cliente"};
+	private static final String[] MENU_EMPRESARIO = {"- Salir" ,"-Consultar informacion de la tienda con capital","- Listar Articulos", 
 			"- Consultar capital","- Consultar articulo por id", "- Añadir un articulo",
 			"- Eliminar un articulo","- Modificar articulo","- Añadir marca",
-			"- Listar empleados", "- Salir"};
+			"- Listar empleados"};
 
 	public static void main (String[] args) throws IOException {
 		
@@ -35,8 +35,8 @@ public class Menu {
 		
 		do {
 			
-			System.out.println(MENU_ROL);
-			int opcion = br.read();
+			
+			int opcion = mostrarMenu(MENU_ROL);
 			
 			switch (opcion) {
 			
@@ -111,6 +111,7 @@ public class Menu {
 		
 		Empleado e = new Empleado ();
 		
+		System.out.println("tienda"+t);
 		e.setTienda(t);
 		e.setTipo(tipo);
 		
@@ -135,13 +136,13 @@ public class Menu {
 		
 	}
 
-	private static void añadirMarca() throws IOException { // DUDA NO COMPLETO
+	private static void añadirMarca() throws IOException { 
 		
 		System.out.println("Introduzca el nombre de la marca");
 		
 		String nombre = br.readLine();
 		
-		Marca marca = new Marca (nombre, null); // le tengo que pasar un null o como??'
+		Marca marca = new Marca (nombre); 
 		
 		dbman.addMarca(marca);
 		
