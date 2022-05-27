@@ -6,6 +6,7 @@ import pojos.Articulo;
 import pojos.Cliente;
 import pojos.Empleado;
 import pojos.Marca;
+import pojos.Tienda;
 
 public class Factory {
 
@@ -51,17 +52,44 @@ public class Factory {
 		Empleado empleado = new Empleado();
 		
 		empleado.setTipo(randomStringFromArray(TIPOSEMPLEADO));
+		
+		empleado.setTienda(getTiendaAleatoria());
+		
 		return empleado;
 		
 	}
 	
+	public static Tienda getTiendaAleatoria() {
+		
+		int i = randomInt(3);
+		
+		Tienda t = new Tienda ();
+		
+		if (i==1) {
+			
+			t.setNombreTienda("Delfin&Maria");
+			
+		}else if (i ==2){
+			
+			t.setNombreTienda("Sterling");
+			
+		} else if (i == 3) {
+			
+			t.setNombreTienda("Delfin 1953");
+			
+		}
+		
+		return t;
+	}
+	
 	public static Articulo generarArticuloAleatorio() {
+		
 		Articulo articulo = new Articulo();
 		
 		articulo.setCampaña(randomStringFromArray(CAMPAÑA));
 		articulo.setCategoria(randomStringFromArray(CATEGORIA));
 		articulo.setColor(randomStringFromArray(COLOR));
-		articulo.setMarca(null);
+		articulo.setMarca(generarMarcasAleatorias());
 		articulo.setPrecio(randomInt (10001));
 		articulo.setSexo(randomBoolean());
 		
