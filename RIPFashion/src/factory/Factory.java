@@ -43,6 +43,7 @@ public class Factory {
 		
 		Marca marca = new Marca ();
 		marca.setNombre(randomStringFromArray(MARCAS));
+		marca.setTienda(getTiendaAleatoria());
 		return marca;
 	}
 	
