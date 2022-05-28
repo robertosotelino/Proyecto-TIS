@@ -98,13 +98,21 @@ public class JDBCManager implements DBManager {
     }
     
 	private void createTables() throws SQLException{
+		
 		File file = new File(ficheroInicializacion);
+		
 	    try (Scanner scanner = new Scanner(file)){
+	    	
 	    	String sqlInicializacion = "";
+	    	
 	    	while (scanner.hasNextLine()) {
+	    		
 	    		sqlInicializacion += scanner.nextLine();
+	    		
 	    	}
+	    	
 	    	stmt.executeUpdate(sqlInicializacion);
+	    	
 		} catch (FileNotFoundException e) {
 			
 			LOGGER.severe("Error al leer fichero sql\n" + e.toString());
@@ -139,7 +147,7 @@ public class JDBCManager implements DBManager {
               Marca m = Factory.generarMarcasAleatorias();
               
               marcas.add(m);
-              addMarca(m);
+            //  addMarca(m);
               
             }
         }
@@ -153,7 +161,7 @@ public class JDBCManager implements DBManager {
             
             a.setMarca(marcas.get(i));
             
-            addArticulo(a); // cuando en factory genero un articulo, 
+           // addArticulo(a); // 
        }
     		
     }
@@ -162,7 +170,6 @@ public class JDBCManager implements DBManager {
         
         }
         
-    
            
     /*
      * Añado un articulo nuevo
