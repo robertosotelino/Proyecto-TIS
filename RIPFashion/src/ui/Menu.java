@@ -4,58 +4,145 @@ package ui;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.time.format.DateTimeFormatter;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import db.interfaces.DBManager;
+import db.interfaces.UsuariosManager;
 import db.jdbc.JDBCManager;
+import db.jpa.JPAUsuariosManager;
 import pojos.Articulo;
+import pojos.Cliente;
 import pojos.Empleado;
 import pojos.Marca;
+import pojos.Rol;
 import pojos.Tienda;
-
-
+//import logging.MyLogger;
+import pojos.Usuario;
+import java.util.logging.*;
 
 public class Menu {
-
+	private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 	private static DBManager dbman = new JDBCManager(); 
-	
+	private static UsuariosManager userman = new JPAUsuariosManager();
 	private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	private static final String[] MENU_ROL = { "-Salir del programa", "-Rol Empresario","-Rol Cliente"};
 	private static final String[] MENU_EMPRESARIO = {"- Salir" ,"-Consultar informacion de la tienda con capital","- Listar Articulos", 
 			"- Consultar capital","- Consultar articulo por id", "- Añadir un articulo",
 			"- Eliminar un articulo","- Modificar articulo","- Añadir marca",
 			"- Listar empleados"};
-
+	private static final String[] MENU_INICIO = {"Salir del programa", "Registrarse", "Login"};
+	static Usuario usuario;
+	
+	
 	public static void main (String[] args) throws IOException {
-		
+		//MyLogger.setupFromFile();
 		dbman.connect();
+		userman.connect();
 		System.out.println("Bienvenido a nuestras tiendas");
-		
-		int a = -1;
-		
+	
+		int respuesta = -1;
 		do {
 			
+			respuesta = mostrarMenu(MENU_ROL);// solo para verificar que funcionan los metodos sin pasar por el login
+			//respuesta = mostrarMenu(MENU_INICIO);
+		//	LOGGER.fine("El usuario ha seleccionado la opcion " + respuesta + " en el menu principal");
+		
+			switch(respuesta) {
 			
-			int opcion = mostrarMenu(MENU_ROL);
+			case 1-> mostrarMenuEmpresario(); // solo para verificar que funcionan los metodos sin pasar por el login
+			//case 1 -> registrarse();
+			//case 2 -> login();
+		}
 			
-			switch (opcion) {
-			
-			case 1 -> mostrarMenuEmpresario();
-			
-			
-			}
-			
-		} while ( a != 0);
+	} while(respuesta != 0);
+		
 			System.out.println("Saliendo.... Gracias");
 			
 			dbman.disconnect();
 		
 	
 		}
+	
+	private static void login() {
+		
+		try {
+			
+			System.out.println("Indique su email:");
+			String email = br.readLine();
+			System.out.println("Indique su contraseña:");
+			String pass = br.readLine();
+			usuario = userman.checkLogin(email, pass);
+			
+			if (usuario == null) {
+				
+				System.out.println("Email o contraseña incorrectos");
+				
+			} else {
+				
+				switch(usuario.getRol().getNombre()) {
+				
+					//case "cliente" -> mostrarMenuCliente();
+					case "Empresario" -> mostrarMenuEmpresario();
 
+				}
+			}
+			
+		} catch(IOException e) {
+			
+			LOGGER.warning("Error en el registro\n" + e);
+			
+		}
+	}
+
+	private static void registrarse() {
+		
+		try {
+			
+			System.out.println("Indique su email:");
+			String email = br.readLine();
+			System.out.println("Indique su contraseña:");
+			String pass = br.readLine();
+			MessageDigest md = MessageDigest.getInstance("MD5");
+			md.update(pass.getBytes());
+			byte[] hash = md.digest();
+			System.out.println("Indique su nombre:");
+			String nombre = br.readLine();
+			System.out.println("Indique sus apellidos:");
+			String apellidos = br.readLine();
+			System.out.println("Indique su direccion");
+			String direccion = br.readLine();
+			System.out.println(userman.getRoles());
+			System.out.println("Indique el id del rol:");
+			int rolId = Integer.parseInt(br.readLine());
+			//TODO Asegurarse que el id es válido
+			Rol rol = userman.getRolById(rolId);
+			Usuario usuario = new Usuario(email, hash, rol);
+			rol.addUsuario(usuario);
+			userman.addUsuario(usuario);
+			
+			
+			if(rol.getNombre().equals("cliente")) {
+				
+				Cliente cliente = new Cliente(nombre, apellidos, email, direccion);
+				dbman.addCliente(cliente);
+				
+			} else {
+				
+				añadirEmpleado();
+			}
+			
+		} catch(IOException | NoSuchAlgorithmException e) {
+			
+			LOGGER.warning("Error en el registro\n" + e);
+			
+		}
+	}
+	
+	
 	private static void mostrarMenuEmpresario() throws IOException {
 		
-		System.out.println("/n/n*****MENU DEL EMPRESARIO*****/n/n");
+		System.out.println("\n\n*****MENU DEL EMPRESARIO*****\n\n");
 		
 		int respuesta = -1;
 		
@@ -72,7 +159,7 @@ public class Menu {
 				case 5 -> añadirArticulo();  // done
 				case 6 -> eliminarArticulo(); // done
 				case 7 -> modificarArticulo(); // done
-				case 8 -> añadirMarca(); // duda
+				case 8 -> newMarca(); // duda
 				case 9 -> listarEmpleados (); // done
 				case 10 -> añadirEmpleado (); // done
 				
@@ -92,12 +179,12 @@ public class Menu {
 		
 		Tienda t = new Tienda ();
 		
-		do {
+		//do {
 			
 			System.out.println("Seleccione la tienda en la que va a trabajar el nuevo empleado");
-			System.out.println("\n1- Delfin&Maria \n 2- Sterling \n 3- Delfin 1953");
+			System.out.println("\n1- Delfin&Maria \n2- Sterling \n3- Delfin 1953");
 			 
-			r = br.read();
+			r = Integer.parseInt(br.readLine());
 			
 			switch(r) {
 			
@@ -107,11 +194,11 @@ public class Menu {
 			
 			}
 			
-		}while (r != 1 || r != 2 || r != 3);
+		//}while (r != 1 || r != 2 || r != 3);
 		
 		Empleado e = new Empleado ();
-		
-		System.out.println("tienda"+t);
+		System.out.println("HOLA");
+		System.out.println("\n\nSu tienda es "+t.getNombreTienda());
 		e.setTienda(t);
 		e.setTipo(tipo);
 		
@@ -136,18 +223,66 @@ public class Menu {
 		
 	}
 
-	private static void añadirMarca() throws IOException { 
+	private static void newMarca()  { 
+		
+		int i ;
+		
+		Marca marca = new Marca ();
 		
 		System.out.println("Introduzca el nombre de la marca");
 		
-		String nombre = br.readLine();
+		String nombre;
 		
-		Marca marca = new Marca (nombre); 
+		try {
+			
+			nombre = br.readLine();	
 		
-		dbman.addMarca(marca);
+			marca.setNombre(nombre);
 		
-	}
+		
+		
+		System.out.println("A que tienda quiere que pertenezca"); 
+		
+		ArrayList <Tienda> tiendas = dbman.getInfoTiendasSinCapital();
+		
+		int respuesta ;
+		boolean exito = false ;
+		do {
+			
+		for (i=0 ; i < tiendas.size(); i++) {
+			
+			System.out.println(i + " : " +tiendas.get(i).getNombreTienda());  
+			
+		}
+		
+		respuesta = Integer.parseInt(br.readLine());
+		
+		switch (respuesta) {
+		
+		case 0 -> marca.setTienda(tiendas.get(0));
+		case 1 -> marca.setTienda(tiendas.get(1));
+		case 2 -> marca.setTienda(tiendas.get(2));
+		
+		}
+	
+		
+		if (respuesta == 1 || respuesta ==2 || respuesta == 3) {
+			
+			dbman.addMarca(marca);
+			exito = true;
+		}
 
+		
+		}while (exito);
+
+		
+		} catch (IOException e) {
+			
+			LOGGER.severe("Error al añadir la marca \n" + e.toString());
+			
+		}
+				
+	}	
 	private static void modificarArticulo() throws IOException {
 		
 		System.out.println("Que artículo quieres modificar ( introduce su id )");
@@ -161,7 +296,7 @@ public class Menu {
 		do {
 			
 			idA = br.read();
-			exito = comprobarIdCorrecto(idA);
+			exito = comprobarIdCorrectoArticulo(idA);
 			
 		}while(exito ==true);
 		
@@ -243,22 +378,25 @@ public class Menu {
 		listarArticulos();
 		boolean exito = false;
 		int id ;
+		
 		do {
 			
 		System.out.println("Id del articulo que desea eliminar");
 		
 	    id = br.read();
 		
-		exito = comprobarIdCorrecto(id);
+		exito = comprobarIdCorrectoArticulo(id);
 		
-		}while(exito = true);
+		}while(exito == true);
 		
 		dbman.deleteArticuloById(id);
 		
 		System.out.println("Articulo eliminado correctamente");
+		
 	}
 	
-	private static boolean comprobarIdCorrecto (int id) {
+	
+	private static boolean comprobarIdCorrectoArticulo (int id) {
 		
         ArrayList <Articulo> articulos = dbman.getArticulos();
 		
@@ -352,6 +490,7 @@ public class Menu {
 	private static Marca selecMarca () throws IOException {
 		
 		ArrayList <Marca> marcas = dbman.getMarcas();
+		
 		System.out.println("Nombre de la marca a la que pertenece ( existente )");
 		int j ;
 		
@@ -395,7 +534,7 @@ public class Menu {
 		
 		a = br.read(); 
 		
-		exito = comprobarIdCorrecto (a);
+		exito = comprobarIdCorrectoArticulo (a);
 		
 		} while ( exito == true);
 		
@@ -409,29 +548,63 @@ public class Menu {
 	
 	private static void consultarCapital() throws IOException { 
 		
-		consultarInformacionTiendasSinCapital();
+		boolean exito = false ;
 		int r ;
-		Tienda t = new Tienda ();
+		int i;
+		Tienda t ;
 		
+		ArrayList <Tienda> tiendas = new ArrayList <Tienda>();
+
 		do {
 			
-		System.out.println("Seleccione la tienda de la que quiere consultar el capital");
-		System.out.println("\n1- Delfin&Maria \n 2- Sterling \n 3- Delfin 1953");
-		 
-		r = br.read();
-		
-		switch(r) {
-		
-		case 1 -> t.setNombreTienda("Delfin&Maria");
-		case 2 -> t.setNombreTienda("Sterling");
-		case 3 -> t.setNombreTienda("Delfin 1953");
+		tiendas = dbman.getInfoTiendasConCapital();
+			
+		for ( i = 0 ; i < dbman.getInfoTiendasConCapital().size() ; i++) {
+				
+			System.out.println(i + ":"+tiendas.get(i).getNombreTienda());
+				
 		}
+			
+		r = Integer.parseInt(br.readLine());
 		
-		}while  (r != 1 || r != 2 || r != 3);
+		if (r == 1|| r == 2 ||r == 3) {
+			
+			switch(r) {
+			
+			case 0 :
+				
+				t =tiendas.get(0);
+				int capital = dbman.consultarBalance(t);
+				System.out.println("El capital de la tienda seleccionada es : " + capital);
+				break;
+				
+			case 1 :
+				
+				t = tiendas.get(1);
+				int c = dbman.consultarBalance(t);
+				System.out.println("El capital de la tienda seleccionada es : " + c);
+				break;
+				
+			case 2 :
+				
+				t = tiendas.get(2);
+				int ca = dbman.consultarBalance(t);
+				System.out.println("El capital de la tienda seleccionada es : " + ca);
+				break;
+			
+			}
+			
+			exito = true;
+			
+		} else {
+			
+			exito = false;
+		}
+			
 		
-		int capital = dbman.consultarBalance(t);
+		}while  (exito != true);
+	
 		
-		System.out.println("El capital de la tienda seleccionada es : " + capital);
 		
 	}
 
