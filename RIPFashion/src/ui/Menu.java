@@ -139,7 +139,7 @@ public class Menu {
 			String email = br.readLine();
 			System.out.println("Indique su contraseña:");
 			String pass = br.readLine();
-			MessageDigest md = MessageDigest.getInstance("MD5");
+			MessageDigest md = MessageDigest.getInstance("MD5"); // oculto la contraseña
 			md.update(pass.getBytes());
 			byte[] hash = md.digest();
 			System.out.println("Indique su nombre:");
