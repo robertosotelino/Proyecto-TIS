@@ -85,8 +85,8 @@ public class Articulo {
 
 	@Override
 	public String toString() {
-		return "Articulo [idArt=" + idArt + ", categoria=" + categoria + ", campaña=" + campaña + ", color=" + color
-				+ ", sexo=" + sexo + ", precio=" + precio + ", marca=" + marca + "]";
+		return "\nId del articulo" + idArt + "categoria:" + categoria + "campaña=" + campaña + ", color=" + color
+				+ "sexo:" + sexo + "precio: " + precio + "$" + "marca:" + marca.getNombre() + "\n";
 	}
 
 	

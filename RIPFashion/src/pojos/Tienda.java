@@ -9,7 +9,6 @@ public class Tienda {
 	private String ubicacion;
 	private String categoria;
 	private int capitalTienda;
-	private ArrayList <Cliente> cliente ;
 	
 	public Tienda() {
 		
@@ -98,8 +97,8 @@ public class Tienda {
 	@Override
 	public String toString() {
 		
-		return "Tienda [nombreTienda=" + nombreTienda + ", capitalTienda=" + capitalTienda + ", horario=" + horario
-				+ ", ubicacion=" + ubicacion + ", categoria=" + categoria + "]";
+		return "\nNombre de la tienda : " + nombreTienda + "\ncapital=" + capitalTienda + "\nhorario:" + horario
+				+ "\nubicacion:" + ubicacion + "\ncategoria:" + categoria + "\n\n\n";
 		
 	}
 	
