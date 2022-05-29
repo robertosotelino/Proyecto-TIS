@@ -27,10 +27,11 @@ public class Menu {
 	private static UsuariosManager userman = new JPAUsuariosManager();
 	private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	private static final String[] MENU_ROL = { "-Salir del programa", "-Rol Empresario","-Rol Cliente"};
-	private static final String[] MENU_EMPRESARIO = {"- Salir" ,"-Consultar informacion de la tienda con capital","- Listar Articulos", 
+	private static final String[] MENU_EMPRESARIO = {"- Salir" ,"-Consultar informacion de la tienda ","- Listar Articulos", 
 			"- Consultar capital","- Consultar articulo por id", "- Añadir un articulo",
 			"- Eliminar un articulo","- Modificar articulo","- Añadir marca",
 			"- Listar empleados"};
+	private static final String [] MENU_CLIENTE = {"-Salir ", "Consultar informacion de las tiendas"};
 	private static final String[] MENU_INICIO = {"Salir del programa", "Registrarse", "Login"};
 	static Usuario usuario;
 	
@@ -49,8 +50,10 @@ public class Menu {
 		//	LOGGER.fine("El usuario ha seleccionado la opcion " + respuesta + " en el menu principal");
 		
 			switch(respuesta) {
-			
-			case 1-> mostrarMenuEmpresario(); // solo para verificar que funcionan los metodos sin pasar por el login
+			// solo para verificar que funcionan los metodos sin pasar por el login
+			case 1-> mostrarMenuEmpresario();
+			case 2 -> mostrarMenuCliente();
+			// solo para verificar que funcionan los metodos sin pasar por el login
 			//case 1 -> registrarse();
 			//case 2 -> login();
 		}
@@ -82,7 +85,7 @@ public class Menu {
 				
 				switch(usuario.getRol().getNombre()) {
 				
-					//case "cliente" -> mostrarMenuCliente();
+					case "cliente" -> mostrarMenuCliente();
 					case "Empresario" -> mostrarMenuEmpresario();
 
 				}
@@ -92,6 +95,39 @@ public class Menu {
 			
 			LOGGER.warning("Error en el registro\n" + e);
 			
+		}
+	}
+
+	private static void mostrarMenuCliente() {
+		
+		System.out.println("\n\n*****MENU DEL Cliente*****\n\n");
+		
+		int respuesta = -1;
+		
+		do {
+			
+			respuesta = mostrarMenu(MENU_CLIENTE);
+			
+			switch(respuesta) {
+			
+				case 1 -> consultarInformacionTiendasSinCapital();
+				case 2 -> consultarArticulosPorTienda();
+				
+			}
+			
+		} while(respuesta != 0);
+		
+	}
+
+	private static void consultarArticulosPorTienda() {
+		
+		ArrayList <Articulo> articulos = dbman.getArticulosPorTienda(null);
+		
+		int i ;
+		
+		for ( i = 0 ; i < articulos.size() ; i++) {
+			
+			System.out.println(articulos.get(i).toString());
 		}
 	}
 
@@ -130,6 +166,7 @@ public class Menu {
 			} else {
 				
 				añadirEmpleado();
+				
 			}
 			
 		} catch(IOException | NoSuchAlgorithmException e) {
@@ -176,28 +213,32 @@ public class Menu {
 		String tipo = br.readLine();
 		 
 		int r ;
-		
+		int i;
 		Tienda t = new Tienda ();
 		
-		//do {
+		do {
 			
 			System.out.println("Seleccione la tienda en la que va a trabajar el nuevo empleado");
-			System.out.println("\n1- Delfin&Maria \n2- Sterling \n3- Delfin 1953");
+			ArrayList <Tienda> tiendas = dbman.getInfoTiendasSinCapital();
+			
+			for ( i= 0 ; i < tiendas.size() ; i++) {
+				
+				System.out.println(tiendas.get(i).toString());
+			}
 			 
 			r = Integer.parseInt(br.readLine());
 			
 			switch(r) {
 			
-			case 1 -> t.setNombreTienda("Delfin&Maria");
-			case 2 -> t.setNombreTienda("Sterling");
-			case 3 -> t.setNombreTienda("Delfin 1953");
+			case 0 -> t = tiendas.get(0);
+			case 1 -> t = tiendas.get(1);
+			case 2 -> t = tiendas.get(2);
 			
 			}
 			
-		//}while (r != 1 || r != 2 || r != 3);
+		}while (r != 1 || r != 2 || r != 3);
 		
 		Empleado e = new Empleado ();
-		System.out.println("HOLA");
 		System.out.println("\n\nSu tienda es "+t.getNombreTienda());
 		e.setTienda(t);
 		e.setTipo(tipo);
