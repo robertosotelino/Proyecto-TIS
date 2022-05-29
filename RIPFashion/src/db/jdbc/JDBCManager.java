@@ -111,6 +111,7 @@ public class JDBCManager implements DBManager {
 	    	}
 	    	
 	    	stmt.executeUpdate(sqlInicializacion);
+	    	LOGGER.info("Se han creado las tablas correctamente en la base de datos");
 	    	
 		} catch (FileNotFoundException e) {
 			
@@ -119,6 +120,7 @@ public class JDBCManager implements DBManager {
 	}
 	
     private void inicializarTablas() { // para insertar valores en las tablas
+    	
     	
     	ArrayList <Marca> marcas = new ArrayList <Marca>();
     	
@@ -187,7 +189,9 @@ public class JDBCManager implements DBManager {
             prep.close();
 
         } catch (SQLException e) {
-        	     
+        	 
+        	LOGGER.warning("Error al añadir un articulo\n" + e.toString());
+        	
         }
         
     }
@@ -209,6 +213,7 @@ public class JDBCManager implements DBManager {
             
         } catch (SQLException e) {
            
+        	LOGGER.warning("Error al añadir un cliente\n" + e.toString());
         }
         
         	
@@ -229,6 +234,7 @@ public class JDBCManager implements DBManager {
             
            } catch (SQLException e1) {
                
+        	   LOGGER.warning("Error al añadir un empleado\n" + e.toString());
            }
 
     }
@@ -242,9 +248,11 @@ public class JDBCManager implements DBManager {
     		
     		PreparedStatement prep = c.prepareStatement(sqlAddMarca);
     		prep.setString(1, m.getNombre());
+    		prep.setString(1, m.getTienda().getNombreTienda());
     		
     	}catch (SQLException e) {
     		
+    		LOGGER.warning("Error al añadir una marca\n" + e.toString());
     	}
     	
     }
@@ -267,6 +275,7 @@ public class JDBCManager implements DBManager {
 
     	}catch (SQLException e) {
     		
+    		LOGGER.warning("Error al añadir una tienda\n" + e.toString());
     	}
     	
     }
@@ -304,6 +313,7 @@ public class JDBCManager implements DBManager {
             
         } catch (SQLException e) {
             
+        	LOGGER.warning("Error al obtener articulos\n" + e.toString());
         }
         
         return articulos;
@@ -339,6 +349,7 @@ public class JDBCManager implements DBManager {
             
         } catch (SQLException e) {
             
+        	LOGGER.warning("Error al obtener articulos en funcion de la tienda\n" + e.toString());
         }
         
         return articulos;
@@ -377,6 +388,7 @@ public class JDBCManager implements DBManager {
             
         } catch (SQLException e) {
            
+        	LOGGER.warning("Error al obtener un articulo en funcion de su id\n" + e.toString());
         }
         
         return articulos;
@@ -408,6 +420,7 @@ public class JDBCManager implements DBManager {
             
         } catch (SQLException e) {
            
+        	LOGGER.warning("Error al obtener las marcas\n" + e.toString());
         }
         
         return marcas;
@@ -440,6 +453,7 @@ public class JDBCManager implements DBManager {
             
         } catch (SQLException e) {
            
+        	LOGGER.warning("Error al obtener informacion de las tiendas\n" + e.toString());
         }
         
         return tiendas;
@@ -472,7 +486,7 @@ public class JDBCManager implements DBManager {
             
         } catch (SQLException e) {
         	
-           
+        	LOGGER.warning("Error al obtener informacion de las tiendas\n" + e.toString());
         }
         
         return tiendas;
@@ -502,6 +516,7 @@ public class JDBCManager implements DBManager {
             
         } catch (SQLException e) {
            
+        	LOGGER.warning("Error al obtener los empleados\n" + e.toString());
         }
         
         return empleados;
@@ -529,6 +544,7 @@ public class JDBCManager implements DBManager {
             }
         } catch (SQLException e) {
           
+        	LOGGER.warning("Error al eliminar un articulo en funcion de su id\n" + e.toString());
         }
         
         return exito;
@@ -561,6 +577,7 @@ public class JDBCManager implements DBManager {
             
         } catch (SQLException e) {
             
+        	LOGGER.warning("Error al actualizar un articulo\n" + e.toString());
         }
         
         return exito;
@@ -568,7 +585,7 @@ public class JDBCManager implements DBManager {
     }
     
     
-    public int consultarBalance(Tienda t) { 
+    public int consultarCapital(Tienda t) { 
     	
         
         int capital = 0;
@@ -583,6 +600,7 @@ public class JDBCManager implements DBManager {
 
          } catch (SQLException e) {
              
+        	 LOGGER.warning("Error al obtener el capital de una tienda\n" + e.toString());
          }
         
         return capital;
@@ -596,6 +614,7 @@ public class JDBCManager implements DBManager {
             rs.close();
         } catch (SQLException e) {
           
+        	LOGGER.warning("Error al buscar elementos de la tabla" + nombreTabla+"\n" + e.toString());
         }
         return numElementos;
     }
