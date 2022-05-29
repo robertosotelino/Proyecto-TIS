@@ -52,7 +52,7 @@ public class JDBCManager implements DBManager {
     private static final String sqlGetEmpleados = "SELECT * FROM Empleados";
     private static final String sqlCountElementsFromTable = "SELECT COUNT(*) AS Count FROM ";
     private static final String sqlGetArticulosPorTienda = "";
-    
+    private static final String sqlGetArticulosPorMarca = "";
     private static final int NUM_CLIENTES = 10;
     private static final int NUM_EMPLEADOS = 10;
     private static final int MARCAS = 10;
@@ -618,6 +618,43 @@ public class JDBCManager implements DBManager {
         }
         return numElementos;
     }
+	@Override
+	public ArrayList<Articulo> getArticulosPorMarca(int idM) {
+		
+		ArrayList<Articulo> articulos = new ArrayList<Articulo>();
+		
+		try {
+        	
+            ResultSet rs = stmt.executeQuery(sqlGetArticulosPorMarca);
+            
+            while(rs.next()){
+            	
+            
+            	int ida = rs.getInt("IdArt");
+            	int idMarca = rs.getInt("IdMarca");
+            	String categoria = rs.getString("Categoria");
+            	String campana = rs.getString("Campaña");
+            	String color = rs.getString("Colo");
+            	boolean sexo = rs.getBoolean("Sexo");
+            	int precio = rs.getInt("Precio");
+            	
+            	Marca m = new Marca();
+            	m.setIdM(idMarca);
+            	
+            	Articulo a = new Articulo (ida , m , categoria, campana, color, sexo,precio );
+            	articulos.add(a);
+                
+            }
+            
+            rs.close();
+            
+        } catch (SQLException e) {
+            
+        	LOGGER.warning("Error al obtener articulos en funcion de la tienda\n" + e.toString());
+        }
+        
+		return articulos;
+	}
 	
 
     

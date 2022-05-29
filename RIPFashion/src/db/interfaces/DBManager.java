@@ -43,5 +43,7 @@ public interface DBManager {
 	int consultarCapital(Tienda t);
 
 	ArrayList<Articulo> getArticulosPorTienda(Tienda t);
+
+	ArrayList<Articulo> getArticulosPorMarca(int idM);
 	
 }
