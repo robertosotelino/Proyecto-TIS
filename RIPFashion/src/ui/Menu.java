@@ -615,21 +615,21 @@ public class Menu {
 			case 0 :
 				
 				t =tiendas.get(0);
-				int capital = dbman.consultarBalance(t);
+				int capital = dbman.consultarCapital(t);
 				System.out.println("El capital de la tienda seleccionada es : " + capital);
 				break;
 				
 			case 1 :
 				
 				t = tiendas.get(1);
-				int c = dbman.consultarBalance(t);
+				int c = dbman.consultarCapital(t);
 				System.out.println("El capital de la tienda seleccionada es : " + c);
 				break;
 				
 			case 2 :
 				
 				t = tiendas.get(2);
-				int ca = dbman.consultarBalance(t);
+				int ca = dbman.consultarCapital(t);
 				System.out.println("El capital de la tienda seleccionada es : " + ca);
 				break;
 			
