@@ -1,6 +1,5 @@
 package db.jdbc;
 
-
 import pojos.Articulo;
 import pojos.Cliente;
 import pojos.Empleado;
@@ -50,9 +49,9 @@ public class JDBCManager implements DBManager {
     private static final String sqlGetMarcas =  "SELECT * FROM Marcas;";
     private static final String sqlGetTiendas = "SELECT * FROM Tiendas;";
     private static final String sqlGetBalance = "";
-    private static final String sqlGetEmpleados = "";
+    private static final String sqlGetEmpleados = "SELECT * FROM Empleados";
     private static final String sqlCountElementsFromTable = "SELECT COUNT(*) AS Count FROM ";
-   
+    private static final String sqlGetArticulosPorTienda = "";
     
     private static final int NUM_CLIENTES = 10;
     private static final int NUM_EMPLEADOS = 10;
@@ -147,7 +146,6 @@ public class JDBCManager implements DBManager {
               Marca m = Factory.generarMarcasAleatorias();
               
               marcas.add(m);
-            //  addMarca(m);
               
             }
         }
@@ -311,6 +309,40 @@ public class JDBCManager implements DBManager {
         return articulos;
         
     }
+	public ArrayList<Articulo> getArticulosPorTienda(Tienda t) {
+		
+		ArrayList<Articulo> articulos = new ArrayList<Articulo>();
+        
+        try {
+        	
+            ResultSet rs = stmt.executeQuery(sqlGetArticulosPorTienda);
+            
+            while(rs.next()){
+            	
+            
+            	int ida = rs.getInt("IdArt");
+            	int idM = rs.getInt("IdMarca");
+            	String categoria = rs.getString("Categoria");
+            	String campana = rs.getString("Campaña");
+            	String color = rs.getString("Colo");
+            	boolean sexo = rs.getBoolean("Sexo");
+            	int precio = rs.getInt("Precio");
+            	
+            	Marca m = new Marca();
+            	m.setIdM(idM);
+            	Articulo a = new Articulo (ida , m , categoria, campana, color, sexo,precio );
+            	articulos.add(a);
+                
+            }
+            
+            rs.close();
+            
+        } catch (SQLException e) {
+            
+        }
+        
+        return articulos;
+	}
 
     /*
      * Busco un articulo en funcion de un id conocido
@@ -536,7 +568,7 @@ public class JDBCManager implements DBManager {
     }
     
     
-    public int consultarBalance(Tienda t) { // ?????
+    public int consultarBalance(Tienda t) { 
     	
         
         int capital = 0;
@@ -567,6 +599,8 @@ public class JDBCManager implements DBManager {
         }
         return numElementos;
     }
+	
+
     
     
 }

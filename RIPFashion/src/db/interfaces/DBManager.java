@@ -41,5 +41,7 @@ public interface DBManager {
 	boolean updateArticulo(Articulo a);
 	
 	int consultarBalance(Tienda t);
+
+	ArrayList<Articulo> getArticulosPorTienda(Tienda t);
 	
 }
