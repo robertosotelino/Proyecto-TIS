@@ -30,7 +30,7 @@ public class JPAUsuariosManager implements UsuariosManager{
 		if (getRoles().size() == 0) {
 			
 			addRol(new Rol("cliente"));
-			addRol(new Rol("Empresario"));
+			addRol(new Rol("empresario"));
 			
 		}
 	}
