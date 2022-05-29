@@ -86,7 +86,7 @@ public class Menu {
 				switch(usuario.getRol().getNombre()) {
 				
 					case "cliente" -> mostrarMenuCliente();
-					case "Empresario" -> mostrarMenuEmpresario();
+					case "empresario" -> mostrarMenuEmpresario();
 
 				}
 			}
@@ -336,7 +336,7 @@ public class Menu {
 		
 		do {
 			
-			idA = br.read();
+			idA = Integer.parseInt(br.readLine());br.read();
 			exito = comprobarIdCorrectoArticulo(idA);
 			
 		}while(exito ==true);
@@ -378,7 +378,7 @@ public class Menu {
 		
 		System.out.println("Precio del articulo ( numero entero )");
 		
-		int precio = br.read();
+		int precio = Integer.parseInt(br.readLine());
 		
 		Marca m = selecMarca();
 			
@@ -388,7 +388,7 @@ public class Menu {
 			
 		System.out.println("Sexo (introduzca 1 si es para hombre o 0 si es para mujer)");
 		
-		sexo = br.read();
+		sexo = Integer.parseInt(br.readLine());
 		
 		if (sexo == 1) {
 				
@@ -424,7 +424,7 @@ public class Menu {
 			
 		System.out.println("Id del articulo que desea eliminar");
 		
-	    id = br.read();
+	    id = Integer.parseInt(br.readLine());
 		
 		exito = comprobarIdCorrectoArticulo(id);
 		
@@ -490,7 +490,7 @@ public class Menu {
 		
 		System.out.println("Precio del articulo ( numero entero )");
 		
-		int precio = br.read();
+		int precio = Integer.parseInt(br.readLine());
 		
 		Marca m = selecMarca();
 			
@@ -500,7 +500,7 @@ public class Menu {
 			
 		System.out.println("Sexo (introduzca 1 si es para hombre o 0 si es para mujer)");
 		
-		sexo = br.read();
+		sexo = Integer.parseInt(br.readLine());
 		
 		if (sexo == 1) {
 				
@@ -573,7 +573,7 @@ public class Menu {
 			
 		System.out.println("Introduce un id");
 		
-		a = br.read(); 
+		a = Integer.parseInt(br.readLine());
 		
 		exito = comprobarIdCorrectoArticulo (a);
 		

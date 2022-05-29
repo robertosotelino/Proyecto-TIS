@@ -19,6 +19,7 @@ public class Tienda {
 	@XmlElement(name = "Marca")
 	@XmlElementWrapper(name = "Marca")
 	private ArrayList<Marca> marcas;
+	
 	public Tienda() {
 		
 		super();
