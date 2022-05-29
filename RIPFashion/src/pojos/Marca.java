@@ -1,10 +1,19 @@
 package pojos;
 
+import java.util.ArrayList;
+
+@XmlRootElement(name = "Marca")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Marca {
-	
+	@XmlElement
 	private int idM;
+	@XmlElement
 	private String nombre;
+	@XmlTransient
 	private Tienda tienda;
+	@XmlElement(name = "Articulo")
+	@XmlElementWrapper(name = "Articulo")
+	private ArrayList<Articulo> articulos;
 
 	public Marca() {
 		
@@ -69,6 +78,11 @@ public class Marca {
 		
 		this.tienda = tienda;
 		
+	}
+	
+	public void addArticulo(Articulo a) {
+		if(!articulos.contains(a))
+			articulos.add(a);
 	}
 
 	@Override

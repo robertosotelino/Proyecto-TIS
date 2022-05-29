@@ -2,14 +2,23 @@ package pojos;
 
 import java.util.ArrayList;
 
+@XmlRootElement(name = "Tienda")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Tienda {
-
+	@XmlElement
 	private String nombreTienda;
+	@XmlElement
 	private String horario;
+	@XmlElement
 	private String ubicacion;
+	@XmlElement
 	private String categoria;
+	@XmlElement
 	private int capitalTienda;
 	
+	@XmlElement(name = "Marca")
+	@XmlElementWrapper(name = "Marca")
+	private ArrayList<Marca> marcas;
 	public Tienda() {
 		
 		super();
@@ -93,6 +102,11 @@ public class Tienda {
 		this.categoria = categoria;
 		
 	}
+	public void addMarca(Marca m) {
+		if(!marcas.contains(m))
+			marcas.add(m);
+	}
+
 
 	@Override
 	public String toString() {

@@ -1,15 +1,23 @@
 package pojos;
 
+@XmlRootElement(name = "Marca")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Articulo {
-	
+	@XmlElement
     private int idArt;
+	@XmlElement
 	private String categoria;
+	@XmlElement
 	private String campaña;
+	@XmlElement
 	private String color;
+	@XmlElement
 	private boolean sexo;
+	@XmlElement
 	private int precio;
+	@XmlTransient
 	private Marca marca;
-	
+	R
 	public Articulo() {
 	
 	}
