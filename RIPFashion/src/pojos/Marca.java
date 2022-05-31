@@ -1,5 +1,6 @@
 package pojos;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -11,7 +12,13 @@ import javax.xml.bind.annotation.XmlTransient;
 
 @XmlRootElement(name = "Marca")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Marca {
+public class Marca implements Serializable{
+
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1324200261531760390L;
 	@XmlElement
 	private int idM;
 	@XmlElement

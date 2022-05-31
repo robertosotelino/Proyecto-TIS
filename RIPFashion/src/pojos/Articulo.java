@@ -1,5 +1,7 @@
 package pojos;
 
+import java.io.Serializable;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -8,7 +10,11 @@ import javax.xml.bind.annotation.XmlTransient;
 
 @XmlRootElement(name = "Articulo")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Articulo {
+public class Articulo implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5483181536256859033L;
 	@XmlElement
     private int idArt;
     @XmlElement
