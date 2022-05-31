@@ -35,6 +35,9 @@ public class Factory {
 		cliente.setNombre(randomStringFromArray(NOMBRES));
 		cliente.setApellido(randomStringFromArray(APELLIDOS));
 		cliente.setDireccion(randomStringFromArray(DIRECCIONES));
+		cliente.seteMail(randomStringFromArray(NOMBRES) + 
+				randomStringFromArray(APELLIDOS) + randomInt(100)+
+				"@gmail.com");
 		return cliente;
 		
 	}
