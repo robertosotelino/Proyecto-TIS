@@ -45,5 +45,7 @@ public interface DBManager {
 	ArrayList<Articulo> getArticulosPorTienda(Tienda t);
 
 	ArrayList<Articulo> getArticulosPorMarca(int idM);
+
+	ArrayList<Marca> getMarcasPorTienda(Tienda tienda);
 	
 }

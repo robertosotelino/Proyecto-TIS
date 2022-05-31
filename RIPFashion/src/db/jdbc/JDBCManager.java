@@ -34,11 +34,11 @@ public class JDBCManager implements DBManager {
 
     private static Statement stmt;
 
-    private static final String sqlAddArticulo = "INSERT INTO Articulos (Categoria,Campaña,Color,Sexo,Precio) VALUES (?,?,?,?,?);";
+    private static final String sqlAddArticulo = "INSERT INTO Articulos (Categoria,Campaña,Color,Sexo,Precio,IdMarca) VALUES (?,?,?,?,?,?);";
 
-    private static final String sqlAddCliente = "INSERT ITO Clientes(Nombre,Apellido,Mail,Direccion) VALUES (?,?,?,?);";
+    private static final String sqlAddCliente = "INSERT INTO Clientes(Nombre,Apellido,'e-mail',Direccion) VALUES (?,?,?,?);";
     private static final String sqlAddEmpleado = "INSERT INTO Empleados (Tipo, NombreTienda) VALUES (?,?);";
-    private static final String sqlAddMarca = "INSERT INTO Marcas (Nombre) VALUES (?);";
+    private static final String sqlAddMarca = "INSERT INTO Marcas (NombreMarca, NombreTienda) VALUES (?, ?);";
     private static final String sqlAddTienda = "INSERT INTO Tiendas (NombreTienda,Horario,Ubicacion,Categoria,CapitalTienda) VALUES (?,?,?,?,?);";
     
 
@@ -53,6 +53,7 @@ public class JDBCManager implements DBManager {
     private static final String sqlCountElementsFromTable = "SELECT COUNT(*) AS Count FROM ";
     private static final String sqlGetArticulosPorTienda = "";
     private static final String sqlGetArticulosPorMarca = "";
+    private static final String sqlGetMarcasPorTienda = "";
     private static final int NUM_CLIENTES = 10;
     private static final int NUM_EMPLEADOS = 10;
     private static final int MARCAS = 10;
@@ -149,7 +150,10 @@ public class JDBCManager implements DBManager {
               
               marcas.add(m);
               
+              addMarca(m);
+              
             }
+             
         }
     
         
@@ -161,7 +165,7 @@ public class JDBCManager implements DBManager {
             
             a.setMarca(marcas.get(i));
             
-           // addArticulo(a); // 
+           addArticulo(a); 
        }
     		
     }
@@ -248,7 +252,7 @@ public class JDBCManager implements DBManager {
     		
     		PreparedStatement prep = c.prepareStatement(sqlAddMarca);
     		prep.setString(1, m.getNombre());
-    		prep.setString(1, m.getTienda().getNombreTienda());
+    		prep.setString(2, m.getTienda().getNombreTienda());
     		
     	}catch (SQLException e) {
     		
@@ -353,6 +357,37 @@ public class JDBCManager implements DBManager {
         }
         
         return articulos;
+	}
+	public ArrayList<Marca> getMarcasPorTienda(Tienda tienda) {
+		
+		ArrayList<Marca> marcas = new ArrayList<Marca>();
+		
+		try {
+        	
+            ResultSet rs = stmt.executeQuery(sqlGetMarcasPorTienda);
+            
+            while(rs.next()){
+            	
+            	int idM = rs.getInt("IdMarca");
+            	String nombreMarca = rs.getString("NombreMarca");
+            	String nombreTienda = rs.getString("NombreTienda");
+            	
+            	Tienda t = new Tienda ();
+            	t.setNombreTienda(nombreTienda);
+            	
+            	marcas.add(new Marca (idM,nombreMarca,t));
+                
+            }
+            
+            rs.close();
+            
+        } catch (SQLException e) {
+            
+        	LOGGER.warning("Error al obtener marcas en funcion de la tienda\n" + e.toString());
+        }
+        
+		
+		return marcas;
 	}
 
     /*
@@ -618,7 +653,7 @@ public class JDBCManager implements DBManager {
         }
         return numElementos;
     }
-	@Override
+
 	public ArrayList<Articulo> getArticulosPorMarca(int idM) {
 		
 		ArrayList<Articulo> articulos = new ArrayList<Articulo>();
@@ -655,6 +690,7 @@ public class JDBCManager implements DBManager {
         
 		return articulos;
 	}
+	
 	
 
     
