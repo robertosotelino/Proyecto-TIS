@@ -17,11 +17,17 @@ import pojos.Empleado;
 import pojos.Marca;
 import pojos.Rol;
 import pojos.Tienda;
-//import logging.MyLogger;
+import logging.MyLogger;
 import pojos.Usuario;
+import xml.testTienda;
+
 import java.util.logging.*;
 
+import javax.xml.bind.JAXBException;
+
 public class Menu {
+	
+	private final static testTienda testT = new testTienda();
 	private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 	private static DBManager dbman = new JDBCManager(); 
 	private static UsuariosManager userman = new JPAUsuariosManager();
@@ -29,15 +35,14 @@ public class Menu {
 	private static final String[] MENU_ROL = { "-Salir del programa", "-Rol Empresario","-Rol Cliente"};
 	private static final String[] MENU_EMPRESARIO = {"- Salir" ,"-Consultar informacion de la tienda ","- Listar Articulos", 
 			"- Consultar capital","- Consultar articulo por id", "- Añadir un articulo",
-			"- Eliminar un articulo","- Modificar articulo","- Añadir marca",
-			"- Listar empleados"};
+			"- Eliminar un articulo","- Modificar articulo","- Añadir marca", "- Listar empleados"
+			,"Añadir empleado","marshalling", "unMarshalling"};
 	private static final String [] MENU_CLIENTE = {"-Salir ", "Consultar informacion de las tiendas"};
-	private static final String[] MENU_INICIO = {"Salir del programa", "Registrarse", "Login"};
 	static Usuario usuario;
 	
 	
-	public static void main (String[] args) throws IOException {
-		//MyLogger.setupFromFile();
+	public static void main (String[] args) throws IOException, JAXBException {
+		MyLogger.setupFromFile(); 
 		dbman.connect();
 		userman.connect();
 		System.out.println("Bienvenido a nuestras tiendas");
@@ -67,7 +72,7 @@ public class Menu {
 	
 		}
 	
-	private static void login() {
+	private static void login() throws JAXBException {
 		
 		try {
 			
@@ -98,7 +103,7 @@ public class Menu {
 		}
 	}
 
-	private static void mostrarMenuCliente() {
+	private static void mostrarMenuCliente() throws NumberFormatException, IOException {
 		
 		System.out.println("\n\n*****MENU DEL Cliente*****\n\n");
 		
@@ -119,16 +124,72 @@ public class Menu {
 		
 	}
 
-	private static void consultarArticulosPorTienda() {
+	private static void consultarArticulosPorTienda() throws NumberFormatException, IOException { // IMCOMPLETO
 		
-		ArrayList <Articulo> articulos = dbman.getArticulosPorTienda(null);
+		boolean exito = false;
 		
-		int i ;
-		
-		for ( i = 0 ; i < articulos.size() ; i++) {
+		do {
+		Tienda t ;
+		int r;
+		ArrayList <Tienda> tiendas = new ArrayList <Tienda>();
+			 
+			consultarInformacionTiendasSinCapital();
 			
-			System.out.println(articulos.get(i).toString());
+		r = Integer.parseInt(br.readLine());
+		
+		if (r == 0|| r == 1 ||r == 2) {
+			
+			switch(r) {
+			
+			case 0 :
+				
+				t =tiendas.get(0);
+				ArrayList <Articulo> articulost0 = dbman.getArticulosPorTienda(t);
+
+				
+				for ( int a = 0 ; a < articulost0.size() ; a++) {
+					
+					System.out.println(articulost0.get(a).toString());
+				}
+				break;
+				
+			case 1 :
+				
+				t = tiendas.get(1);
+				ArrayList <Articulo> articulost1 = dbman.getArticulosPorTienda(t);
+				
+				for ( int j = 0 ; j < articulost1.size() ; j++) {
+					
+					System.out.println(articulost1.get(j).toString());
+				}
+				break;
+				
+			case 2 :
+				
+				t = tiendas.get(2);
+				ArrayList <Articulo> articulost3 = dbman.getArticulosPorTienda(t);
+			
+				
+				for ( int i = 0 ; i < articulost3.size() ; i++) {
+					
+					System.out.println(articulost3.get(i).toString());
+				}
+				break;
+			
+			}
+			
+			
+			exito = true;
+			
+		} else {
+			
+			exito = false;
 		}
+			
+		
+		}while  (exito != true);
+		
+		
 	}
 
 	private static void registrarse() {
@@ -151,7 +212,7 @@ public class Menu {
 			System.out.println(userman.getRoles());
 			System.out.println("Indique el id del rol:");
 			int rolId = Integer.parseInt(br.readLine());
-			//TODO Asegurarse que el id es válido
+			// bucle
 			Rol rol = userman.getRolById(rolId);
 			Usuario usuario = new Usuario(email, hash, rol);
 			rol.addUsuario(usuario);
@@ -177,7 +238,7 @@ public class Menu {
 	}
 	
 	
-	private static void mostrarMenuEmpresario() throws IOException {
+	private static void mostrarMenuEmpresario() throws IOException, JAXBException {
 		
 		System.out.println("\n\n*****MENU DEL EMPRESARIO*****\n\n");
 		
@@ -188,7 +249,7 @@ public class Menu {
 			respuesta = mostrarMenu(MENU_EMPRESARIO);
 			
 			switch(respuesta) {
-			
+				case 0 -> respuesta = 0;
 				case 1 -> consultarInfoTiendasConCapital(); // done
 				case 2 -> listarArticulos(); // done
 				case 3 -> consultarCapital(); // done
@@ -199,7 +260,9 @@ public class Menu {
 				case 8 -> newMarca(); // duda
 				case 9 -> listarEmpleados (); // done
 				case 10 -> añadirEmpleado (); // done
-				
+				case 11 -> testT.marshalling();
+				case 12 -> testT.unMarshalling();
+
 			}
 			
 		} while(respuesta != 0);
@@ -219,6 +282,7 @@ public class Menu {
 		do {
 			
 			System.out.println("Seleccione la tienda en la que va a trabajar el nuevo empleado");
+			
 			ArrayList <Tienda> tiendas = dbman.getInfoTiendasSinCapital();
 			
 			for ( i= 0 ; i < tiendas.size() ; i++) {
@@ -236,7 +300,7 @@ public class Menu {
 			
 			}
 			
-		}while (r != 1 || r != 2 || r != 3);
+		}while (r < 0 || r > 2);
 		
 		Empleado e = new Empleado ();
 		System.out.println("\n\nSu tienda es "+t.getNombreTienda());
@@ -266,7 +330,6 @@ public class Menu {
 
 	private static void newMarca()  { 
 		
-		int i ;
 		
 		Marca marca = new Marca ();
 		
@@ -286,11 +349,13 @@ public class Menu {
 		
 		ArrayList <Tienda> tiendas = dbman.getInfoTiendasSinCapital();
 		
+		System.out.println();
 		int respuesta ;
 		boolean exito = false ;
+		
 		do {
 			
-		for (i=0 ; i < tiendas.size(); i++) {
+		for (int i=0 ; i < tiendas.size(); i++) {
 			
 			System.out.println(i + " : " +tiendas.get(i).getNombreTienda());  
 			
@@ -307,14 +372,15 @@ public class Menu {
 		}
 	
 		
-		if (respuesta == 1 || respuesta ==2 || respuesta == 3) {
+		if (respuesta == 0 || respuesta ==1 || respuesta == 2) {
 			
 			dbman.addMarca(marca);
 			exito = true;
+			
 		}
 
 		
-		}while (exito);
+		}while (!exito);
 
 		
 		} catch (IOException e) {
@@ -528,11 +594,12 @@ public class Menu {
 		
 	}
 
-	private static Marca selecMarca () throws IOException {
+	private static Marca selecMarca () throws IOException { 
 		
 		ArrayList <Marca> marcas = dbman.getMarcas();
 		
 		System.out.println("Nombre de la marca a la que pertenece ( existente )");
+		
 		int j ;
 		
 		for ( j = 0 ; j < marcas.size() ; j++) {
@@ -608,7 +675,7 @@ public class Menu {
 			
 		r = Integer.parseInt(br.readLine());
 		
-		if (r == 1|| r == 2 ||r == 3) {
+		if (r == 0|| r == 1 ||r == 2) {
 			
 			switch(r) {
 			
@@ -681,7 +748,7 @@ public class Menu {
 		
 	}
 	
-	private static void consultarInformacionTiendasSinCapital() {
+	private static void consultarInformacionTiendasSinCapital() { // HACER TO STRING SIN CAPI
 
 		int i ;
 		
@@ -691,7 +758,7 @@ public class Menu {
 		
 		for ( i = 0 ; i < dbman.getInfoTiendasSinCapital().size() ; i++) {
 			
-			System.out.println(tiendas.get(i).toString());
+			System.out.println(i +"-"+tiendas.get(i).toStringSinCapital());
 			
 		}
 		
