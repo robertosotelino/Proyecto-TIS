@@ -9,10 +9,13 @@ PRIMARY KEY (NombreTienda)
 
 );
 
+INSERT INTO Tiendas VALUES ("Delfin&Maria", 10000000,"10:00-20:00", "Rua Paseo 19", "Calzado y complementos")
+INSERT INTO Tiendas VALUES ("Sterling", 10000000,"10:00-20:00", "Rua San Miguel 7", "Ropa de mujer")
+INSERT INTO Tiendas VALUES ("Delfin 1953", 10000000,"10:00-20:00", "Rua San Miguel 11", "Calzado de caballero")
 
 CREATE TABLE IF NOT EXISTS Clientes (
 
-"e-mail " TEXT UNIQUE NOT NULL PRIMARY KEY,
+"e-mail" TEXT UNIQUE NOT NULL PRIMARY KEY,
 Nombre TEXT ,
 Apellido TEXT,
 Direccion TEXT
@@ -35,7 +38,7 @@ Categoria TEXT NOT NULL,
 Color TEXT NOT NULL,
 Sexo NUMERIC NOT NULL,
 Precio INTEGER NOT NULL,
-IdMarca INTEGER NOT NULL UNIQUE,
+IdMarca INTEGER NOT NULL,
 Campaña TEXT,
 FOREIGN KEY (IdMarca) REFERENCES Marcas ( IdMarca)
 
