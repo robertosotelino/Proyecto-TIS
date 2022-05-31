@@ -1,11 +1,17 @@
 package pojos;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
+
 @XmlRootElement(name = "Marca")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Articulo {
 	@XmlElement
     private int idArt;
-	@XmlElement
+    @XmlElement
 	private String categoria;
 	@XmlElement
 	private String campaña;
@@ -17,7 +23,7 @@ public class Articulo {
 	private int precio;
 	@XmlTransient
 	private Marca marca;
-	R
+	
 	public Articulo() {
 	
 	}

@@ -1,14 +1,13 @@
 package xml;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.logging.Logger;
 
-import org.eclipse.persistence.exceptions.JAXBException;
-import org.eclipse.persistence.internal.oxm.Marshaller;
-import org.eclipse.persistence.internal.oxm.Unmarshaller;
-import org.eclipse.persistence.jaxb.JAXBContext;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
 
 import db.interfaces.DBManager;
 import db.jdbc.JDBCManager;
@@ -20,41 +19,31 @@ public class testTienda {
 
 	 final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME); 
 	 private static DBManager dbman = new JDBCManager(); 
-	 
-		public static void main(String[] args) throws JAXBException, IOException {
-			
-			//MyLogger.setupFromFile();
-			Tienda tienda = randomTienda();
-			//Empresa empresa = generarEmpresa();
-			marshalling(tienda);
-			unMarshalling();
-			
-		}
 
-		private static Tienda randomTienda() {
+		public static Tienda randomTienda() {
 			
-			Tienda tienda = new Tienda ();
-			ArrayList <Marca> marcas = dbman.getMarcas();
-			ArrayList <Articulo> articulos = dbman.getArticulos();
+			ArrayList <Tienda> tiendas = dbman.getInfoTiendasConCapital();
+			Tienda tienda = tiendas.get(0);
+			ArrayList <Marca> marcas = dbman.getMarcasPorTienda(tienda);
 		
 			for (int i = 0 ; i < marcas.size() ; i ++ ) {
 				
 				ArrayList <Articulo> art = 
-						dbman.getArticulosPorMarca(marcas.get(i).getIdM());
+						dbman.getArticulosPorMarca(marcas.get(i).getIdM()); 
 				
-				for ( int j = 0 ; i < art.size(); j++) {
-					
-					marcas.get(i).addArticulo(art.get(j));
-				}
+				marcas.get(i).setArticulos(art);
+				
 				tienda.addMarca(marcas.get(i));
+				
 			}
 			
 			System.out.println("Se ha generado una tienda con " + marcas.size() +
-					" marcas y " + articulos.size() + "articulos");
+					" marcas" );
 			return tienda;
 		}
 
-		private static void marshalling(Tienda t) throws JAXBException {
+		public static void marshalling() throws JAXBException {
+			Tienda t = randomTienda();
 			// Creamos el JAXBContext
 			JAXBContext jaxbC = JAXBContext.newInstance(Tienda.class);
 			// Creamos el JAXBMarshaller
@@ -70,7 +59,7 @@ public class testTienda {
 			jaxbM.marshal(t, System.out);
 		}
 		
-		private static void unMarshalling() throws JAXBException {
+		public static void unMarshalling() throws JAXBException {
 			// Creamos el JAXBContext
 			JAXBContext jaxbC = JAXBContext.newInstance(Tienda.class);
 			// Creamos el JAXBMarshaller
@@ -82,5 +71,5 @@ public class testTienda {
 			// Escribiendo por pantalla el objeto
 			System.out.println(t);
 		}
-	 
+
 }

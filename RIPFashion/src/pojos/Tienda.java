@@ -2,6 +2,14 @@ package pojos;
 
 import java.util.ArrayList;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
+
+
 @XmlRootElement(name = "Tienda")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Tienda {
@@ -108,7 +116,12 @@ public class Tienda {
 			marcas.add(m);
 	}
 
-
+public String toStringSinCapital() {
+		
+		return "\nNombre de la tienda : " + nombreTienda + "\nhorario:" + horario
+				+ "\nubicacion:" + ubicacion + "\ncategoria:" + categoria + "\n\n\n";
+		
+	}
 	@Override
 	public String toString() {
 		

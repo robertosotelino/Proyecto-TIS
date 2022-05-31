@@ -2,6 +2,13 @@ package pojos;
 
 import java.util.ArrayList;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
+
 @XmlRootElement(name = "Marca")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Marca {
@@ -83,6 +90,16 @@ public class Marca {
 	public void addArticulo(Articulo a) {
 		if(!articulos.contains(a))
 			articulos.add(a);
+	}
+	
+	
+
+	public ArrayList<Articulo> getArticulos() {
+		return articulos;
+	}
+
+	public void setArticulos(ArrayList<Articulo> articulos) {
+		this.articulos = articulos;
 	}
 
 	@Override
