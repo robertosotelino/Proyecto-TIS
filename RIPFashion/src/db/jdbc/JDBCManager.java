@@ -28,8 +28,9 @@ public class JDBCManager implements DBManager {
     private static Connection c;
     final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME); 
     private static final String DB_LOCATION = "./db/RIPFashion.db";
-    private static final String ficheroInicializacion = "./db/ddl.sql";
-
+    private static final String ficheroInicializacion = "./db/ddl.sql";	
+    private static final String ficheroInicializarTiendas= "./db/ficheroInicializarTiendas.sql";
+    private static final String ficheroInicializarMarcas = "./db/ficheroInicializarMarcas.sql";
     // codigo SQL a usar ¡¡¡ CONSULTAS SQL PROBAR EN LA BASE DE DATOS !!! 
 
     private static Statement stmt;
@@ -97,7 +98,7 @@ public class JDBCManager implements DBManager {
         }
     }
     
-	private void createTables() throws SQLException{
+	private void createTables() {
 		
 		File file = new File(ficheroInicializacion);
 		
@@ -117,13 +118,40 @@ public class JDBCManager implements DBManager {
 		} catch (FileNotFoundException e) {
 			
 			LOGGER.severe("Error al leer fichero sql\n" + e.toString());
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 	
     private void inicializarTablas() { // para insertar valores en las tablas
     	
     	
-    	ArrayList <Marca> marcas = new ArrayList <Marca>();
+        if (countElementsFromTable("Tiendas") == 0) {
+        	
+        	File file = new File(ficheroInicializarTiendas);
+    		
+    	    try (Scanner scanner = new Scanner(file)){
+    	    	
+    	    	String sqlInicializacion = "";
+    	    	
+    	    	while (scanner.hasNextLine()) {
+    	    		
+    	    		sqlInicializacion += scanner.nextLine();
+    	    		
+    	    	}
+    	    	
+    	    	stmt.executeUpdate(sqlInicializacion);
+    	    	LOGGER.info("Se ha añadido correctamente la informacion de las tiendas en la base de datos");
+    	    	
+    		} catch (FileNotFoundException e) {
+    			
+    			LOGGER.severe("Error al leer fichero sql para insertar datos en las tiendas\n" + e.toString());
+    		} catch (SQLException e) {
+				
+    			LOGGER.severe("Error SQL al añadir TIENDAS\n" + e.toString());
+			}
+        }
     	
         if (countElementsFromTable("Clientes") == 0) {
         	
@@ -144,15 +172,28 @@ public class JDBCManager implements DBManager {
             
         if (countElementsFromTable("Marcas") == 0) {
             	
-             for(int i = 0; i < MARCAS; i++) {
-                	
-              Marca m = Factory.generarMarcasAleatorias();
-              
-              marcas.add(m);
-              
-              addMarca(m);
-              
-            }
+        	File file = new File(ficheroInicializarMarcas);
+    		
+    	    try (Scanner scanner = new Scanner(file)){
+    	    	
+    	    	String sqlInicializacion = "";
+    	    	
+    	    	while (scanner.hasNextLine()) {
+    	    		
+    	    		sqlInicializacion += scanner.nextLine();
+    	    		
+    	    	}
+    	    	
+    	    	stmt.executeUpdate(sqlInicializacion);
+    	    	LOGGER.info("Se ha añadido correctamente la informacion de las marcas en la base de datos");
+    	    	
+    		} catch (FileNotFoundException e) {
+    			
+    			LOGGER.severe("Error al leer fichero sql para insertar datos en las marcas\n" + e.toString());
+    		} catch (SQLException e) {
+				
+    			LOGGER.severe("Error SQL al añadir MARCAS\n" + e.toString());
+			}
              
         }
     
@@ -162,8 +203,12 @@ public class JDBCManager implements DBManager {
     		for(int i = 0; i < ARTICULOS; i++) {
                 	
             Articulo a = Factory.generarArticuloAleatorio();
+          
+            ArrayList<Marca> marcas = getMarcas();
             
             a.setMarca(marcas.get(i));
+           
+            System.out.println(marcas.get(i));
             
            addArticulo(a); 
        }
@@ -179,6 +224,7 @@ public class JDBCManager implements DBManager {
      * Añado un articulo nuevo
      */
     public void addArticulo(Articulo a) {
+    	
     	
         try {
         	
@@ -253,33 +299,12 @@ public class JDBCManager implements DBManager {
     		PreparedStatement prep = c.prepareStatement(sqlAddMarca);
     		prep.setString(1, m.getNombre());
     		prep.setString(2, m.getTienda().getNombreTienda());
-    		
+    		 prep.executeUpdate();
+             prep.close();
+             
     	}catch (SQLException e) {
     		
     		LOGGER.warning("Error al añadir una marca\n" + e.toString());
-    	}
-    	
-    }
-    
-    /*
-     * Añado una tienda a mi base de datos
-     */
-    public void addTienda (Tienda t) {
-    	
-    	try {
-    		
-    		PreparedStatement prep = c.prepareStatement(sqlAddTienda);
-    		prep.setString(1, t.getNombreTienda());
-    		prep.setString(2, t.getHorario());
-    		prep.setString(3, t.getUbicacion());
-    		prep.setString(4, t.getCategoria());
-    		prep.setInt(5, t.getCapitalTienda());
-    		prep.executeUpdate();
-            prep.close();
-
-    	}catch (SQLException e) {
-    		
-    		LOGGER.warning("Error al añadir una tienda\n" + e.toString());
     	}
     	
     }
@@ -302,7 +327,7 @@ public class JDBCManager implements DBManager {
             	int idM = rs.getInt("IdMarca");
             	String categoria = rs.getString("Categoria");
             	String campana = rs.getString("Campaña");
-            	String color = rs.getString("Colo");
+            	String color = rs.getString("Color");
             	boolean sexo = rs.getBoolean("Sexo");
             	int precio = rs.getInt("Precio");
             	
