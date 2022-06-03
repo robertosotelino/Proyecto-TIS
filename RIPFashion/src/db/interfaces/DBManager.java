@@ -22,7 +22,6 @@ public interface DBManager {
 	
 	void addMarca (Marca m);
 	
-	void addTienda (Tienda t);
 	
 	ArrayList<Articulo> getArticulos();
 	
