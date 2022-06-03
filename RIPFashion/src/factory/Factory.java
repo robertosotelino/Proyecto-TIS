@@ -69,15 +69,15 @@ public class Factory {
 		
 		Tienda t = new Tienda ();
 		
-		if (i==1) {
+		if (i==0) {
 			
 			t.setNombreTienda("Delfin&Maria");
 			
-		}else if (i ==2){
+		}else if (i ==1){
 			
 			t.setNombreTienda("Sterling");
 			
-		} else if (i == 3) {
+		} else if (i == 2) {
 			
 			t.setNombreTienda("Delfin 1953");
 			
