@@ -50,7 +50,7 @@ Por último, nuestro sistema (R.I.P FASHION) que lo utilizamos para definir el a
 
 Presentamos el diagrama entidad relación de nuestro proyecto. 
 
-![DiagramaER](DiagramaER.jpg) 
+![Entidad_Relacion](Entidad_Relacion.jpg) 
 
 
 En el se pueden observar 5 entidades con sus correspondientes atributos y 4 relaciones. 
