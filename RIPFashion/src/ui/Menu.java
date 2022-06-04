@@ -122,6 +122,9 @@ public class Menu {
 			
 		} while(respuesta != 0);
 		
+		System.out.println(" \n\n Gracias, tenga un buen dia \n\n");
+		
+		
 	}
 
 	private static void consultarArticulosPorTienda() throws NumberFormatException, IOException { // IMCOMPLETO
@@ -645,7 +648,6 @@ public class Menu {
 		exito = comprobarIdCorrectoArticulo (a);
 		
 		} while ( exito == true);
-		
 		ArrayList<Articulo> articulo = dbman.searchArticuloByIdArt(a);
 		
 		System.out.println(articulo.get(0).toString()); // posicion 0 ya que el arraylist solo deberia contener un articulo ya que los id son unicos
