@@ -105,8 +105,8 @@ public class Articulo implements Serializable{
 
 	@Override
 	public String toString() {
-		return "\nId del articulo" + idArt + "categoria:" + categoria + "campaña=" + campaña + ", color=" + color
-				+ "sexo:" + sexo + "precio: " + precio + "$" + "marca:" + marca.getNombre() + "\n";
+		return "\nId del articulo : " + idArt + "\ncategoria : " + categoria + "\ncampaña : " + campaña + "\ncolor : " + color
+				+ "\n sexo : " + sexo + "\n precio : " + precio + " $" + "\nmarca : " + marca.getNombre() + "\n";
 	}
 
 	
