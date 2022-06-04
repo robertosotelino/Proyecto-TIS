@@ -40,16 +40,13 @@ public class JDBCManager implements DBManager {
     private static final String sqlAddCliente = "INSERT INTO Clientes(Nombre,Apellido,'e-mail',Direccion) VALUES (?,?,?,?);";
     private static final String sqlAddEmpleado = "INSERT INTO Empleados (Tipo, NombreTienda) VALUES (?,?);";
     private static final String sqlAddMarca = "INSERT INTO Marcas (NombreMarca, NombreTienda) VALUES (?, ?);";
-    private static final String sqlAddTienda = "INSERT INTO Tiendas (NombreTienda,Horario,Ubicacion,Categoria,CapitalTienda) VALUES (?,?,?,?,?);";
-    
-
     private static final String sqlGetArticulos = "SELECT * FROM Articulos;";
     private static final String sqlSearchArticuloByIdArt = "SELECT * FROM Articulos WHERE Id_art=?;";
     private static final String sqlDeleteArticuloById = "DELETE FROM Articulos WHERE Id_art=?;";
     private static final String sqlUpdateArticulo = "UPDATE Articulos SET Categoria=?, Campana=?, Color=?,Sexo=?, Precio=? WHERE Id_art=?;";
     private static final String sqlGetMarcas =  "SELECT * FROM Marcas;";
     private static final String sqlGetTiendas = "SELECT * FROM Tiendas;";
-    private static final String sqlGetBalance = "";
+    private static final String sqlGetCapital = "";
     private static final String sqlGetEmpleados = "SELECT * FROM Empleados";
     private static final String sqlCountElementsFromTable = "SELECT COUNT(*) AS Count FROM ";
     private static final String sqlGetArticulosPorTienda = "";
@@ -650,7 +647,7 @@ public class JDBCManager implements DBManager {
         
         int capital = 0;
         
-        try (PreparedStatement prep = c.prepareStatement(sqlGetBalance)){
+        try (PreparedStatement prep = c.prepareStatement(sqlGetCapital)){
         	
         	prep.setInt(1, t.getCapitalTienda());
             
