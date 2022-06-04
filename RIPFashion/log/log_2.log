@@ -2,9 +2,9 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2022-06-03T16:13:11.076530Z</date>
-  <millis>1654272791076</millis>
-  <nanos>530000</nanos>
+  <date>2022-06-03T16:16:53.880060Z</date>
+  <millis>1654273013880</millis>
+  <nanos>60000</nanos>
   <sequence>0</sequence>
   <logger>global</logger>
   <level>INFO</level>
@@ -14,9 +14,9 @@
   <message>Logger is configured</message>
 </record>
 <record>
-  <date>2022-06-03T16:13:11.426154Z</date>
-  <millis>1654272791426</millis>
-  <nanos>154000</nanos>
+  <date>2022-06-03T16:16:54.099827Z</date>
+  <millis>1654273014099</millis>
+  <nanos>827000</nanos>
   <sequence>1</sequence>
   <logger>global</logger>
   <level>INFO</level>
@@ -26,34 +26,10 @@
   <message>Se han creado las tablas correctamente en la base de datos</message>
 </record>
 <record>
-  <date>2022-06-03T16:13:11.432307Z</date>
-  <millis>1654272791432</millis>
-  <nanos>307000</nanos>
+  <date>2022-06-03T16:16:54.100821Z</date>
+  <millis>1654273014100</millis>
+  <nanos>821000</nanos>
   <sequence>2</sequence>
-  <logger>global</logger>
-  <level>INFO</level>
-  <class>db.jdbc.JDBCManager</class>
-  <method>inicializarTablas</method>
-  <thread>1</thread>
-  <message>Se ha añadido correctamente la informacion de las tiendas en la base de datos</message>
-</record>
-<record>
-  <date>2022-06-03T16:13:11.454555Z</date>
-  <millis>1654272791454</millis>
-  <nanos>555000</nanos>
-  <sequence>3</sequence>
-  <logger>global</logger>
-  <level>INFO</level>
-  <class>db.jdbc.JDBCManager</class>
-  <method>inicializarTablas</method>
-  <thread>1</thread>
-  <message>Se ha añadido correctamente la informacion de las marcas en la base de datos</message>
-</record>
-<record>
-  <date>2022-06-03T16:13:11.464762Z</date>
-  <millis>1654272791464</millis>
-  <nanos>762000</nanos>
-  <sequence>4</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>db.jdbc.JDBCManager</class>
@@ -62,10 +38,10 @@
   <message>Se ha configurado la base de datos con éxito</message>
 </record>
 <record>
-  <date>2022-06-03T16:13:11.477071Z</date>
-  <millis>1654272791477</millis>
-  <nanos>71000</nanos>
-  <sequence>5</sequence>
+  <date>2022-06-03T16:16:54.111721Z</date>
+  <millis>1654273014111</millis>
+  <nanos>721000</nanos>
+  <sequence>3</sequence>
   <logger>global</logger>
   <level>FINER</level>
   <class>ArchiveFactoryImpl</class>
@@ -74,10 +50,10 @@
   <message>ENTRY file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/ META-INF/persistence.xml</message>
 </record>
 <record>
-  <date>2022-06-03T16:13:11.477530Z</date>
-  <millis>1654272791477</millis>
-  <nanos>530000</nanos>
-  <sequence>6</sequence>
+  <date>2022-06-03T16:16:54.112141Z</date>
+  <millis>1654273014112</millis>
+  <nanos>141000</nanos>
+  <sequence>4</sequence>
   <logger>global</logger>
   <level>FINER</level>
   <class>ArchiveFactoryImpl</class>
@@ -86,10 +62,10 @@
   <message>protocol = file</message>
 </record>
 <record>
-  <date>2022-06-03T16:13:11.481171Z</date>
-  <millis>1654272791481</millis>
-  <nanos>171000</nanos>
-  <sequence>7</sequence>
+  <date>2022-06-03T16:16:54.115851Z</date>
+  <millis>1654273014115</millis>
+  <nanos>851000</nanos>
+  <sequence>5</sequence>
   <logger>global</logger>
   <level>FINER</level>
   <class>DirectoryArchive</class>
@@ -98,10 +74,10 @@
   <message>ENTRY /Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin</message>
 </record>
 <record>
-  <date>2022-06-03T16:13:11.481439Z</date>
-  <millis>1654272791481</millis>
-  <nanos>439000</nanos>
-  <sequence>8</sequence>
+  <date>2022-06-03T16:16:54.116040Z</date>
+  <millis>1654273014116</millis>
+  <nanos>40000</nanos>
+  <sequence>6</sequence>
   <logger>global</logger>
   <level>FINER</level>
   <class>DirectoryArchive</class>
@@ -110,46 +86,46 @@
   <message>rootURL = file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/</message>
 </record>
 <record>
-  <date>2022-06-03T16:13:11.483801Z</date>
-  <millis>1654272791483</millis>
-  <nanos>801000</nanos>
+  <date>2022-06-03T16:16:54.117286Z</date>
+  <millis>1654273014117</millis>
+  <nanos>286000</nanos>
+  <sequence>7</sequence>
+  <logger>global</logger>
+  <level>FINER</level>
+  <class>ArchiveFactoryImpl</class>
+  <method>createArchive</method>
+  <thread>1</thread>
+  <message>RETURN DirectoryArchive(file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/)</message>
+</record>
+<record>
+  <date>2022-06-03T16:16:54.217721Z</date>
+  <millis>1654273014217</millis>
+  <nanos>721000</nanos>
+  <sequence>8</sequence>
+  <logger>global</logger>
+  <level>FINER</level>
+  <class>ArchiveFactoryImpl</class>
+  <method>createArchive</method>
+  <thread>1</thread>
+  <message>ENTRY file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/ null</message>
+</record>
+<record>
+  <date>2022-06-03T16:16:54.218045Z</date>
+  <millis>1654273014218</millis>
+  <nanos>45000</nanos>
   <sequence>9</sequence>
   <logger>global</logger>
   <level>FINER</level>
   <class>ArchiveFactoryImpl</class>
   <method>createArchive</method>
   <thread>1</thread>
-  <message>RETURN DirectoryArchive(file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/)</message>
-</record>
-<record>
-  <date>2022-06-03T16:13:11.596659Z</date>
-  <millis>1654272791596</millis>
-  <nanos>659000</nanos>
-  <sequence>10</sequence>
-  <logger>global</logger>
-  <level>FINER</level>
-  <class>ArchiveFactoryImpl</class>
-  <method>createArchive</method>
-  <thread>1</thread>
-  <message>ENTRY file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/ null</message>
-</record>
-<record>
-  <date>2022-06-03T16:13:11.596907Z</date>
-  <millis>1654272791596</millis>
-  <nanos>907000</nanos>
-  <sequence>11</sequence>
-  <logger>global</logger>
-  <level>FINER</level>
-  <class>ArchiveFactoryImpl</class>
-  <method>createArchive</method>
-  <thread>1</thread>
   <message>protocol = file</message>
 </record>
 <record>
-  <date>2022-06-03T16:13:11.597110Z</date>
-  <millis>1654272791597</millis>
-  <nanos>110000</nanos>
-  <sequence>12</sequence>
+  <date>2022-06-03T16:16:54.218240Z</date>
+  <millis>1654273014218</millis>
+  <nanos>240000</nanos>
+  <sequence>10</sequence>
   <logger>global</logger>
   <level>FINER</level>
   <class>DirectoryArchive</class>
@@ -158,10 +134,10 @@
   <message>ENTRY /Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin</message>
 </record>
 <record>
-  <date>2022-06-03T16:13:11.597329Z</date>
-  <millis>1654272791597</millis>
-  <nanos>329000</nanos>
-  <sequence>13</sequence>
+  <date>2022-06-03T16:16:54.218367Z</date>
+  <millis>1654273014218</millis>
+  <nanos>367000</nanos>
+  <sequence>11</sequence>
   <logger>global</logger>
   <level>FINER</level>
   <class>DirectoryArchive</class>
@@ -170,46 +146,46 @@
   <message>rootURL = file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/</message>
 </record>
 <record>
-  <date>2022-06-03T16:13:11.598633Z</date>
-  <millis>1654272791598</millis>
-  <nanos>633000</nanos>
+  <date>2022-06-03T16:16:54.219450Z</date>
+  <millis>1654273014219</millis>
+  <nanos>450000</nanos>
+  <sequence>12</sequence>
+  <logger>global</logger>
+  <level>FINER</level>
+  <class>ArchiveFactoryImpl</class>
+  <method>createArchive</method>
+  <thread>1</thread>
+  <message>RETURN DirectoryArchive(file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/)</message>
+</record>
+<record>
+  <date>2022-06-03T16:16:54.219584Z</date>
+  <millis>1654273014219</millis>
+  <nanos>584000</nanos>
+  <sequence>13</sequence>
+  <logger>global</logger>
+  <level>FINER</level>
+  <class>ArchiveFactoryImpl</class>
+  <method>createArchive</method>
+  <thread>1</thread>
+  <message>ENTRY file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/ null</message>
+</record>
+<record>
+  <date>2022-06-03T16:16:54.219678Z</date>
+  <millis>1654273014219</millis>
+  <nanos>678000</nanos>
   <sequence>14</sequence>
   <logger>global</logger>
   <level>FINER</level>
   <class>ArchiveFactoryImpl</class>
   <method>createArchive</method>
   <thread>1</thread>
-  <message>RETURN DirectoryArchive(file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/)</message>
-</record>
-<record>
-  <date>2022-06-03T16:13:11.598778Z</date>
-  <millis>1654272791598</millis>
-  <nanos>778000</nanos>
-  <sequence>15</sequence>
-  <logger>global</logger>
-  <level>FINER</level>
-  <class>ArchiveFactoryImpl</class>
-  <method>createArchive</method>
-  <thread>1</thread>
-  <message>ENTRY file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/ null</message>
-</record>
-<record>
-  <date>2022-06-03T16:13:11.598869Z</date>
-  <millis>1654272791598</millis>
-  <nanos>869000</nanos>
-  <sequence>16</sequence>
-  <logger>global</logger>
-  <level>FINER</level>
-  <class>ArchiveFactoryImpl</class>
-  <method>createArchive</method>
-  <thread>1</thread>
   <message>protocol = file</message>
 </record>
 <record>
-  <date>2022-06-03T16:13:11.598963Z</date>
-  <millis>1654272791598</millis>
-  <nanos>963000</nanos>
-  <sequence>17</sequence>
+  <date>2022-06-03T16:16:54.219774Z</date>
+  <millis>1654273014219</millis>
+  <nanos>774000</nanos>
+  <sequence>15</sequence>
   <logger>global</logger>
   <level>FINER</level>
   <class>DirectoryArchive</class>
@@ -218,10 +194,10 @@
   <message>ENTRY /Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin</message>
 </record>
 <record>
-  <date>2022-06-03T16:13:11.599070Z</date>
-  <millis>1654272791599</millis>
-  <nanos>70000</nanos>
-  <sequence>18</sequence>
+  <date>2022-06-03T16:16:54.219879Z</date>
+  <millis>1654273014219</millis>
+  <nanos>879000</nanos>
+  <sequence>16</sequence>
   <logger>global</logger>
   <level>FINER</level>
   <class>DirectoryArchive</class>
@@ -230,15 +206,28 @@
   <message>rootURL = file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/</message>
 </record>
 <record>
-  <date>2022-06-03T16:13:11.600080Z</date>
-  <millis>1654272791600</millis>
-  <nanos>80000</nanos>
-  <sequence>19</sequence>
+  <date>2022-06-03T16:16:54.220885Z</date>
+  <millis>1654273014220</millis>
+  <nanos>885000</nanos>
+  <sequence>17</sequence>
   <logger>global</logger>
   <level>FINER</level>
   <class>ArchiveFactoryImpl</class>
   <method>createArchive</method>
   <thread>1</thread>
   <message>RETURN DirectoryArchive(file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/)</message>
+</record>
+<record>
+  <date>2022-06-03T16:17:11.399817Z</date>
+  <millis>1654273031399</millis>
+  <nanos>817000</nanos>
+  <sequence>18</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>db.jdbc.JDBCManager</class>
+  <method>consultarCapital</method>
+  <thread>1</thread>
+  <message>Error al obtener el capital de una tienda
+java.sql.SQLException: The prepared statement has been finalized</message>
 </record>
 </log>
