@@ -47,6 +47,17 @@ public class Articulo implements Serializable{
 		
 	}
 
+	public Articulo(int idArt, Marca marca,String categoria, String campaña, String color, int precio) {
+		
+		super();
+		this.idArt = idArt;
+		this.marca = marca;
+		this.categoria = categoria;
+		this.campaña = campaña;
+		this.color = color;
+		this.precio = precio;
+	}
+
 	public int getIdArt() {
 		return idArt;
 	}
@@ -106,7 +117,7 @@ public class Articulo implements Serializable{
 	@Override
 	public String toString() {
 		return "\nId del articulo : " + idArt + "\ncategoria : " + categoria + "\ncampaña : " + campaña + "\ncolor : " + color
-				+ "\n sexo : " + sexo + "\n precio : " + precio + " $" + "\nmarca : " + marca.getNombre() + "\n";
+				+ "\nsexo : " + sexo + "\nprecio : " + precio + " $" + "\nmarca : " + marca.getNombre() + "\n";
 	}
 
 	

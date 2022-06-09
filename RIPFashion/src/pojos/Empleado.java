@@ -57,7 +57,8 @@ public class Empleado {
 
 	@Override
 	public String toString() {
-		return "Empleado [id=" + id + ", tipo=" + tipo + ", tienda=" + tienda + "]";
+		return ("\nEmpleado : id=" + id + "\nTipo : " + tipo + 
+				"\nTienda donde trabaja : " + tienda.getNombreTienda() );
 	}
 	
 	
