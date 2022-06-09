@@ -40,8 +40,9 @@ public interface DBManager {
 	boolean updateArticulo(Articulo a);
 	
 	int consultarCapital(Tienda t);
-
-	ArrayList<Articulo> getArticulosPorTienda(Tienda t);
+	
+	ArrayList<Articulo> searchArticuloPorSexo ( boolean sexo);
+	
 
 	ArrayList<Articulo> getArticulosPorMarca(int idM);
 
