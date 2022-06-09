@@ -35,26 +35,25 @@ public class JDBCManager implements DBManager {
 
     private static Statement stmt;
 
-    private static final String sqlAddArticulo = "INSERT INTO Articulos (Categoria,Campaña,Color,Sexo,Precio,IdMarca) VALUES (?,?,?,?,?,?);";
+    private static final String sqlAddArticulo = "INSERT INTO Articulos (Categoria,Color,Sexo,Precio,IdMarca,Campaña) VALUES (?,?,?,?,?,?);";
 
-    private static final String sqlAddCliente = "INSERT INTO Clientes(Nombre,Apellido,'e-mail',Direccion) VALUES (?,?,?,?);";
+    private static final String sqlAddCliente = "INSERT INTO Clientes('e-mail',Nombre,Apellido,Direccion) VALUES (?,?,?,?);";
     private static final String sqlAddEmpleado = "INSERT INTO Empleados (Tipo, NombreTienda) VALUES (?,?);";
     private static final String sqlAddMarca = "INSERT INTO Marcas (NombreMarca, NombreTienda) VALUES (?, ?);";
     private static final String sqlGetArticulos = "SELECT * FROM Articulos;";
-    private static final String sqlSearchArticuloByIdArt = "SELECT * FROM Articulos WHERE Id_art=?;";
-    private static final String sqlDeleteArticuloById = "DELETE FROM Articulos WHERE Id_art=?;";
-    private static final String sqlUpdateArticulo = "UPDATE Articulos SET Categoria=?, Campana=?, Color=?,Sexo=?, Precio=? WHERE Id_art=?;";
+    private static final String sqlSearchArticuloByIdArt = "SELECT * FROM Articulos WHERE IdArt=?;";
+    private static final String sqlDeleteArticuloById = "DELETE FROM Articulos WHERE IdArt=?;";
+    private static final String sqlUpdateArticulo = "UPDATE Articulos SET Categoria=?, Color=?,Sexo=?, Precio=?, IdMarca=?, Campaña=? WHERE IdArt=?;";
     private static final String sqlGetMarcas =  "SELECT * FROM Marcas;";
     private static final String sqlGetTiendas = "SELECT * FROM Tiendas;";
-    private static final String sqlGetCapital = "";
+    private static final String sqlGetCapital = "SELECT Capital FROM Tiendas WHERE NombreTienda = ?";
     private static final String sqlGetEmpleados = "SELECT * FROM Empleados";
     private static final String sqlCountElementsFromTable = "SELECT COUNT(*) AS Count FROM ";
-    private static final String sqlGetArticulosPorTienda = "";
     private static final String sqlGetArticulosPorMarca = "";
     private static final String sqlGetMarcasPorTienda = "";
+    private static final String sqlSearchArticulosPorSexo = "SELECT * FROM Articulos WHERE Sexo = ?";
     private static final int NUM_CLIENTES = 10;
     private static final int NUM_EMPLEADOS = 10;
-    private static final int MARCAS = 10;
     private static final int ARTICULOS = 10;
     
     /*
@@ -227,11 +226,11 @@ public class JDBCManager implements DBManager {
         	
         	PreparedStatement prep = c.prepareStatement(sqlAddArticulo);
         	prep.setString(1, a.getCategoria());
-        	prep.setString(2, a.getCampaña());
-        	prep.setString(3, a.getColor());
-        	prep.setBoolean(4, a.getSexo());
-        	prep.setInt(5, a.getPrecio());
-        	prep.setInt(6, a.getMarca().getIdM());
+        	prep.setString(2, a.getColor());
+        	prep.setBoolean(3, a.getSexo());
+        	prep.setInt(4, a.getPrecio());
+        	prep.setInt(5, a.getMarca().getIdM());
+        	prep.setString(6, a.getCampaña());
         	prep.executeUpdate();
             prep.close();
 
@@ -306,6 +305,43 @@ public class JDBCManager implements DBManager {
     	
     }
     
+    
+    public ArrayList<Articulo> searchArticuloPorSexo ( boolean sexo) {
+    	
+        ArrayList<Articulo> articulos = new ArrayList<Articulo>();
+        
+        try (PreparedStatement prep = c.prepareStatement(sqlSearchArticulosPorSexo)){
+        	
+            prep.setString(1, "%" + sexo + "%");
+            
+            ResultSet rs = prep.executeQuery();
+            
+            while (rs.next()) {
+            	
+              int id = rs.getInt("IdArt");
+              String categoria = rs.getString("Categoria");
+              String color = rs.getString("Color");
+              int precio = rs.getInt("Precio");
+              int idM = rs.getInt("IdMarca");
+              String campaña = rs.getString("Campaña");
+              
+              Marca marca = new Marca();
+              marca.setIdM(idM);
+              Articulo a = new Articulo(id, marca, categoria, campaña, color ,precio);
+              articulos.add(a);
+              
+            }
+            
+            rs.close();
+            
+        } catch (SQLException e) {
+           
+        	LOGGER.warning("Error al obtener un articulo en funcion de su id\n" + e.toString());
+        }
+        
+        return articulos;
+    	
+    }
     /*
      * Obtengo los articulos
      */
@@ -345,41 +381,7 @@ public class JDBCManager implements DBManager {
         return articulos;
         
     }
-	public ArrayList<Articulo> getArticulosPorTienda(Tienda t) {
-		
-		ArrayList<Articulo> articulos = new ArrayList<Articulo>();
-        
-        try {
-        	
-            ResultSet rs = stmt.executeQuery(sqlGetArticulosPorTienda);
-            
-            while(rs.next()){
-            	
-            
-            	int ida = rs.getInt("IdArt");
-            	int idM = rs.getInt("IdMarca");
-            	String categoria = rs.getString("Categoria");
-            	String campana = rs.getString("Campaña");
-            	String color = rs.getString("Colo");
-            	boolean sexo = rs.getBoolean("Sexo");
-            	int precio = rs.getInt("Precio");
-            	
-            	Marca m = new Marca();
-            	m.setIdM(idM);
-            	Articulo a = new Articulo (ida , m , categoria, campana, color, sexo,precio );
-            	articulos.add(a);
-                
-            }
-            
-            rs.close();
-            
-        } catch (SQLException e) {
-            
-        	LOGGER.warning("Error al obtener articulos en funcion de la tienda\n" + e.toString());
-        }
-        
-        return articulos;
-	}
+	
 	public ArrayList<Marca> getMarcasPorTienda(Tienda tienda) {
 		
 		ArrayList<Marca> marcas = new ArrayList<Marca>();
@@ -421,7 +423,7 @@ public class JDBCManager implements DBManager {
         
         try (PreparedStatement prep = c.prepareStatement(sqlSearchArticuloByIdArt)){
         	
-            prep.setString(1, "%" + i + "%");
+            prep.setInt(1, i);
             
             ResultSet rs = prep.executeQuery();
             
@@ -617,12 +619,14 @@ public class JDBCManager implements DBManager {
         
         try (PreparedStatement prep = c.prepareStatement(sqlUpdateArticulo)){
         	
-        	prep.setInt(1, a.getIdArt());
-            prep.setString(2, a.getCategoria());
-            prep.setString(3, a.getCampaña());
-            prep.setString(4, a.getColor());
-            prep.setBoolean(5, a.getSexo());
-            prep.setDouble(6, a.getPrecio());
+        	
+            prep.setString(1, a.getCategoria());
+            prep.setString(2, a.getColor());
+            prep.setBoolean(3, a.getSexo());
+            prep.setDouble(4, a.getPrecio());
+            prep.setInt(5, a.getMarca().getIdM());
+            prep.setString(6, a.getCampaña());
+
             
             int resultado = prep.executeUpdate();
             
@@ -644,12 +648,12 @@ public class JDBCManager implements DBManager {
     
     public int consultarCapital(Tienda t) { 
     	
-        
+        System.out.println(t.getNombreTienda());
         int capital = 0;
         
         try (PreparedStatement prep = c.prepareStatement(sqlGetCapital)){
         	
-        	prep.setInt(1, t.getCapitalTienda());
+        	prep.setString(1, t.getNombreTienda());
             
             
             capital = t.getCapitalTienda();
@@ -676,7 +680,7 @@ public class JDBCManager implements DBManager {
         return numElementos;
     }
 
-	public ArrayList<Articulo> getArticulosPorMarca(int idM) {
+    public ArrayList<Articulo> getArticulosPorMarca(int idM) {
 		
 		ArrayList<Articulo> articulos = new ArrayList<Articulo>();
 		
