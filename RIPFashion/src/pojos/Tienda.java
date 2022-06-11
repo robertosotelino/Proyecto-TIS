@@ -31,7 +31,7 @@ public class Tienda implements Serializable{
 	
 	@XmlElement(name = "Marca")
 	@XmlElementWrapper(name = "Marca")
-	private ArrayList<Marca> marcas;
+	private ArrayList<Marca> marcas = new ArrayList <Marca> ();
 	
 	public Tienda() {
 		
@@ -116,9 +116,15 @@ public class Tienda implements Serializable{
 		this.categoria = categoria;
 		
 	}
+	
 	public void addMarca(Marca m) {
-		if(!marcas.contains(m))
-			marcas.add(m);
+		
+		if (!marcas.contains(m)) {
+			
+		marcas.add(m);
+		
+		}
+			
 	}
 
 public String toStringSinCapital() {
