@@ -3,6 +3,7 @@ package pojos;
 import java.io.Serializable;
 import java.util.Objects;
 
+import jakarta.persistence.Basic;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -22,14 +23,16 @@ public class Usuario implements Serializable{
 	private static final long serialVersionUID = 874420479559831017L;
 	
 	@Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
-	
+    @GeneratedValue(strategy=GenerationType.IDENTITY) // genera la clave en la base de datos
 	private int id;
+	
 	private String email;
-	@Lob
+	@Basic (fetch = FetchType.LAZY) // especificamos al codigo que el tipo de dato es BLOB
+	@Lob // BLOB
 	private byte[] password;
-	@ManyToOne(fetch=FetchType.LAZY)
-    @JoinColumn(name="IdRol")
+	
+	@ManyToOne(fetch=FetchType.EAGER) // tipo de relación
+    @JoinColumn(name="IdRol") // en la base de datos rol se ve como IdRol
 	private Rol rol;
 	
 	public Usuario() {

@@ -19,6 +19,10 @@ public class Marca implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = -1324200261531760390L;
+	/**
+	 * 
+	 */
+	
 	@XmlElement
 	private int idM;
 	@XmlElement
@@ -111,7 +115,8 @@ public class Marca implements Serializable{
 
 	@Override
 	public String toString() {
-		return "Marca [idM=" + idM + ", nombre=" + nombre + ", tienda=" + tienda + "]";
+		return "\n Marca (idM) : " + idM + "\n Nombre : " + nombre + 
+				"\n Tienda : " + tienda.getNombreTienda() ;
 	}
 	
 
