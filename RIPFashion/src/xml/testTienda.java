@@ -24,15 +24,18 @@ public class testTienda {
 			
 			ArrayList <Tienda> tiendas = dbman.getInfoTiendasConCapital();
 			Tienda tienda = tiendas.get(0);
-			ArrayList <Marca> marcas = dbman.getMarcasPorTienda(tienda);
+			
+			ArrayList <Marca> marcas = dbman.getMarcasPorTienda(tienda.getNombreTienda());
 		
+			
 			for (int i = 0 ; i < marcas.size() ; i ++ ) {
 				
 				ArrayList <Articulo> art = 
 						dbman.getArticulosPorMarca(marcas.get(i).getIdM()); 
+
 				
 				marcas.get(i).setArticulos(art);
-				
+			
 				tienda.addMarca(marcas.get(i));
 				
 			}
@@ -42,7 +45,7 @@ public class testTienda {
 			return tienda;
 		}
 
-		public static void marshalling() throws JAXBException {
+		public void marshalling() throws JAXBException {
 			Tienda t = randomTienda();
 			// Creamos el JAXBContext
 			JAXBContext jaxbC = JAXBContext.newInstance(Tienda.class);
@@ -53,19 +56,19 @@ public class testTienda {
 			//jaxbM.setProperty("com.sun.xml.bind.xmlHeaders", "\n<!DOCTYPE Tienda SYSTEM \"Tienda.dtd\">");
 			//jaxbM.setProperty("com.sun.xml.bind.xmlDeclaration", false);
 			// Escribiendo en un fichero
-			File XMLfile = new File("./xml/Tienda.xml");
+			File XMLfile = new File("./src/xml/Tienda.xml");
 			jaxbM.marshal(t, XMLfile);
 			// Escribiendo por pantalla
 			jaxbM.marshal(t, System.out);
 		}
 		
-		public static void unMarshalling() throws JAXBException {
+		public void unMarshalling() throws JAXBException {
 			// Creamos el JAXBContext
 			JAXBContext jaxbC = JAXBContext.newInstance(Tienda.class);
 			// Creamos el JAXBMarshaller
 			Unmarshaller jaxbU = jaxbC.createUnmarshaller();
 			// Leyendo un fichero
-			File XMLfile = new File("./xml/Tienda.xml");
+			File XMLfile = new File("./src/xml/Tienda.xml");
 			// Creando el objeto
 			Tienda t = (Tienda) jaxbU.unmarshal(XMLfile);
 			// Escribiendo por pantalla el objeto
