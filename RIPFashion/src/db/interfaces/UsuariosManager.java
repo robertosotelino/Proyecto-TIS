@@ -14,4 +14,5 @@ public interface UsuariosManager {
 	Rol getRolById(int rolId);
 	void addUsuario(Usuario usuario);
 	Usuario checkLogin(String email, String pass);
+	void deleteRol(Rol rol);
 }
