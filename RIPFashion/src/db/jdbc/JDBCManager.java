@@ -21,8 +21,6 @@ import db.interfaces.DBManager;
 import factory.Factory;
 
 
-
-
 public class JDBCManager implements DBManager {
 
     private static Connection c;
@@ -49,10 +47,11 @@ public class JDBCManager implements DBManager {
     private static final String sqlGetCapital = "SELECT Capital FROM Tiendas WHERE NombreTienda = ?";
     private static final String sqlGetEmpleados = "SELECT * FROM Empleados";
     private static final String sqlCountElementsFromTable = "SELECT COUNT(*) AS Count FROM ";
-    private static final String sqlGetArticulosPorMarca = "";
-    private static final String sqlGetMarcasPorTienda = "";
-    private static final String sqlSearchArticulosPorSexo = "SELECT * FROM Articulos WHERE Sexo = ?";
-    private static final int NUM_CLIENTES = 10;
+    private static final String sqlGetArticulosPorMarca = "SELECT * FROM Articulos WHERE IdMarca = ?";
+    private static final String sqlGetMarcasPorTienda = "SELECT * FROM Marcas WHERE NombreTienda = ?";
+    private static final String sqlGetArticulosPorCampaña = "SELECT * FROM Articulos WHERE Campaña = ?";
+    private static final String sqlGetNombreMarcaById = "SELECT NombreMarca FROM Marcas WHERE IdMarca = ?";
+    private static final int NUM_CLIENTES = 5;
     private static final int NUM_EMPLEADOS = 10;
     private static final int ARTICULOS = 10;
     
@@ -82,7 +81,6 @@ public class JDBCManager implements DBManager {
     public void disconnect() {
 
         try {
-        	System.out.println("hola");
             stmt.close();
             c.close();
             LOGGER.info("Se ha desconectado de la base de datos con éxito");
@@ -115,8 +113,8 @@ public class JDBCManager implements DBManager {
 			
 			LOGGER.severe("Error al leer fichero sql\n" + e.toString());
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			LOGGER.severe("Error SQL\n" + e.toString());
+			
 		}
 	}
 	
@@ -203,8 +201,6 @@ public class JDBCManager implements DBManager {
             ArrayList<Marca> marcas = getMarcas();
             
             a.setMarca(marcas.get(i));
-           
-            System.out.println(marcas.get(i));
             
            addArticulo(a); 
        }
@@ -250,9 +246,9 @@ public class JDBCManager implements DBManager {
         try {
         	
             PreparedStatement prep = c.prepareStatement(sqlAddCliente);
-            prep.setString(1, cl.getNombre());
-            prep.setString(2, cl.getApellido());
-            prep.setString(3, cl.geteMail());
+            prep.setString(1, cl.geteMail());
+            prep.setString(2, cl.getNombre());
+            prep.setString(3, cl.getApellido());
             prep.setString(4, cl.getDireccion());
             prep.executeUpdate();
             prep.close();
@@ -306,13 +302,14 @@ public class JDBCManager implements DBManager {
     }
     
     
-    public ArrayList<Articulo> searchArticuloPorSexo ( boolean sexo) {
+    public ArrayList<Articulo> searchAticuloPorCamapaña ( String campaña) {
+    	
     	
         ArrayList<Articulo> articulos = new ArrayList<Articulo>();
         
-        try (PreparedStatement prep = c.prepareStatement(sqlSearchArticulosPorSexo)){
+        try (PreparedStatement prep = c.prepareStatement(sqlGetArticulosPorCampaña)){
         	
-            prep.setString(1, "%" + sexo + "%");
+            prep.setString(1,  campaña.toUpperCase());
             
             ResultSet rs = prep.executeQuery();
             
@@ -323,11 +320,10 @@ public class JDBCManager implements DBManager {
               String color = rs.getString("Color");
               int precio = rs.getInt("Precio");
               int idM = rs.getInt("IdMarca");
-              String campaña = rs.getString("Campaña");
+              String camp = rs.getString("Campaña");
               
-              Marca marca = new Marca();
-              marca.setIdM(idM);
-              Articulo a = new Articulo(id, marca, categoria, campaña, color ,precio);
+              Marca m = getNombreMarcaById(idM);
+              Articulo a = new Articulo(id, m, categoria, camp, color ,precio);
               articulos.add(a);
               
             }
@@ -364,8 +360,8 @@ public class JDBCManager implements DBManager {
             	boolean sexo = rs.getBoolean("Sexo");
             	int precio = rs.getInt("Precio");
             	
-            	Marca m = new Marca();
-            	m.setIdM(idM);
+            	Marca m = getNombreMarcaById(idM);
+            	
             	Articulo a = new Articulo (ida , m , categoria, campana, color, sexo,precio );
             	articulos.add(a);
                 
@@ -381,14 +377,50 @@ public class JDBCManager implements DBManager {
         return articulos;
         
     }
+    
+    public Marca getNombreMarcaById(int id){
+    	
+    	Marca marca = new Marca();
+        
+        try (PreparedStatement prep = c.prepareStatement(sqlGetNombreMarcaById)){
+        	
+            prep.setInt(1, id);
+            
+            ResultSet rs = prep.executeQuery();
+            
+            while (rs.next()) {
+            	
+            	 
+                 String nombre = rs.getString("NombreMarca");
+                 
+              
+                 marca.setIdM(id);
+                 marca.setNombre(nombre);
+
+              
+            }
+            
+            rs.close();
+            
+        } catch (SQLException e) {
+           
+        	LOGGER.warning("Error al obtener una marca en funcion de su id\n" + e.toString());
+        }
+        
+    	return marca;
+    	
+    }
+    
 	
-	public ArrayList<Marca> getMarcasPorTienda(Tienda tienda) {
+	public ArrayList<Marca> getMarcasPorTienda(String nombre) {
 		
 		ArrayList<Marca> marcas = new ArrayList<Marca>();
 		
-		try {
+		try (PreparedStatement prep = c.prepareStatement(sqlGetMarcasPorTienda)){
         	
-            ResultSet rs = stmt.executeQuery(sqlGetMarcasPorTienda);
+			prep.setString(1, nombre);
+            
+            ResultSet rs = prep.executeQuery();
             
             while(rs.next()){
             	
@@ -417,9 +449,9 @@ public class JDBCManager implements DBManager {
     /*
      * Busco un articulo en funcion de un id conocido
      */
-    public ArrayList<Articulo> searchArticuloByIdArt(int i) {
+    public Articulo searchArticuloByIdArt(int i) {
     	
-        ArrayList<Articulo> articulos = new ArrayList<Articulo>();
+        Articulo articulo = null;
         
         try (PreparedStatement prep = c.prepareStatement(sqlSearchArticuloByIdArt)){
         	
@@ -436,10 +468,9 @@ public class JDBCManager implements DBManager {
               String color = rs.getString("Color");
               boolean sexo = rs.getBoolean("sexo");
               int precio = rs.getInt("Precio");
-              Marca marca = new Marca();
-              marca.setIdM(idM);
-              Articulo a = new Articulo(id, marca, categoria, campaña, color , sexo ,precio);
-              articulos.add(a);
+              Marca m = getNombreMarcaById(idM);
+              articulo = new Articulo(id, m, categoria, campaña, color , sexo ,precio);
+              
               
             }
             
@@ -450,7 +481,7 @@ public class JDBCManager implements DBManager {
         	LOGGER.warning("Error al obtener un articulo en funcion de su id\n" + e.toString());
         }
         
-        return articulos;
+        return articulo;
         
     }
     
@@ -620,13 +651,14 @@ public class JDBCManager implements DBManager {
         try (PreparedStatement prep = c.prepareStatement(sqlUpdateArticulo)){
         	
         	
+        	
             prep.setString(1, a.getCategoria());
             prep.setString(2, a.getColor());
             prep.setBoolean(3, a.getSexo());
             prep.setDouble(4, a.getPrecio());
             prep.setInt(5, a.getMarca().getIdM());
             prep.setString(6, a.getCampaña());
-
+            prep.setInt(7, a.getIdArt());
             
             int resultado = prep.executeUpdate();
             
@@ -684,9 +716,12 @@ public class JDBCManager implements DBManager {
 		
 		ArrayList<Articulo> articulos = new ArrayList<Articulo>();
 		
-		try {
+		try (PreparedStatement prep = c.prepareStatement(sqlGetArticulosPorMarca)){
         	
-            ResultSet rs = stmt.executeQuery(sqlGetArticulosPorMarca);
+			prep.setInt(1, idM);
+            
+            ResultSet rs = prep.executeQuery();
+            
             
             while(rs.next()){
             	
@@ -695,12 +730,12 @@ public class JDBCManager implements DBManager {
             	int idMarca = rs.getInt("IdMarca");
             	String categoria = rs.getString("Categoria");
             	String campana = rs.getString("Campaña");
-            	String color = rs.getString("Colo");
+            	String color = rs.getString("Color");
             	boolean sexo = rs.getBoolean("Sexo");
             	int precio = rs.getInt("Precio");
             	
-            	Marca m = new Marca();
-            	m.setIdM(idMarca);
+            	Marca m = getNombreMarcaById(idM);
+            	
             	
             	Articulo a = new Articulo (ida , m , categoria, campana, color, sexo,precio );
             	articulos.add(a);
@@ -711,7 +746,7 @@ public class JDBCManager implements DBManager {
             
         } catch (SQLException e) {
             
-        	LOGGER.warning("Error al obtener articulos en funcion de la tienda\n" + e.toString());
+        	LOGGER.warning("Error al obtener articulos en funcion de la marca\n" + e.toString());
         }
         
 		return articulos;
