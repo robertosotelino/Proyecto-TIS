@@ -25,7 +25,7 @@ public interface DBManager {
 	
 	ArrayList<Articulo> getArticulos();
 	
-	ArrayList<Articulo> searchArticuloByIdArt(int i);
+    public Articulo searchArticuloByIdArt(int i);
 	
 	ArrayList<Marca> getMarcas();
 	
@@ -41,11 +41,11 @@ public interface DBManager {
 	
 	int consultarCapital(Tienda t);
 	
-	ArrayList<Articulo> searchArticuloPorSexo ( boolean sexo);
+	ArrayList<Articulo> searchAticuloPorCamapaña ( String color);
 	
 
 	ArrayList<Articulo> getArticulosPorMarca(int idM);
 
-	ArrayList<Marca> getMarcasPorTienda(Tienda tienda);
+	public ArrayList<Marca> getMarcasPorTienda(String nombre);
 	
 }
