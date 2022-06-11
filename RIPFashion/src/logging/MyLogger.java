@@ -11,7 +11,7 @@ public class MyLogger {
 	
     private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
     
-    private final static Level LOGGER_LVL = Level.ALL; // NIVEL POR ENCIMA DE TODOSe
+    private final static Level LOGGER_LVL = Level.ALL; // NIVEL POR ENCIMA DE TODOS
     private final static Level CONSOLE_LVL = Level.INFO; // solo aparece un mensaje informativo
     private final static Level FILE_LVL = Level.ALL;
     private final static String LOGGING_FILE = "./lib/logging.properties";
