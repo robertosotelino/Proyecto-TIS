@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Tienda>
+    <nombreTienda>Delfin&amp;Maria</nombreTienda>
+    <horario>10:00-20:00</horario>
+    <ubicacion>Rua Paseo 19</ubicacion>
+    <categoria>Calzado y complementos</categoria>
+    <capitalTienda>10000000</capitalTienda>
+    <Marca>
+        <Marca>
+            <idM>1</idM>
+            <nombre>YSL</nombre>
+            <Articulo>
+                <Articulo>
+                    <idArt>1</idArt>
+                    <categoria>Pantalon</categoria>
+                    <campaña>FW22</campaña>
+                    <color>Rojo</color>
+                    <sexo>false</sexo>
+                    <precio>6028</precio>
+                </Articulo>
+            </Articulo>
+        </Marca>
+        <Marca>
+            <idM>2</idM>
+            <nombre>BALMAIN</nombre>
+            <Articulo>
+                <Articulo>
+                    <idArt>2</idArt>
+                    <categoria>Tacon</categoria>
+                    <campaña>FW22</campaña>
+                    <color>Amarillo</color>
+                    <sexo>true</sexo>
+                    <precio>4961</precio>
+                </Articulo>
+            </Articulo>
+        </Marca>
+        <Marca>
+            <idM>3</idM>
+            <nombre>Louis Vuitton</nombre>
+            <Articulo>
+                <Articulo>
+                    <idArt>3</idArt>
+                    <categoria>Sneaker</categoria>
+                    <campaña>FW22</campaña>
+                    <color>Naranja</color>
+                    <sexo>true</sexo>
+                    <precio>2048</precio>
+                </Articulo>
+            </Articulo>
+        </Marca>
+        <Marca>
+            <idM>4</idM>
+            <nombre>Hermes</nombre>
+            <Articulo>
+                <Articulo>
+                    <idArt>4</idArt>
+                    <categoria>Blazer</categoria>
+                    <campaña>SS22</campaña>
+                    <color>Rosa</color>
+                    <sexo>true</sexo>
+                    <precio>3962</precio>
+                </Articulo>
+            </Articulo>
+        </Marca>
+    </Marca>
+</Tienda>
