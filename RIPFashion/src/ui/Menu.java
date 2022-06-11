@@ -38,7 +38,8 @@ public class Menu {
 			"- Eliminar un articulo","- Modificar articulo","- Añadir marca", "- Listar empleados"
 			,"Añadir empleado","marshalling", "unMarshalling"};
 	private static final String [] MENU_CLIENTE = {"-Salir ", "Consultar informacion de las tiendas",
-			"Buscar articulos por sexo"};
+			"Buscar articulos por campaña"};
+	private static final String[] MENU_INICIO = {"Salir del programa", "Registrarse", "Login"};
 	static Usuario usuario;
 	
 	
@@ -51,17 +52,13 @@ public class Menu {
 		int respuesta = -1;
 		do {
 			
-			respuesta = mostrarMenu(MENU_ROL);// solo para verificar que funcionan los metodos sin pasar por el login
-			//respuesta = mostrarMenu(MENU_INICIO);
-		//	LOGGER.fine("El usuario ha seleccionado la opcion " + respuesta + " en el menu principal");
+			respuesta = mostrarMenu(MENU_INICIO);
+			LOGGER.fine("El usuario ha seleccionado la opcion " + respuesta + " en el menu principal");
 		
 			switch(respuesta) {
-			// solo para verificar que funcionan los metodos sin pasar por el login
-			case 1-> mostrarMenuEmpresario();
-			case 2 -> mostrarMenuCliente();
-			// solo para verificar que funcionan los metodos sin pasar por el login
-			//case 1 -> registrarse();
-			//case 2 -> login();
+			
+			case 1 -> registrarse();
+			case 2 -> login();
 		}
 			
 	} while(respuesta != 0);
@@ -117,7 +114,7 @@ public class Menu {
 			switch(respuesta) {
 			
 				case 1 -> consultarInformacionTiendasSinCapital();
-				case 2 -> buscarArticulosPorSexo();
+				case 2 -> buscarArticulosPorCampaña();
 			}
 			
 		} while(respuesta != 0);
@@ -127,44 +124,40 @@ public class Menu {
 		
 	}
 
-	private static void buscarArticulosPorSexo() {
+	private static void buscarArticulosPorCampaña() {
+		
+		String campaña;
+		
 		
 		try {
-			
-			System.out.println("\nIndique el sexo de los articulos deseados");
-			System.out.println("\n 0 : hombre \n 1 : mujer\n");
+			boolean exito = false;
+			do {
+			System.out.println("\nIndique la campaña de los articulos deseados");
+			System.out.println("\nSS22 / FW22");
 		
-			boolean sexo = Boolean.parseBoolean(br.readLine());
+			campaña = br.readLine();
 			
-			if (sexo == false) {
+			if (campaña.equalsIgnoreCase("SS22") || campaña.equalsIgnoreCase("FW22")) { // por si el usuario la introduce en mayusculas/ minusculas
+				
+				System.out.println("Campaña encontrada en la base de datos");
+				exito = true;
+				
+			}
 			
-			ArrayList <Articulo> articulos = dbman.searchArticuloPorSexo(sexo);
+			}while (exito!=true);
+			
+			ArrayList<Articulo> articulos = dbman.searchAticuloPorCamapaña(campaña);
 			
 			for ( int i = 0 ; i < articulos.size() ; i ++) {
 				
-			System.out.println(articulos.get(i).toString());
-			
-			}
-			
-			} else if (sexo == true) {
-				
-			ArrayList <Articulo> articulos = dbman.searchArticuloPorSexo(sexo);
-			
-			for ( int i = 0 ; i < articulos.size() ; i ++) {
-				
-			System.out.println(articulos.get(i).toString());
-			
-			}
-			
-			} else {
-				
-				System.out.println("Asegurese de indicar un valor adecuado");
+				System.out.println(articulos.get(i));
 			}
 			
 		} catch (IOException e) {
 			
 			System.out.println("Error al introducir el sexo , asegurese de introducirlo correctamente");
 		}
+		
 	}
 
 	
@@ -239,7 +232,6 @@ public class Menu {
 				case 10 -> añadirEmpleado (); // done
 				case 11 -> testT.marshalling();
 				case 12 -> testT.unMarshalling();
-		
 
 			}
 			
@@ -378,26 +370,21 @@ public class Menu {
 		
 		do {
 			System.out.println("Que artículo quieres modificar ( introduce su id )");
-			idA = Integer.parseInt(br.readLine());br.read();
-			System.out.println("ID DEL ARTICULO"+idA);
+			idA = Integer.parseInt(br.readLine());
+			
 			exito = comprobarIdCorrectoArticulo(idA);
 			
 		}while(exito !=true);
 		
 		System.out.println("El id es correcto");
 		
-		ArrayList <Articulo> articulo = dbman.searchArticuloByIdArt (idA);
+		a = dbman.searchArticuloByIdArt (idA);
 		
-		for ( int f = 0 ; f < articulo.size() ; f ++) {
-			
-			a = articulo.get(f);
-			
-		}
-		
-		
+
 		Articulo aModificado = updateArticulo (a);
 		
 		boolean b = dbman.updateArticulo(aModificado);
+		
 		
 		if (b == true) {
 			
@@ -419,8 +406,7 @@ public class Menu {
 		String categoria;
 		
 		categoria = br.readLine();
-		
-		
+
 		System.out.println("Campaña del articulo");
 		
 		String campaña = br.readLine();
@@ -449,19 +435,16 @@ public class Menu {
 				
 			articulo.setSexo(true);
 			exito = true;
-			System.out.println("BOOLEAN 1" + exito);
 		}else if( sexo == 0) {
 			
 			articulo.setSexo(false);
 			exito = true;
-			System.out.println("BOOLEAN 2" + exito);
 		}else  {
 			
 			System.out.println("No ha introducido un dato válido");
 			
 		}
 
-		System.out.println("BOOLEAN"+exito);
 		}while (exito != true);
 		
 		articulo.setCampaña(campaña);
@@ -547,10 +530,14 @@ public class Menu {
 		System.out.println("Color del articulo");
 		
 		String color = br.readLine();
+		int precio ;
 		
+		do {
+			
 		System.out.println("Precio del articulo ( numero entero )");
+		precio = Integer.parseInt(br.readLine());
 		
-		int precio = Integer.parseInt(br.readLine());
+		}while(precio<=0);
 		
 		Marca m = selecMarca();
 			
@@ -644,15 +631,10 @@ public class Menu {
 		
 		} while ( !exito);
 		
-		ArrayList<Articulo> articulo = dbman.searchArticuloByIdArt(a);
-		
-		for ( int j = 0 ; j < articulo.size() ; j++ ) {
-			
-			System.out.println(articulo.get(j).toString());
-			
-		}
-		
-		
+		Articulo articulo = dbman.searchArticuloByIdArt(a);
+	
+		System.out.println(articulo);
+				
 		
 	}
 
