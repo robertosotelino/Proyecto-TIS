@@ -55,6 +55,14 @@ public class JPAUsuariosManager implements UsuariosManager{
 		em.getTransaction().commit();
 		
 	}
+	
+	@Override
+	public void deleteRol (Rol rol) {
+		
+		em.getTransaction().begin();
+		em.remove(rol);
+		em.getTransaction().commit();
+	}
 
 	@Override
 	public Rol getRolById(int rolId) {
