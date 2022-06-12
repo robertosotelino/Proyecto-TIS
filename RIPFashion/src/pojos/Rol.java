@@ -26,6 +26,7 @@ public class Rol implements Serializable{
 	
 	public Rol() {
 		
+		super();
 	}
 	
 	public Rol(String nombre) {

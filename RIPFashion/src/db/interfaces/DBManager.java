@@ -22,7 +22,6 @@ public interface DBManager {
 	
 	void addMarca (Marca m);
 	
-	
 	ArrayList<Articulo> getArticulos();
 	
     public Articulo searchArticuloByIdArt(int i);
