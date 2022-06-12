@@ -2,9 +2,9 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2022-06-11T16:17:05.724063Z</date>
-  <millis>1654964225724</millis>
-  <nanos>63000</nanos>
+  <date>2022-06-12T14:40:28.031414Z</date>
+  <millis>1655044828031</millis>
+  <nanos>414000</nanos>
   <sequence>0</sequence>
   <logger>global</logger>
   <level>INFO</level>
@@ -14,9 +14,9 @@
   <message>Logger is configured</message>
 </record>
 <record>
-  <date>2022-06-11T16:17:06.085794Z</date>
-  <millis>1654964226085</millis>
-  <nanos>794000</nanos>
+  <date>2022-06-12T14:40:28.361353Z</date>
+  <millis>1655044828361</millis>
+  <nanos>353000</nanos>
   <sequence>1</sequence>
   <logger>global</logger>
   <level>INFO</level>
@@ -26,9 +26,9 @@
   <message>Se han creado las tablas correctamente en la base de datos</message>
 </record>
 <record>
-  <date>2022-06-11T16:17:06.087264Z</date>
-  <millis>1654964226087</millis>
-  <nanos>264000</nanos>
+  <date>2022-06-12T14:40:28.362743Z</date>
+  <millis>1655044828362</millis>
+  <nanos>743000</nanos>
   <sequence>2</sequence>
   <logger>global</logger>
   <level>INFO</level>
@@ -38,9 +38,9 @@
   <message>Se ha configurado la base de datos con éxito</message>
 </record>
 <record>
-  <date>2022-06-11T16:17:06.098804Z</date>
-  <millis>1654964226098</millis>
-  <nanos>804000</nanos>
+  <date>2022-06-12T14:40:28.375160Z</date>
+  <millis>1655044828375</millis>
+  <nanos>160000</nanos>
   <sequence>3</sequence>
   <logger>global</logger>
   <level>FINER</level>
@@ -50,9 +50,9 @@
   <message>ENTRY file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/ META-INF/persistence.xml</message>
 </record>
 <record>
-  <date>2022-06-11T16:17:06.099284Z</date>
-  <millis>1654964226099</millis>
-  <nanos>284000</nanos>
+  <date>2022-06-12T14:40:28.375592Z</date>
+  <millis>1655044828375</millis>
+  <nanos>592000</nanos>
   <sequence>4</sequence>
   <logger>global</logger>
   <level>FINER</level>
@@ -62,9 +62,9 @@
   <message>protocol = file</message>
 </record>
 <record>
-  <date>2022-06-11T16:17:06.103468Z</date>
-  <millis>1654964226103</millis>
-  <nanos>468000</nanos>
+  <date>2022-06-12T14:40:28.379546Z</date>
+  <millis>1655044828379</millis>
+  <nanos>546000</nanos>
   <sequence>5</sequence>
   <logger>global</logger>
   <level>FINER</level>
@@ -74,9 +74,9 @@
   <message>ENTRY /Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin</message>
 </record>
 <record>
-  <date>2022-06-11T16:17:06.103673Z</date>
-  <millis>1654964226103</millis>
-  <nanos>673000</nanos>
+  <date>2022-06-12T14:40:28.379936Z</date>
+  <millis>1655044828379</millis>
+  <nanos>936000</nanos>
   <sequence>6</sequence>
   <logger>global</logger>
   <level>FINER</level>
@@ -86,9 +86,9 @@
   <message>rootURL = file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/</message>
 </record>
 <record>
-  <date>2022-06-11T16:17:06.104917Z</date>
-  <millis>1654964226104</millis>
-  <nanos>917000</nanos>
+  <date>2022-06-12T14:40:28.381367Z</date>
+  <millis>1655044828381</millis>
+  <nanos>367000</nanos>
   <sequence>7</sequence>
   <logger>global</logger>
   <level>FINER</level>
@@ -98,9 +98,9 @@
   <message>RETURN DirectoryArchive(file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/)</message>
 </record>
 <record>
-  <date>2022-06-11T16:17:06.198733Z</date>
-  <millis>1654964226198</millis>
-  <nanos>733000</nanos>
+  <date>2022-06-12T14:40:28.482775Z</date>
+  <millis>1655044828482</millis>
+  <nanos>775000</nanos>
   <sequence>8</sequence>
   <logger>global</logger>
   <level>FINER</level>
@@ -110,8 +110,8 @@
   <message>ENTRY file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/ null</message>
 </record>
 <record>
-  <date>2022-06-11T16:17:06.198941Z</date>
-  <millis>1654964226198</millis>
+  <date>2022-06-12T14:40:28.482941Z</date>
+  <millis>1655044828482</millis>
   <nanos>941000</nanos>
   <sequence>9</sequence>
   <logger>global</logger>
@@ -122,9 +122,9 @@
   <message>protocol = file</message>
 </record>
 <record>
-  <date>2022-06-11T16:17:06.199064Z</date>
-  <millis>1654964226199</millis>
-  <nanos>64000</nanos>
+  <date>2022-06-12T14:40:28.483110Z</date>
+  <millis>1655044828483</millis>
+  <nanos>110000</nanos>
   <sequence>10</sequence>
   <logger>global</logger>
   <level>FINER</level>
@@ -134,9 +134,9 @@
   <message>ENTRY /Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin</message>
 </record>
 <record>
-  <date>2022-06-11T16:17:06.199177Z</date>
-  <millis>1654964226199</millis>
-  <nanos>177000</nanos>
+  <date>2022-06-12T14:40:28.483224Z</date>
+  <millis>1655044828483</millis>
+  <nanos>224000</nanos>
   <sequence>11</sequence>
   <logger>global</logger>
   <level>FINER</level>
@@ -146,9 +146,9 @@
   <message>rootURL = file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/</message>
 </record>
 <record>
-  <date>2022-06-11T16:17:06.200116Z</date>
-  <millis>1654964226200</millis>
-  <nanos>116000</nanos>
+  <date>2022-06-12T14:40:28.484158Z</date>
+  <millis>1655044828484</millis>
+  <nanos>158000</nanos>
   <sequence>12</sequence>
   <logger>global</logger>
   <level>FINER</level>
@@ -158,9 +158,9 @@
   <message>RETURN DirectoryArchive(file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/)</message>
 </record>
 <record>
-  <date>2022-06-11T16:17:06.200247Z</date>
-  <millis>1654964226200</millis>
-  <nanos>247000</nanos>
+  <date>2022-06-12T14:40:28.484298Z</date>
+  <millis>1655044828484</millis>
+  <nanos>298000</nanos>
   <sequence>13</sequence>
   <logger>global</logger>
   <level>FINER</level>
@@ -170,9 +170,9 @@
   <message>ENTRY file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/ null</message>
 </record>
 <record>
-  <date>2022-06-11T16:17:06.200335Z</date>
-  <millis>1654964226200</millis>
-  <nanos>335000</nanos>
+  <date>2022-06-12T14:40:28.484385Z</date>
+  <millis>1655044828484</millis>
+  <nanos>385000</nanos>
   <sequence>14</sequence>
   <logger>global</logger>
   <level>FINER</level>
@@ -182,9 +182,9 @@
   <message>protocol = file</message>
 </record>
 <record>
-  <date>2022-06-11T16:17:06.200466Z</date>
-  <millis>1654964226200</millis>
-  <nanos>466000</nanos>
+  <date>2022-06-12T14:40:28.484512Z</date>
+  <millis>1655044828484</millis>
+  <nanos>512000</nanos>
   <sequence>15</sequence>
   <logger>global</logger>
   <level>FINER</level>
@@ -194,9 +194,9 @@
   <message>ENTRY /Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin</message>
 </record>
 <record>
-  <date>2022-06-11T16:17:06.200601Z</date>
-  <millis>1654964226200</millis>
-  <nanos>601000</nanos>
+  <date>2022-06-12T14:40:28.484612Z</date>
+  <millis>1655044828484</millis>
+  <nanos>612000</nanos>
   <sequence>16</sequence>
   <logger>global</logger>
   <level>FINER</level>
@@ -206,9 +206,9 @@
   <message>rootURL = file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/</message>
 </record>
 <record>
-  <date>2022-06-11T16:17:06.201573Z</date>
-  <millis>1654964226201</millis>
-  <nanos>573000</nanos>
+  <date>2022-06-12T14:40:28.486024Z</date>
+  <millis>1655044828486</millis>
+  <nanos>24000</nanos>
   <sequence>17</sequence>
   <logger>global</logger>
   <level>FINER</level>
@@ -218,27 +218,507 @@
   <message>RETURN DirectoryArchive(file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/)</message>
 </record>
 <record>
-  <date>2022-06-11T16:17:10.437860Z</date>
-  <millis>1654964230437</millis>
-  <nanos>860000</nanos>
+  <date>2022-06-12T14:40:31.038023Z</date>
+  <millis>1655044831038</millis>
+  <nanos>23000</nanos>
   <sequence>18</sequence>
   <logger>global</logger>
   <level>FINE</level>
   <class>ui.Menu</class>
   <method>main</method>
   <thread>1</thread>
-  <message>El usuario ha seleccionado la opcion 1 en el menu principal</message>
+  <message>El usuario ha seleccionado la opcion 2 en el menu principal</message>
 </record>
 <record>
-  <date>2022-06-11T16:17:45.675815Z</date>
-  <millis>1654964265675</millis>
-  <nanos>815000</nanos>
+  <date>2022-06-12T14:40:36.137696Z</date>
+  <millis>1655044836137</millis>
+  <nanos>696000</nanos>
   <sequence>19</sequence>
-  <logger>global</logger>
+  <logger>javax.xml.bind</logger>
   <level>FINE</level>
-  <class>ui.Menu</class>
-  <method>main</method>
+  <class>javax.xml.bind.ContextFinder</class>
+  <method>find</method>
   <thread>1</thread>
-  <message>El usuario ha seleccionado la opcion 2 en el menu principal</message>
+  <message>Searching jaxb.properties</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.138633Z</date>
+  <millis>1655044836138</millis>
+  <nanos>633000</nanos>
+  <sequence>20</sequence>
+  <logger>javax.xml.bind</logger>
+  <level>FINE</level>
+  <class>javax.xml.bind.ContextFinder</class>
+  <method>getSystemProperty</method>
+  <thread>1</thread>
+  <message>Checking system property javax.xml.bind.JAXBContextFactory</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.138932Z</date>
+  <millis>1655044836138</millis>
+  <nanos>932000</nanos>
+  <sequence>21</sequence>
+  <logger>javax.xml.bind</logger>
+  <level>FINE</level>
+  <class>javax.xml.bind.ContextFinder</class>
+  <method>getSystemProperty</method>
+  <thread>1</thread>
+  <message>  not found</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.139129Z</date>
+  <millis>1655044836139</millis>
+  <nanos>129000</nanos>
+  <sequence>22</sequence>
+  <logger>javax.xml.bind</logger>
+  <level>FINE</level>
+  <class>javax.xml.bind.ContextFinder</class>
+  <method>getSystemProperty</method>
+  <thread>1</thread>
+  <message>Checking system property javax.xml.bind.context.factory</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.139366Z</date>
+  <millis>1655044836139</millis>
+  <nanos>366000</nanos>
+  <sequence>23</sequence>
+  <logger>javax.xml.bind</logger>
+  <level>FINE</level>
+  <class>javax.xml.bind.ContextFinder</class>
+  <method>getSystemProperty</method>
+  <thread>1</thread>
+  <message>  not found</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.139559Z</date>
+  <millis>1655044836139</millis>
+  <nanos>559000</nanos>
+  <sequence>24</sequence>
+  <logger>javax.xml.bind</logger>
+  <level>FINE</level>
+  <class>javax.xml.bind.ContextFinder</class>
+  <method>getSystemProperty</method>
+  <thread>1</thread>
+  <message>Checking system property javax.xml.bind.JAXBContext</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.139767Z</date>
+  <millis>1655044836139</millis>
+  <nanos>767000</nanos>
+  <sequence>25</sequence>
+  <logger>javax.xml.bind</logger>
+  <level>FINE</level>
+  <class>javax.xml.bind.ContextFinder</class>
+  <method>getSystemProperty</method>
+  <thread>1</thread>
+  <message>  not found</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.140964Z</date>
+  <millis>1655044836140</millis>
+  <nanos>964000</nanos>
+  <sequence>26</sequence>
+  <logger>javax.xml.bind</logger>
+  <level>FINE</level>
+  <class>javax.xml.bind.ServiceLoaderUtil</class>
+  <method>firstByServiceLoader</method>
+  <thread>1</thread>
+  <message>ServiceProvider loading Facility used; returning object [com.sun.xml.bind.v2.JAXBContextFactory]</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.141852Z</date>
+  <millis>1655044836141</millis>
+  <nanos>852000</nanos>
+  <sequence>27</sequence>
+  <logger>javax.xml.bind</logger>
+  <level>FINE</level>
+  <class>javax.xml.bind.ModuleUtil</class>
+  <method>delegateAddOpensToImplModule</method>
+  <thread>1</thread>
+  <message>Propagating openness of package pojos in RIPFashion to com.sun.xml.bind.</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.145348Z</date>
+  <millis>1655044836145</millis>
+  <nanos>348000</nanos>
+  <sequence>28</sequence>
+  <logger>com.sun.xml.bind.v2.ContextFactory</logger>
+  <level>FINE</level>
+  <class>com.sun.xml.bind.v2.ContextFactory</class>
+  <method>createContext</method>
+  <thread>1</thread>
+  <message>Property com.sun.xml.bind.XmlAccessorFactoryis not active.  Using JAXB's implementation</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.217158Z</date>
+  <millis>1655044836217</millis>
+  <nanos>158000</nanos>
+  <sequence>29</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.218591Z</date>
+  <millis>1655044836218</millis>
+  <nanos>591000</nanos>
+  <sequence>30</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</class>
+  <method>get</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.218808Z</date>
+  <millis>1655044836218</millis>
+  <nanos>808000</nanos>
+  <sequence>31</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.219017Z</date>
+  <millis>1655044836219</millis>
+  <nanos>17000</nanos>
+  <sequence>32</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.219188Z</date>
+  <millis>1655044836219</millis>
+  <nanos>188000</nanos>
+  <sequence>33</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</class>
+  <method>get</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.219350Z</date>
+  <millis>1655044836219</millis>
+  <nanos>350000</nanos>
+  <sequence>34</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.219513Z</date>
+  <millis>1655044836219</millis>
+  <nanos>513000</nanos>
+  <sequence>35</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.219658Z</date>
+  <millis>1655044836219</millis>
+  <nanos>658000</nanos>
+  <sequence>36</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</class>
+  <method>get</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.219775Z</date>
+  <millis>1655044836219</millis>
+  <nanos>775000</nanos>
+  <sequence>37</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.219929Z</date>
+  <millis>1655044836219</millis>
+  <nanos>929000</nanos>
+  <sequence>38</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.220062Z</date>
+  <millis>1655044836220</millis>
+  <nanos>62000</nanos>
+  <sequence>39</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</class>
+  <method>get</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.220187Z</date>
+  <millis>1655044836220</millis>
+  <nanos>187000</nanos>
+  <sequence>40</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.220436Z</date>
+  <millis>1655044836220</millis>
+  <nanos>436000</nanos>
+  <sequence>41</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.224938Z</date>
+  <millis>1655044836224</millis>
+  <nanos>938000</nanos>
+  <sequence>42</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.225214Z</date>
+  <millis>1655044836225</millis>
+  <nanos>214000</nanos>
+  <sequence>43</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.225377Z</date>
+  <millis>1655044836225</millis>
+  <nanos>377000</nanos>
+  <sequence>44</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.225488Z</date>
+  <millis>1655044836225</millis>
+  <nanos>488000</nanos>
+  <sequence>45</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</class>
+  <method>get</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.225597Z</date>
+  <millis>1655044836225</millis>
+  <nanos>597000</nanos>
+  <sequence>46</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.225744Z</date>
+  <millis>1655044836225</millis>
+  <nanos>744000</nanos>
+  <sequence>47</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.225870Z</date>
+  <millis>1655044836225</millis>
+  <nanos>870000</nanos>
+  <sequence>48</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.225996Z</date>
+  <millis>1655044836225</millis>
+  <nanos>996000</nanos>
+  <sequence>49</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.226096Z</date>
+  <millis>1655044836226</millis>
+  <nanos>96000</nanos>
+  <sequence>50</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</class>
+  <method>get</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.226219Z</date>
+  <millis>1655044836226</millis>
+  <nanos>219000</nanos>
+  <sequence>51</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.226333Z</date>
+  <millis>1655044836226</millis>
+  <nanos>333000</nanos>
+  <sequence>52</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.226430Z</date>
+  <millis>1655044836226</millis>
+  <nanos>430000</nanos>
+  <sequence>53</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</class>
+  <method>get</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.226540Z</date>
+  <millis>1655044836226</millis>
+  <nanos>540000</nanos>
+  <sequence>54</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.226647Z</date>
+  <millis>1655044836226</millis>
+  <nanos>647000</nanos>
+  <sequence>55</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.226751Z</date>
+  <millis>1655044836226</millis>
+  <nanos>751000</nanos>
+  <sequence>56</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</class>
+  <method>get</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.226842Z</date>
+  <millis>1655044836226</millis>
+  <nanos>842000</nanos>
+  <sequence>57</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.226944Z</date>
+  <millis>1655044836226</millis>
+  <nanos>944000</nanos>
+  <sequence>58</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:40:36.227067Z</date>
+  <millis>1655044836227</millis>
+  <nanos>67000</nanos>
+  <sequence>59</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
 </record>
 </log>

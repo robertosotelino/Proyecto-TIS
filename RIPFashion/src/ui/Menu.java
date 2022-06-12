@@ -1,6 +1,6 @@
 package ui;
-
-
+       
+                                                                                                                                                                          
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -32,7 +32,6 @@ public class Menu {
 	private static DBManager dbman = new JDBCManager(); 
 	private static UsuariosManager userman = new JPAUsuariosManager();
 	private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-	private static final String[] MENU_ROL = { "-Salir del programa", "-Rol Empresario","-Rol Cliente"};
 	private static final String[] MENU_EMPRESARIO = {"- Salir" ,"-Consultar informacion de la tienda ","- Listar Articulos", 
 			"- Consultar capital","- Consultar articulo por id", "- Añadir un articulo",
 			"- Eliminar un articulo","- Modificar articulo","- Añadir marca", "- Listar empleados"
@@ -101,6 +100,49 @@ public class Menu {
 		}
 	}
 
+	private static void registrarse() {
+		
+		try {
+			
+			System.out.println("Indique su email:");
+			String email = br.readLine();
+			System.out.println("Indique su contraseña:");
+			String pass = br.readLine();
+			MessageDigest md = MessageDigest.getInstance("MD5"); // oculto la contraseña
+			md.update(pass.getBytes());
+			byte[] hash = md.digest();
+			System.out.println("Indique su nombre:");
+			String nombre = br.readLine();
+			System.out.println("Indique sus apellidos:");
+			String apellidos = br.readLine();
+			System.out.println("Indique su direccion");
+			String direccion = br.readLine();
+			System.out.println(userman.getRoles());
+			System.out.println("Indique el id del rol:");
+			int rolId = Integer.parseInt(br.readLine());
+			Rol rol = userman.getRolById(rolId);
+			Usuario usuario = new Usuario(email, hash, rol);
+			rol.addUsuario(usuario);
+			userman.addUsuario(usuario);
+			
+			
+			if(rol.getNombre().equals("cliente")) {
+				
+				Cliente cliente = new Cliente(nombre, apellidos, email, direccion);
+				dbman.addCliente(cliente);
+				
+			} else {
+				
+				añadirEmpleado();
+				
+			}
+			
+		} catch(IOException | NoSuchAlgorithmException e) {
+			
+			LOGGER.warning("Error en el registro\n" + e);
+			
+		}
+	}
 	private static void mostrarMenuCliente() throws NumberFormatException, IOException {
 		
 		System.out.println("\n\n*****MENU DEL Cliente*****\n\n");
@@ -160,54 +202,6 @@ public class Menu {
 		
 	}
 
-	
-
-	private static void registrarse() {
-		
-		try {
-			
-			System.out.println("Indique su email:");
-			String email = br.readLine();
-			System.out.println("Indique su contraseña:");
-			String pass = br.readLine();
-			MessageDigest md = MessageDigest.getInstance("MD5"); // oculto la contraseña
-			md.update(pass.getBytes());
-			byte[] hash = md.digest();
-			System.out.println("Indique su nombre:");
-			String nombre = br.readLine();
-			System.out.println("Indique sus apellidos:");
-			String apellidos = br.readLine();
-			System.out.println("Indique su direccion");
-			String direccion = br.readLine();
-			System.out.println(userman.getRoles());
-			System.out.println("Indique el id del rol:");
-			int rolId = Integer.parseInt(br.readLine());
-			// bucle
-			Rol rol = userman.getRolById(rolId);
-			Usuario usuario = new Usuario(email, hash, rol);
-			rol.addUsuario(usuario);
-			userman.addUsuario(usuario);
-			
-			
-			if(rol.getNombre().equals("cliente")) {
-				
-				Cliente cliente = new Cliente(nombre, apellidos, email, direccion);
-				dbman.addCliente(cliente);
-				
-			} else {
-				
-				añadirEmpleado();
-				
-			}
-			
-		} catch(IOException | NoSuchAlgorithmException e) {
-			
-			LOGGER.warning("Error en el registro\n" + e);
-			
-		}
-	}
-	
-	
 	private static void mostrarMenuEmpresario() throws IOException, JAXBException {
 		
 		System.out.println("\n\n*****MENU DEL EMPRESARIO*****\n\n");
@@ -227,11 +221,11 @@ public class Menu {
 				case 5 -> añadirArticulo();  // done
 				case 6 -> eliminarArticulo(); // done
 				case 7 -> modificarArticulo(); // 
-				case 8 -> newMarca(); // 
+				case 8 -> newMarca(); // done
 				case 9 -> listarEmpleados (); // done
 				case 10 -> añadirEmpleado (); // done
-				case 11 -> testT.marshalling();
-				case 12 -> testT.unMarshalling();
+				case 11 -> testT.marshalling();//done
+				case 12 -> testT.unMarshalling();//done
 
 			}
 			
@@ -299,6 +293,7 @@ public class Menu {
 	}
 
 	private static void newMarca()  { 
+
 		
 		
 		Marca marca = new Marca ();
@@ -482,7 +477,6 @@ public class Menu {
 		
 	}
 	
-	
 	private static boolean comprobarIdCorrectoArticulo (int id) {
 		
         ArrayList <Articulo> articulos = dbman.getArticulos();
@@ -638,7 +632,6 @@ public class Menu {
 		
 	}
 
-	
 	private static void consultarCapital() throws IOException { 
 		
 		boolean exito = false ;
@@ -733,7 +726,7 @@ public class Menu {
 		
 	}
 	
-	private static void consultarInformacionTiendasSinCapital() { // HACER TO STRING SIN CAPI
+	private static void consultarInformacionTiendasSinCapital() { 
 
 		int i ;
 		

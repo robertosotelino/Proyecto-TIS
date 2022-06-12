@@ -2,9 +2,9 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2022-06-11T16:18:56.383272Z</date>
-  <millis>1654964336383</millis>
-  <nanos>272000</nanos>
+  <date>2022-06-12T14:42:11.642673Z</date>
+  <millis>1655044931642</millis>
+  <nanos>673000</nanos>
   <sequence>0</sequence>
   <logger>global</logger>
   <level>INFO</level>
@@ -14,9 +14,9 @@
   <message>Logger is configured</message>
 </record>
 <record>
-  <date>2022-06-11T16:18:56.712628Z</date>
-  <millis>1654964336712</millis>
-  <nanos>628000</nanos>
+  <date>2022-06-12T14:42:11.972887Z</date>
+  <millis>1655044931972</millis>
+  <nanos>887000</nanos>
   <sequence>1</sequence>
   <logger>global</logger>
   <level>INFO</level>
@@ -26,34 +26,10 @@
   <message>Se han creado las tablas correctamente en la base de datos</message>
 </record>
 <record>
-  <date>2022-06-11T16:18:56.717679Z</date>
-  <millis>1654964336717</millis>
-  <nanos>679000</nanos>
+  <date>2022-06-12T14:42:11.974229Z</date>
+  <millis>1655044931974</millis>
+  <nanos>229000</nanos>
   <sequence>2</sequence>
-  <logger>global</logger>
-  <level>INFO</level>
-  <class>db.jdbc.JDBCManager</class>
-  <method>inicializarTablas</method>
-  <thread>1</thread>
-  <message>Se ha añadido correctamente la informacion de las tiendas en la base de datos</message>
-</record>
-<record>
-  <date>2022-06-11T16:18:56.734783Z</date>
-  <millis>1654964336734</millis>
-  <nanos>783000</nanos>
-  <sequence>3</sequence>
-  <logger>global</logger>
-  <level>INFO</level>
-  <class>db.jdbc.JDBCManager</class>
-  <method>inicializarTablas</method>
-  <thread>1</thread>
-  <message>Se ha añadido correctamente la informacion de las marcas en la base de datos</message>
-</record>
-<record>
-  <date>2022-06-11T16:18:56.743630Z</date>
-  <millis>1654964336743</millis>
-  <nanos>630000</nanos>
-  <sequence>4</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>db.jdbc.JDBCManager</class>
@@ -62,10 +38,10 @@
   <message>Se ha configurado la base de datos con éxito</message>
 </record>
 <record>
-  <date>2022-06-11T16:18:56.754871Z</date>
-  <millis>1654964336754</millis>
-  <nanos>871000</nanos>
-  <sequence>5</sequence>
+  <date>2022-06-12T14:42:11.987931Z</date>
+  <millis>1655044931987</millis>
+  <nanos>931000</nanos>
+  <sequence>3</sequence>
   <logger>global</logger>
   <level>FINER</level>
   <class>ArchiveFactoryImpl</class>
@@ -74,10 +50,10 @@
   <message>ENTRY file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/ META-INF/persistence.xml</message>
 </record>
 <record>
-  <date>2022-06-11T16:18:56.755590Z</date>
-  <millis>1654964336755</millis>
-  <nanos>590000</nanos>
-  <sequence>6</sequence>
+  <date>2022-06-12T14:42:11.988358Z</date>
+  <millis>1655044931988</millis>
+  <nanos>358000</nanos>
+  <sequence>4</sequence>
   <logger>global</logger>
   <level>FINER</level>
   <class>ArchiveFactoryImpl</class>
@@ -86,10 +62,10 @@
   <message>protocol = file</message>
 </record>
 <record>
-  <date>2022-06-11T16:18:56.759715Z</date>
-  <millis>1654964336759</millis>
-  <nanos>715000</nanos>
-  <sequence>7</sequence>
+  <date>2022-06-12T14:42:11.992549Z</date>
+  <millis>1655044931992</millis>
+  <nanos>549000</nanos>
+  <sequence>5</sequence>
   <logger>global</logger>
   <level>FINER</level>
   <class>DirectoryArchive</class>
@@ -98,10 +74,10 @@
   <message>ENTRY /Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin</message>
 </record>
 <record>
-  <date>2022-06-11T16:18:56.759939Z</date>
-  <millis>1654964336759</millis>
-  <nanos>939000</nanos>
-  <sequence>8</sequence>
+  <date>2022-06-12T14:42:11.992753Z</date>
+  <millis>1655044931992</millis>
+  <nanos>753000</nanos>
+  <sequence>6</sequence>
   <logger>global</logger>
   <level>FINER</level>
   <class>DirectoryArchive</class>
@@ -110,46 +86,46 @@
   <message>rootURL = file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/</message>
 </record>
 <record>
-  <date>2022-06-11T16:18:56.761136Z</date>
-  <millis>1654964336761</millis>
-  <nanos>136000</nanos>
+  <date>2022-06-12T14:42:11.993961Z</date>
+  <millis>1655044931993</millis>
+  <nanos>961000</nanos>
+  <sequence>7</sequence>
+  <logger>global</logger>
+  <level>FINER</level>
+  <class>ArchiveFactoryImpl</class>
+  <method>createArchive</method>
+  <thread>1</thread>
+  <message>RETURN DirectoryArchive(file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/)</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:12.099407Z</date>
+  <millis>1655044932099</millis>
+  <nanos>407000</nanos>
+  <sequence>8</sequence>
+  <logger>global</logger>
+  <level>FINER</level>
+  <class>ArchiveFactoryImpl</class>
+  <method>createArchive</method>
+  <thread>1</thread>
+  <message>ENTRY file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/ null</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:12.099565Z</date>
+  <millis>1655044932099</millis>
+  <nanos>565000</nanos>
   <sequence>9</sequence>
   <logger>global</logger>
   <level>FINER</level>
   <class>ArchiveFactoryImpl</class>
   <method>createArchive</method>
   <thread>1</thread>
-  <message>RETURN DirectoryArchive(file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/)</message>
-</record>
-<record>
-  <date>2022-06-11T16:18:56.854607Z</date>
-  <millis>1654964336854</millis>
-  <nanos>607000</nanos>
-  <sequence>10</sequence>
-  <logger>global</logger>
-  <level>FINER</level>
-  <class>ArchiveFactoryImpl</class>
-  <method>createArchive</method>
-  <thread>1</thread>
-  <message>ENTRY file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/ null</message>
-</record>
-<record>
-  <date>2022-06-11T16:18:56.854787Z</date>
-  <millis>1654964336854</millis>
-  <nanos>787000</nanos>
-  <sequence>11</sequence>
-  <logger>global</logger>
-  <level>FINER</level>
-  <class>ArchiveFactoryImpl</class>
-  <method>createArchive</method>
-  <thread>1</thread>
   <message>protocol = file</message>
 </record>
 <record>
-  <date>2022-06-11T16:18:56.854958Z</date>
-  <millis>1654964336854</millis>
-  <nanos>958000</nanos>
-  <sequence>12</sequence>
+  <date>2022-06-12T14:42:12.099707Z</date>
+  <millis>1655044932099</millis>
+  <nanos>707000</nanos>
+  <sequence>10</sequence>
   <logger>global</logger>
   <level>FINER</level>
   <class>DirectoryArchive</class>
@@ -158,10 +134,10 @@
   <message>ENTRY /Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin</message>
 </record>
 <record>
-  <date>2022-06-11T16:18:56.855067Z</date>
-  <millis>1654964336855</millis>
-  <nanos>67000</nanos>
-  <sequence>13</sequence>
+  <date>2022-06-12T14:42:12.099820Z</date>
+  <millis>1655044932099</millis>
+  <nanos>820000</nanos>
+  <sequence>11</sequence>
   <logger>global</logger>
   <level>FINER</level>
   <class>DirectoryArchive</class>
@@ -170,46 +146,46 @@
   <message>rootURL = file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/</message>
 </record>
 <record>
-  <date>2022-06-11T16:18:56.856079Z</date>
-  <millis>1654964336856</millis>
-  <nanos>79000</nanos>
+  <date>2022-06-12T14:42:12.100742Z</date>
+  <millis>1655044932100</millis>
+  <nanos>742000</nanos>
+  <sequence>12</sequence>
+  <logger>global</logger>
+  <level>FINER</level>
+  <class>ArchiveFactoryImpl</class>
+  <method>createArchive</method>
+  <thread>1</thread>
+  <message>RETURN DirectoryArchive(file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/)</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:12.100875Z</date>
+  <millis>1655044932100</millis>
+  <nanos>875000</nanos>
+  <sequence>13</sequence>
+  <logger>global</logger>
+  <level>FINER</level>
+  <class>ArchiveFactoryImpl</class>
+  <method>createArchive</method>
+  <thread>1</thread>
+  <message>ENTRY file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/ null</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:12.100966Z</date>
+  <millis>1655044932100</millis>
+  <nanos>966000</nanos>
   <sequence>14</sequence>
   <logger>global</logger>
   <level>FINER</level>
   <class>ArchiveFactoryImpl</class>
   <method>createArchive</method>
   <thread>1</thread>
-  <message>RETURN DirectoryArchive(file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/)</message>
-</record>
-<record>
-  <date>2022-06-11T16:18:56.856252Z</date>
-  <millis>1654964336856</millis>
-  <nanos>252000</nanos>
-  <sequence>15</sequence>
-  <logger>global</logger>
-  <level>FINER</level>
-  <class>ArchiveFactoryImpl</class>
-  <method>createArchive</method>
-  <thread>1</thread>
-  <message>ENTRY file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/ null</message>
-</record>
-<record>
-  <date>2022-06-11T16:18:56.856331Z</date>
-  <millis>1654964336856</millis>
-  <nanos>331000</nanos>
-  <sequence>16</sequence>
-  <logger>global</logger>
-  <level>FINER</level>
-  <class>ArchiveFactoryImpl</class>
-  <method>createArchive</method>
-  <thread>1</thread>
   <message>protocol = file</message>
 </record>
 <record>
-  <date>2022-06-11T16:18:56.856420Z</date>
-  <millis>1654964336856</millis>
-  <nanos>420000</nanos>
-  <sequence>17</sequence>
+  <date>2022-06-12T14:42:12.101098Z</date>
+  <millis>1655044932101</millis>
+  <nanos>98000</nanos>
+  <sequence>15</sequence>
   <logger>global</logger>
   <level>FINER</level>
   <class>DirectoryArchive</class>
@@ -218,10 +194,10 @@
   <message>ENTRY /Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin</message>
 </record>
 <record>
-  <date>2022-06-11T16:18:56.856523Z</date>
-  <millis>1654964336856</millis>
-  <nanos>523000</nanos>
-  <sequence>18</sequence>
+  <date>2022-06-12T14:42:12.101233Z</date>
+  <millis>1655044932101</millis>
+  <nanos>233000</nanos>
+  <sequence>16</sequence>
   <logger>global</logger>
   <level>FINER</level>
   <class>DirectoryArchive</class>
@@ -230,15 +206,5030 @@
   <message>rootURL = file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/</message>
 </record>
 <record>
-  <date>2022-06-11T16:18:56.857436Z</date>
-  <millis>1654964336857</millis>
-  <nanos>436000</nanos>
-  <sequence>19</sequence>
+  <date>2022-06-12T14:42:12.102191Z</date>
+  <millis>1655044932102</millis>
+  <nanos>191000</nanos>
+  <sequence>17</sequence>
   <logger>global</logger>
   <level>FINER</level>
   <class>ArchiveFactoryImpl</class>
   <method>createArchive</method>
   <thread>1</thread>
   <message>RETURN DirectoryArchive(file:/Users/robertosotelino/git/Proyecto-TIS/RIPFashion/bin/)</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:14.527162Z</date>
+  <millis>1655044934527</millis>
+  <nanos>162000</nanos>
+  <sequence>18</sequence>
+  <logger>global</logger>
+  <level>FINE</level>
+  <class>ui.Menu</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>El usuario ha seleccionado la opcion 2 en el menu principal</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.084851Z</date>
+  <millis>1655044967084</millis>
+  <nanos>851000</nanos>
+  <sequence>19</sequence>
+  <logger>javax.xml.bind</logger>
+  <level>FINE</level>
+  <class>javax.xml.bind.ContextFinder</class>
+  <method>find</method>
+  <thread>1</thread>
+  <message>Searching jaxb.properties</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.086126Z</date>
+  <millis>1655044967086</millis>
+  <nanos>126000</nanos>
+  <sequence>20</sequence>
+  <logger>javax.xml.bind</logger>
+  <level>FINE</level>
+  <class>javax.xml.bind.ContextFinder</class>
+  <method>getSystemProperty</method>
+  <thread>1</thread>
+  <message>Checking system property javax.xml.bind.JAXBContextFactory</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.086399Z</date>
+  <millis>1655044967086</millis>
+  <nanos>399000</nanos>
+  <sequence>21</sequence>
+  <logger>javax.xml.bind</logger>
+  <level>FINE</level>
+  <class>javax.xml.bind.ContextFinder</class>
+  <method>getSystemProperty</method>
+  <thread>1</thread>
+  <message>  not found</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.086590Z</date>
+  <millis>1655044967086</millis>
+  <nanos>590000</nanos>
+  <sequence>22</sequence>
+  <logger>javax.xml.bind</logger>
+  <level>FINE</level>
+  <class>javax.xml.bind.ContextFinder</class>
+  <method>getSystemProperty</method>
+  <thread>1</thread>
+  <message>Checking system property javax.xml.bind.context.factory</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.086811Z</date>
+  <millis>1655044967086</millis>
+  <nanos>811000</nanos>
+  <sequence>23</sequence>
+  <logger>javax.xml.bind</logger>
+  <level>FINE</level>
+  <class>javax.xml.bind.ContextFinder</class>
+  <method>getSystemProperty</method>
+  <thread>1</thread>
+  <message>  not found</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.087067Z</date>
+  <millis>1655044967087</millis>
+  <nanos>67000</nanos>
+  <sequence>24</sequence>
+  <logger>javax.xml.bind</logger>
+  <level>FINE</level>
+  <class>javax.xml.bind.ContextFinder</class>
+  <method>getSystemProperty</method>
+  <thread>1</thread>
+  <message>Checking system property javax.xml.bind.JAXBContext</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.087410Z</date>
+  <millis>1655044967087</millis>
+  <nanos>410000</nanos>
+  <sequence>25</sequence>
+  <logger>javax.xml.bind</logger>
+  <level>FINE</level>
+  <class>javax.xml.bind.ContextFinder</class>
+  <method>getSystemProperty</method>
+  <thread>1</thread>
+  <message>  not found</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.088674Z</date>
+  <millis>1655044967088</millis>
+  <nanos>674000</nanos>
+  <sequence>26</sequence>
+  <logger>javax.xml.bind</logger>
+  <level>FINE</level>
+  <class>javax.xml.bind.ServiceLoaderUtil</class>
+  <method>firstByServiceLoader</method>
+  <thread>1</thread>
+  <message>ServiceProvider loading Facility used; returning object [com.sun.xml.bind.v2.JAXBContextFactory]</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.089422Z</date>
+  <millis>1655044967089</millis>
+  <nanos>422000</nanos>
+  <sequence>27</sequence>
+  <logger>javax.xml.bind</logger>
+  <level>FINE</level>
+  <class>javax.xml.bind.ModuleUtil</class>
+  <method>delegateAddOpensToImplModule</method>
+  <thread>1</thread>
+  <message>Propagating openness of package pojos in RIPFashion to com.sun.xml.bind.</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.092841Z</date>
+  <millis>1655044967092</millis>
+  <nanos>841000</nanos>
+  <sequence>28</sequence>
+  <logger>com.sun.xml.bind.v2.ContextFactory</logger>
+  <level>FINE</level>
+  <class>com.sun.xml.bind.v2.ContextFactory</class>
+  <method>createContext</method>
+  <thread>1</thread>
+  <message>Property com.sun.xml.bind.XmlAccessorFactoryis not active.  Using JAXB's implementation</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.171998Z</date>
+  <millis>1655044967171</millis>
+  <nanos>998000</nanos>
+  <sequence>29</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.173564Z</date>
+  <millis>1655044967173</millis>
+  <nanos>564000</nanos>
+  <sequence>30</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</class>
+  <method>get</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.173824Z</date>
+  <millis>1655044967173</millis>
+  <nanos>824000</nanos>
+  <sequence>31</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.174057Z</date>
+  <millis>1655044967174</millis>
+  <nanos>57000</nanos>
+  <sequence>32</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.174213Z</date>
+  <millis>1655044967174</millis>
+  <nanos>213000</nanos>
+  <sequence>33</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</class>
+  <method>get</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.174346Z</date>
+  <millis>1655044967174</millis>
+  <nanos>346000</nanos>
+  <sequence>34</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.174483Z</date>
+  <millis>1655044967174</millis>
+  <nanos>483000</nanos>
+  <sequence>35</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.174599Z</date>
+  <millis>1655044967174</millis>
+  <nanos>599000</nanos>
+  <sequence>36</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</class>
+  <method>get</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.174715Z</date>
+  <millis>1655044967174</millis>
+  <nanos>715000</nanos>
+  <sequence>37</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.174867Z</date>
+  <millis>1655044967174</millis>
+  <nanos>867000</nanos>
+  <sequence>38</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.174990Z</date>
+  <millis>1655044967174</millis>
+  <nanos>990000</nanos>
+  <sequence>39</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</class>
+  <method>get</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.175109Z</date>
+  <millis>1655044967175</millis>
+  <nanos>109000</nanos>
+  <sequence>40</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.175302Z</date>
+  <millis>1655044967175</millis>
+  <nanos>302000</nanos>
+  <sequence>41</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.179673Z</date>
+  <millis>1655044967179</millis>
+  <nanos>673000</nanos>
+  <sequence>42</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.179993Z</date>
+  <millis>1655044967179</millis>
+  <nanos>993000</nanos>
+  <sequence>43</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.180142Z</date>
+  <millis>1655044967180</millis>
+  <nanos>142000</nanos>
+  <sequence>44</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.180301Z</date>
+  <millis>1655044967180</millis>
+  <nanos>301000</nanos>
+  <sequence>45</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</class>
+  <method>get</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.180432Z</date>
+  <millis>1655044967180</millis>
+  <nanos>432000</nanos>
+  <sequence>46</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.180576Z</date>
+  <millis>1655044967180</millis>
+  <nanos>576000</nanos>
+  <sequence>47</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.180826Z</date>
+  <millis>1655044967180</millis>
+  <nanos>826000</nanos>
+  <sequence>48</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.181003Z</date>
+  <millis>1655044967181</millis>
+  <nanos>3000</nanos>
+  <sequence>49</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.181135Z</date>
+  <millis>1655044967181</millis>
+  <nanos>135000</nanos>
+  <sequence>50</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</class>
+  <method>get</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.181304Z</date>
+  <millis>1655044967181</millis>
+  <nanos>304000</nanos>
+  <sequence>51</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.181488Z</date>
+  <millis>1655044967181</millis>
+  <nanos>488000</nanos>
+  <sequence>52</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.181666Z</date>
+  <millis>1655044967181</millis>
+  <nanos>666000</nanos>
+  <sequence>53</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</class>
+  <method>get</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.181853Z</date>
+  <millis>1655044967181</millis>
+  <nanos>853000</nanos>
+  <sequence>54</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.182020Z</date>
+  <millis>1655044967182</millis>
+  <nanos>20000</nanos>
+  <sequence>55</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.182159Z</date>
+  <millis>1655044967182</millis>
+  <nanos>159000</nanos>
+  <sequence>56</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory</class>
+  <method>get</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.182280Z</date>
+  <millis>1655044967182</millis>
+  <nanos>280000</nanos>
+  <sequence>57</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.182406Z</date>
+  <millis>1655044967182</millis>
+  <nanos>406000</nanos>
+  <sequence>58</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.182564Z</date>
+  <millis>1655044967182</millis>
+  <nanos>564000</nanos>
+  <sequence>59</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory</class>
+  <method>getStub</method>
+  <thread>1</thread>
+  <message>Optimization is not available since java 9</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.192208Z</date>
+  <millis>1655044967192</millis>
+  <nanos>208000</nanos>
+  <sequence>60</sequence>
+  <logger>com.sun.xml.bind.v2.util.XmlFactory</logger>
+  <level>FINE</level>
+  <class>com.sun.xml.bind.v2.util.XmlFactory</class>
+  <method>createParserFactory</method>
+  <thread>1</thread>
+  <message>SAXParserFactory instance: com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl@8e50104</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.193956Z</date>
+  <millis>1655044967193</millis>
+  <nanos>956000</nanos>
+  <sequence>61</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startDocument</method>
+  <thread>1</thread>
+  <message>SAXConnector.startDocument</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.194396Z</date>
+  <millis>1655044967194</millis>
+  <nanos>396000</nanos>
+  <sequence>62</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Tienda:Tienda, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.194636Z</date>
+  <millis>1655044967194</millis>
+  <nanos>636000</nanos>
+  <sequence>63</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.194967Z</date>
+  <millis>1655044967194</millis>
+  <nanos>967000</nanos>
+  <sequence>64</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.195109Z</date>
+  <millis>1655044967195</millis>
+  <nanos>109000</nanos>
+  <sequence>65</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :nombreTienda:nombreTienda, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.195239Z</date>
+  <millis>1655044967195</millis>
+  <nanos>239000</nanos>
+  <sequence>66</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.195363Z</date>
+  <millis>1655044967195</millis>
+  <nanos>363000</nanos>
+  <sequence>67</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@f107c50</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.195520Z</date>
+  <millis>1655044967195</millis>
+  <nanos>520000</nanos>
+  <sequence>68</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@51133c06</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.195657Z</date>
+  <millis>1655044967195</millis>
+  <nanos>657000</nanos>
+  <sequence>69</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.195776Z</date>
+  <millis>1655044967195</millis>
+  <nanos>776000</nanos>
+  <sequence>70</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :nombreTienda:nombreTienda</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.195931Z</date>
+  <millis>1655044967195</millis>
+  <nanos>931000</nanos>
+  <sequence>71</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.196038Z</date>
+  <millis>1655044967196</millis>
+  <nanos>38000</nanos>
+  <sequence>72</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.196170Z</date>
+  <millis>1655044967196</millis>
+  <nanos>170000</nanos>
+  <sequence>73</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :horario:horario, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.196291Z</date>
+  <millis>1655044967196</millis>
+  <nanos>291000</nanos>
+  <sequence>74</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.196394Z</date>
+  <millis>1655044967196</millis>
+  <nanos>394000</nanos>
+  <sequence>75</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.196491Z</date>
+  <millis>1655044967196</millis>
+  <nanos>491000</nanos>
+  <sequence>76</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :horario:horario</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.196608Z</date>
+  <millis>1655044967196</millis>
+  <nanos>608000</nanos>
+  <sequence>77</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.196694Z</date>
+  <millis>1655044967196</millis>
+  <nanos>694000</nanos>
+  <sequence>78</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.196820Z</date>
+  <millis>1655044967196</millis>
+  <nanos>820000</nanos>
+  <sequence>79</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :ubicacion:ubicacion, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.196934Z</date>
+  <millis>1655044967196</millis>
+  <nanos>934000</nanos>
+  <sequence>80</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.197068Z</date>
+  <millis>1655044967197</millis>
+  <nanos>68000</nanos>
+  <sequence>81</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.197183Z</date>
+  <millis>1655044967197</millis>
+  <nanos>183000</nanos>
+  <sequence>82</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :ubicacion:ubicacion</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.197301Z</date>
+  <millis>1655044967197</millis>
+  <nanos>301000</nanos>
+  <sequence>83</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.197413Z</date>
+  <millis>1655044967197</millis>
+  <nanos>413000</nanos>
+  <sequence>84</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.197646Z</date>
+  <millis>1655044967197</millis>
+  <nanos>646000</nanos>
+  <sequence>85</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :categoria:categoria, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.197838Z</date>
+  <millis>1655044967197</millis>
+  <nanos>838000</nanos>
+  <sequence>86</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.197986Z</date>
+  <millis>1655044967197</millis>
+  <nanos>986000</nanos>
+  <sequence>87</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.198107Z</date>
+  <millis>1655044967198</millis>
+  <nanos>107000</nanos>
+  <sequence>88</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :categoria:categoria</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.198260Z</date>
+  <millis>1655044967198</millis>
+  <nanos>260000</nanos>
+  <sequence>89</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.198358Z</date>
+  <millis>1655044967198</millis>
+  <nanos>358000</nanos>
+  <sequence>90</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.198534Z</date>
+  <millis>1655044967198</millis>
+  <nanos>534000</nanos>
+  <sequence>91</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :capitalTienda:capitalTienda, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.198813Z</date>
+  <millis>1655044967198</millis>
+  <nanos>813000</nanos>
+  <sequence>92</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.198960Z</date>
+  <millis>1655044967198</millis>
+  <nanos>960000</nanos>
+  <sequence>93</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.199068Z</date>
+  <millis>1655044967199</millis>
+  <nanos>68000</nanos>
+  <sequence>94</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :capitalTienda:capitalTienda</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.200713Z</date>
+  <millis>1655044967200</millis>
+  <nanos>713000</nanos>
+  <sequence>95</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.200862Z</date>
+  <millis>1655044967200</millis>
+  <nanos>862000</nanos>
+  <sequence>96</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.200992Z</date>
+  <millis>1655044967200</millis>
+  <nanos>992000</nanos>
+  <sequence>97</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Marca:Marca, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.201130Z</date>
+  <millis>1655044967201</millis>
+  <nanos>130000</nanos>
+  <sequence>98</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.201270Z</date>
+  <millis>1655044967201</millis>
+  <nanos>270000</nanos>
+  <sequence>99</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.201405Z</date>
+  <millis>1655044967201</millis>
+  <nanos>405000</nanos>
+  <sequence>100</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Marca:Marca, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.201526Z</date>
+  <millis>1655044967201</millis>
+  <nanos>526000</nanos>
+  <sequence>101</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.201685Z</date>
+  <millis>1655044967201</millis>
+  <nanos>685000</nanos>
+  <sequence>102</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.201815Z</date>
+  <millis>1655044967201</millis>
+  <nanos>815000</nanos>
+  <sequence>103</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :idM:idM, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.201950Z</date>
+  <millis>1655044967201</millis>
+  <nanos>950000</nanos>
+  <sequence>104</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.202044Z</date>
+  <millis>1655044967202</millis>
+  <nanos>44000</nanos>
+  <sequence>105</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.202164Z</date>
+  <millis>1655044967202</millis>
+  <nanos>164000</nanos>
+  <sequence>106</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :idM:idM</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.202320Z</date>
+  <millis>1655044967202</millis>
+  <nanos>320000</nanos>
+  <sequence>107</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.202448Z</date>
+  <millis>1655044967202</millis>
+  <nanos>448000</nanos>
+  <sequence>108</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.202604Z</date>
+  <millis>1655044967202</millis>
+  <nanos>604000</nanos>
+  <sequence>109</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :nombre:nombre, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.202751Z</date>
+  <millis>1655044967202</millis>
+  <nanos>751000</nanos>
+  <sequence>110</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.202861Z</date>
+  <millis>1655044967202</millis>
+  <nanos>861000</nanos>
+  <sequence>111</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.202977Z</date>
+  <millis>1655044967202</millis>
+  <nanos>977000</nanos>
+  <sequence>112</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :nombre:nombre</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.203120Z</date>
+  <millis>1655044967203</millis>
+  <nanos>120000</nanos>
+  <sequence>113</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.203232Z</date>
+  <millis>1655044967203</millis>
+  <nanos>232000</nanos>
+  <sequence>114</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.203370Z</date>
+  <millis>1655044967203</millis>
+  <nanos>370000</nanos>
+  <sequence>115</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Articulo:Articulo, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.203517Z</date>
+  <millis>1655044967203</millis>
+  <nanos>517000</nanos>
+  <sequence>116</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.203754Z</date>
+  <millis>1655044967203</millis>
+  <nanos>754000</nanos>
+  <sequence>117</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.203925Z</date>
+  <millis>1655044967203</millis>
+  <nanos>925000</nanos>
+  <sequence>118</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Articulo:Articulo, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.204175Z</date>
+  <millis>1655044967204</millis>
+  <nanos>175000</nanos>
+  <sequence>119</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.204329Z</date>
+  <millis>1655044967204</millis>
+  <nanos>329000</nanos>
+  <sequence>120</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.204447Z</date>
+  <millis>1655044967204</millis>
+  <nanos>447000</nanos>
+  <sequence>121</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :idArt:idArt, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.204560Z</date>
+  <millis>1655044967204</millis>
+  <nanos>560000</nanos>
+  <sequence>122</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.204660Z</date>
+  <millis>1655044967204</millis>
+  <nanos>660000</nanos>
+  <sequence>123</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.204758Z</date>
+  <millis>1655044967204</millis>
+  <nanos>758000</nanos>
+  <sequence>124</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :idArt:idArt</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.204900Z</date>
+  <millis>1655044967204</millis>
+  <nanos>900000</nanos>
+  <sequence>125</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.205001Z</date>
+  <millis>1655044967205</millis>
+  <nanos>1000</nanos>
+  <sequence>126</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.205141Z</date>
+  <millis>1655044967205</millis>
+  <nanos>141000</nanos>
+  <sequence>127</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :categoria:categoria, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.205364Z</date>
+  <millis>1655044967205</millis>
+  <nanos>364000</nanos>
+  <sequence>128</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.205454Z</date>
+  <millis>1655044967205</millis>
+  <nanos>454000</nanos>
+  <sequence>129</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.205549Z</date>
+  <millis>1655044967205</millis>
+  <nanos>549000</nanos>
+  <sequence>130</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :categoria:categoria</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.205657Z</date>
+  <millis>1655044967205</millis>
+  <nanos>657000</nanos>
+  <sequence>131</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.205738Z</date>
+  <millis>1655044967205</millis>
+  <nanos>738000</nanos>
+  <sequence>132</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.205841Z</date>
+  <millis>1655044967205</millis>
+  <nanos>841000</nanos>
+  <sequence>133</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :campaña:campaña, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.205960Z</date>
+  <millis>1655044967205</millis>
+  <nanos>960000</nanos>
+  <sequence>134</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.206042Z</date>
+  <millis>1655044967206</millis>
+  <nanos>42000</nanos>
+  <sequence>135</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.206132Z</date>
+  <millis>1655044967206</millis>
+  <nanos>132000</nanos>
+  <sequence>136</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :campaña:campaña</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.206240Z</date>
+  <millis>1655044967206</millis>
+  <nanos>240000</nanos>
+  <sequence>137</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.206361Z</date>
+  <millis>1655044967206</millis>
+  <nanos>361000</nanos>
+  <sequence>138</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.206489Z</date>
+  <millis>1655044967206</millis>
+  <nanos>489000</nanos>
+  <sequence>139</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :color:color, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.206590Z</date>
+  <millis>1655044967206</millis>
+  <nanos>590000</nanos>
+  <sequence>140</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.206674Z</date>
+  <millis>1655044967206</millis>
+  <nanos>674000</nanos>
+  <sequence>141</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.206800Z</date>
+  <millis>1655044967206</millis>
+  <nanos>800000</nanos>
+  <sequence>142</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :color:color</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.207013Z</date>
+  <millis>1655044967207</millis>
+  <nanos>13000</nanos>
+  <sequence>143</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.207125Z</date>
+  <millis>1655044967207</millis>
+  <nanos>125000</nanos>
+  <sequence>144</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.207236Z</date>
+  <millis>1655044967207</millis>
+  <nanos>236000</nanos>
+  <sequence>145</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :sexo:sexo, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.207369Z</date>
+  <millis>1655044967207</millis>
+  <nanos>369000</nanos>
+  <sequence>146</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.207490Z</date>
+  <millis>1655044967207</millis>
+  <nanos>490000</nanos>
+  <sequence>147</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.207601Z</date>
+  <millis>1655044967207</millis>
+  <nanos>601000</nanos>
+  <sequence>148</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :sexo:sexo</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.207715Z</date>
+  <millis>1655044967207</millis>
+  <nanos>715000</nanos>
+  <sequence>149</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.207945Z</date>
+  <millis>1655044967207</millis>
+  <nanos>945000</nanos>
+  <sequence>150</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.208108Z</date>
+  <millis>1655044967208</millis>
+  <nanos>108000</nanos>
+  <sequence>151</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :precio:precio, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.208220Z</date>
+  <millis>1655044967208</millis>
+  <nanos>220000</nanos>
+  <sequence>152</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.208312Z</date>
+  <millis>1655044967208</millis>
+  <nanos>312000</nanos>
+  <sequence>153</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.208400Z</date>
+  <millis>1655044967208</millis>
+  <nanos>400000</nanos>
+  <sequence>154</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :precio:precio</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.208497Z</date>
+  <millis>1655044967208</millis>
+  <nanos>497000</nanos>
+  <sequence>155</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.208636Z</date>
+  <millis>1655044967208</millis>
+  <nanos>636000</nanos>
+  <sequence>156</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.208741Z</date>
+  <millis>1655044967208</millis>
+  <nanos>741000</nanos>
+  <sequence>157</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Articulo:Articulo</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.208890Z</date>
+  <millis>1655044967208</millis>
+  <nanos>890000</nanos>
+  <sequence>158</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.209019Z</date>
+  <millis>1655044967209</millis>
+  <nanos>19000</nanos>
+  <sequence>159</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.209107Z</date>
+  <millis>1655044967209</millis>
+  <nanos>107000</nanos>
+  <sequence>160</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Articulo:Articulo</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.209201Z</date>
+  <millis>1655044967209</millis>
+  <nanos>201000</nanos>
+  <sequence>161</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.209280Z</date>
+  <millis>1655044967209</millis>
+  <nanos>280000</nanos>
+  <sequence>162</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.209377Z</date>
+  <millis>1655044967209</millis>
+  <nanos>377000</nanos>
+  <sequence>163</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Marca:Marca</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.209475Z</date>
+  <millis>1655044967209</millis>
+  <nanos>475000</nanos>
+  <sequence>164</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.209589Z</date>
+  <millis>1655044967209</millis>
+  <nanos>589000</nanos>
+  <sequence>165</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.209684Z</date>
+  <millis>1655044967209</millis>
+  <nanos>684000</nanos>
+  <sequence>166</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Marca:Marca, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.209788Z</date>
+  <millis>1655044967209</millis>
+  <nanos>788000</nanos>
+  <sequence>167</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.209884Z</date>
+  <millis>1655044967209</millis>
+  <nanos>884000</nanos>
+  <sequence>168</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.209980Z</date>
+  <millis>1655044967209</millis>
+  <nanos>980000</nanos>
+  <sequence>169</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :idM:idM, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.210141Z</date>
+  <millis>1655044967210</millis>
+  <nanos>141000</nanos>
+  <sequence>170</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.210250Z</date>
+  <millis>1655044967210</millis>
+  <nanos>250000</nanos>
+  <sequence>171</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.210339Z</date>
+  <millis>1655044967210</millis>
+  <nanos>339000</nanos>
+  <sequence>172</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :idM:idM</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.210431Z</date>
+  <millis>1655044967210</millis>
+  <nanos>431000</nanos>
+  <sequence>173</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.210510Z</date>
+  <millis>1655044967210</millis>
+  <nanos>510000</nanos>
+  <sequence>174</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.210626Z</date>
+  <millis>1655044967210</millis>
+  <nanos>626000</nanos>
+  <sequence>175</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :nombre:nombre, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.210727Z</date>
+  <millis>1655044967210</millis>
+  <nanos>727000</nanos>
+  <sequence>176</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.210805Z</date>
+  <millis>1655044967210</millis>
+  <nanos>805000</nanos>
+  <sequence>177</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.210889Z</date>
+  <millis>1655044967210</millis>
+  <nanos>889000</nanos>
+  <sequence>178</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :nombre:nombre</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.211057Z</date>
+  <millis>1655044967211</millis>
+  <nanos>57000</nanos>
+  <sequence>179</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.211148Z</date>
+  <millis>1655044967211</millis>
+  <nanos>148000</nanos>
+  <sequence>180</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.211239Z</date>
+  <millis>1655044967211</millis>
+  <nanos>239000</nanos>
+  <sequence>181</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Articulo:Articulo, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.211360Z</date>
+  <millis>1655044967211</millis>
+  <nanos>360000</nanos>
+  <sequence>182</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.211640Z</date>
+  <millis>1655044967211</millis>
+  <nanos>640000</nanos>
+  <sequence>183</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.211812Z</date>
+  <millis>1655044967211</millis>
+  <nanos>812000</nanos>
+  <sequence>184</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Articulo:Articulo, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.211968Z</date>
+  <millis>1655044967211</millis>
+  <nanos>968000</nanos>
+  <sequence>185</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.212081Z</date>
+  <millis>1655044967212</millis>
+  <nanos>81000</nanos>
+  <sequence>186</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.212178Z</date>
+  <millis>1655044967212</millis>
+  <nanos>178000</nanos>
+  <sequence>187</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :idArt:idArt, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.212289Z</date>
+  <millis>1655044967212</millis>
+  <nanos>289000</nanos>
+  <sequence>188</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.212369Z</date>
+  <millis>1655044967212</millis>
+  <nanos>369000</nanos>
+  <sequence>189</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.212458Z</date>
+  <millis>1655044967212</millis>
+  <nanos>458000</nanos>
+  <sequence>190</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :idArt:idArt</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.212553Z</date>
+  <millis>1655044967212</millis>
+  <nanos>553000</nanos>
+  <sequence>191</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.212634Z</date>
+  <millis>1655044967212</millis>
+  <nanos>634000</nanos>
+  <sequence>192</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.212752Z</date>
+  <millis>1655044967212</millis>
+  <nanos>752000</nanos>
+  <sequence>193</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :categoria:categoria, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.212848Z</date>
+  <millis>1655044967212</millis>
+  <nanos>848000</nanos>
+  <sequence>194</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.212925Z</date>
+  <millis>1655044967212</millis>
+  <nanos>925000</nanos>
+  <sequence>195</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.213008Z</date>
+  <millis>1655044967213</millis>
+  <nanos>8000</nanos>
+  <sequence>196</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :categoria:categoria</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.213113Z</date>
+  <millis>1655044967213</millis>
+  <nanos>113000</nanos>
+  <sequence>197</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.213191Z</date>
+  <millis>1655044967213</millis>
+  <nanos>191000</nanos>
+  <sequence>198</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.213282Z</date>
+  <millis>1655044967213</millis>
+  <nanos>282000</nanos>
+  <sequence>199</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :campaña:campaña, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.213383Z</date>
+  <millis>1655044967213</millis>
+  <nanos>383000</nanos>
+  <sequence>200</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.213459Z</date>
+  <millis>1655044967213</millis>
+  <nanos>459000</nanos>
+  <sequence>201</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.213541Z</date>
+  <millis>1655044967213</millis>
+  <nanos>541000</nanos>
+  <sequence>202</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :campaña:campaña</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.213638Z</date>
+  <millis>1655044967213</millis>
+  <nanos>638000</nanos>
+  <sequence>203</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.213729Z</date>
+  <millis>1655044967213</millis>
+  <nanos>729000</nanos>
+  <sequence>204</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.213818Z</date>
+  <millis>1655044967213</millis>
+  <nanos>818000</nanos>
+  <sequence>205</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :color:color, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.213910Z</date>
+  <millis>1655044967213</millis>
+  <nanos>910000</nanos>
+  <sequence>206</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.214Z</date>
+  <millis>1655044967214</millis>
+  <sequence>207</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.214130Z</date>
+  <millis>1655044967214</millis>
+  <nanos>130000</nanos>
+  <sequence>208</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :color:color</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.214234Z</date>
+  <millis>1655044967214</millis>
+  <nanos>234000</nanos>
+  <sequence>209</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.214390Z</date>
+  <millis>1655044967214</millis>
+  <nanos>390000</nanos>
+  <sequence>210</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.214482Z</date>
+  <millis>1655044967214</millis>
+  <nanos>482000</nanos>
+  <sequence>211</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :sexo:sexo, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.214658Z</date>
+  <millis>1655044967214</millis>
+  <nanos>658000</nanos>
+  <sequence>212</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.214756Z</date>
+  <millis>1655044967214</millis>
+  <nanos>756000</nanos>
+  <sequence>213</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.214866Z</date>
+  <millis>1655044967214</millis>
+  <nanos>866000</nanos>
+  <sequence>214</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :sexo:sexo</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.214993Z</date>
+  <millis>1655044967214</millis>
+  <nanos>993000</nanos>
+  <sequence>215</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.215223Z</date>
+  <millis>1655044967215</millis>
+  <nanos>223000</nanos>
+  <sequence>216</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.215415Z</date>
+  <millis>1655044967215</millis>
+  <nanos>415000</nanos>
+  <sequence>217</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :precio:precio, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.215666Z</date>
+  <millis>1655044967215</millis>
+  <nanos>666000</nanos>
+  <sequence>218</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.215769Z</date>
+  <millis>1655044967215</millis>
+  <nanos>769000</nanos>
+  <sequence>219</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.215876Z</date>
+  <millis>1655044967215</millis>
+  <nanos>876000</nanos>
+  <sequence>220</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :precio:precio</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.215982Z</date>
+  <millis>1655044967215</millis>
+  <nanos>982000</nanos>
+  <sequence>221</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.216074Z</date>
+  <millis>1655044967216</millis>
+  <nanos>74000</nanos>
+  <sequence>222</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.216182Z</date>
+  <millis>1655044967216</millis>
+  <nanos>182000</nanos>
+  <sequence>223</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Articulo:Articulo</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.216345Z</date>
+  <millis>1655044967216</millis>
+  <nanos>345000</nanos>
+  <sequence>224</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.216442Z</date>
+  <millis>1655044967216</millis>
+  <nanos>442000</nanos>
+  <sequence>225</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.216562Z</date>
+  <millis>1655044967216</millis>
+  <nanos>562000</nanos>
+  <sequence>226</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Articulo:Articulo</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.216648Z</date>
+  <millis>1655044967216</millis>
+  <nanos>648000</nanos>
+  <sequence>227</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.216726Z</date>
+  <millis>1655044967216</millis>
+  <nanos>726000</nanos>
+  <sequence>228</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.216812Z</date>
+  <millis>1655044967216</millis>
+  <nanos>812000</nanos>
+  <sequence>229</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Marca:Marca</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.216895Z</date>
+  <millis>1655044967216</millis>
+  <nanos>895000</nanos>
+  <sequence>230</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.216970Z</date>
+  <millis>1655044967216</millis>
+  <nanos>970000</nanos>
+  <sequence>231</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.217067Z</date>
+  <millis>1655044967217</millis>
+  <nanos>67000</nanos>
+  <sequence>232</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Marca:Marca, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.217160Z</date>
+  <millis>1655044967217</millis>
+  <nanos>160000</nanos>
+  <sequence>233</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.217251Z</date>
+  <millis>1655044967217</millis>
+  <nanos>251000</nanos>
+  <sequence>234</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.217339Z</date>
+  <millis>1655044967217</millis>
+  <nanos>339000</nanos>
+  <sequence>235</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :idM:idM, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.217432Z</date>
+  <millis>1655044967217</millis>
+  <nanos>432000</nanos>
+  <sequence>236</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.217508Z</date>
+  <millis>1655044967217</millis>
+  <nanos>508000</nanos>
+  <sequence>237</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.217592Z</date>
+  <millis>1655044967217</millis>
+  <nanos>592000</nanos>
+  <sequence>238</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :idM:idM</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.217678Z</date>
+  <millis>1655044967217</millis>
+  <nanos>678000</nanos>
+  <sequence>239</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.217774Z</date>
+  <millis>1655044967217</millis>
+  <nanos>774000</nanos>
+  <sequence>240</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.217874Z</date>
+  <millis>1655044967217</millis>
+  <nanos>874000</nanos>
+  <sequence>241</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :nombre:nombre, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.217961Z</date>
+  <millis>1655044967217</millis>
+  <nanos>961000</nanos>
+  <sequence>242</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.218033Z</date>
+  <millis>1655044967218</millis>
+  <nanos>33000</nanos>
+  <sequence>243</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.218112Z</date>
+  <millis>1655044967218</millis>
+  <nanos>112000</nanos>
+  <sequence>244</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :nombre:nombre</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.218236Z</date>
+  <millis>1655044967218</millis>
+  <nanos>236000</nanos>
+  <sequence>245</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.218311Z</date>
+  <millis>1655044967218</millis>
+  <nanos>311000</nanos>
+  <sequence>246</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.218397Z</date>
+  <millis>1655044967218</millis>
+  <nanos>397000</nanos>
+  <sequence>247</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Articulo:Articulo, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.218488Z</date>
+  <millis>1655044967218</millis>
+  <nanos>488000</nanos>
+  <sequence>248</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.218574Z</date>
+  <millis>1655044967218</millis>
+  <nanos>574000</nanos>
+  <sequence>249</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.218663Z</date>
+  <millis>1655044967218</millis>
+  <nanos>663000</nanos>
+  <sequence>250</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Articulo:Articulo, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.218750Z</date>
+  <millis>1655044967218</millis>
+  <nanos>750000</nanos>
+  <sequence>251</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.218834Z</date>
+  <millis>1655044967218</millis>
+  <nanos>834000</nanos>
+  <sequence>252</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.218940Z</date>
+  <millis>1655044967218</millis>
+  <nanos>940000</nanos>
+  <sequence>253</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :idArt:idArt, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.219027Z</date>
+  <millis>1655044967219</millis>
+  <nanos>27000</nanos>
+  <sequence>254</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.219101Z</date>
+  <millis>1655044967219</millis>
+  <nanos>101000</nanos>
+  <sequence>255</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.219193Z</date>
+  <millis>1655044967219</millis>
+  <nanos>193000</nanos>
+  <sequence>256</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :idArt:idArt</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.219278Z</date>
+  <millis>1655044967219</millis>
+  <nanos>278000</nanos>
+  <sequence>257</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.219353Z</date>
+  <millis>1655044967219</millis>
+  <nanos>353000</nanos>
+  <sequence>258</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.219440Z</date>
+  <millis>1655044967219</millis>
+  <nanos>440000</nanos>
+  <sequence>259</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :categoria:categoria, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.219525Z</date>
+  <millis>1655044967219</millis>
+  <nanos>525000</nanos>
+  <sequence>260</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.219595Z</date>
+  <millis>1655044967219</millis>
+  <nanos>595000</nanos>
+  <sequence>261</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.219676Z</date>
+  <millis>1655044967219</millis>
+  <nanos>676000</nanos>
+  <sequence>262</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :categoria:categoria</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.219790Z</date>
+  <millis>1655044967219</millis>
+  <nanos>790000</nanos>
+  <sequence>263</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.219866Z</date>
+  <millis>1655044967219</millis>
+  <nanos>866000</nanos>
+  <sequence>264</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.219964Z</date>
+  <millis>1655044967219</millis>
+  <nanos>964000</nanos>
+  <sequence>265</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :campaña:campaña, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.220058Z</date>
+  <millis>1655044967220</millis>
+  <nanos>58000</nanos>
+  <sequence>266</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.220130Z</date>
+  <millis>1655044967220</millis>
+  <nanos>130000</nanos>
+  <sequence>267</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.220211Z</date>
+  <millis>1655044967220</millis>
+  <nanos>211000</nanos>
+  <sequence>268</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :campaña:campaña</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.220297Z</date>
+  <millis>1655044967220</millis>
+  <nanos>297000</nanos>
+  <sequence>269</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.220369Z</date>
+  <millis>1655044967220</millis>
+  <nanos>369000</nanos>
+  <sequence>270</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.220464Z</date>
+  <millis>1655044967220</millis>
+  <nanos>464000</nanos>
+  <sequence>271</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :color:color, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.220547Z</date>
+  <millis>1655044967220</millis>
+  <nanos>547000</nanos>
+  <sequence>272</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.220622Z</date>
+  <millis>1655044967220</millis>
+  <nanos>622000</nanos>
+  <sequence>273</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.220711Z</date>
+  <millis>1655044967220</millis>
+  <nanos>711000</nanos>
+  <sequence>274</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :color:color</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.220798Z</date>
+  <millis>1655044967220</millis>
+  <nanos>798000</nanos>
+  <sequence>275</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.220869Z</date>
+  <millis>1655044967220</millis>
+  <nanos>869000</nanos>
+  <sequence>276</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.220950Z</date>
+  <millis>1655044967220</millis>
+  <nanos>950000</nanos>
+  <sequence>277</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :sexo:sexo, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.221041Z</date>
+  <millis>1655044967221</millis>
+  <nanos>41000</nanos>
+  <sequence>278</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.221148Z</date>
+  <millis>1655044967221</millis>
+  <nanos>148000</nanos>
+  <sequence>279</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.221226Z</date>
+  <millis>1655044967221</millis>
+  <nanos>226000</nanos>
+  <sequence>280</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :sexo:sexo</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.221307Z</date>
+  <millis>1655044967221</millis>
+  <nanos>307000</nanos>
+  <sequence>281</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.221380Z</date>
+  <millis>1655044967221</millis>
+  <nanos>380000</nanos>
+  <sequence>282</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.221486Z</date>
+  <millis>1655044967221</millis>
+  <nanos>486000</nanos>
+  <sequence>283</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :precio:precio, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.221570Z</date>
+  <millis>1655044967221</millis>
+  <nanos>570000</nanos>
+  <sequence>284</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.221640Z</date>
+  <millis>1655044967221</millis>
+  <nanos>640000</nanos>
+  <sequence>285</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.221714Z</date>
+  <millis>1655044967221</millis>
+  <nanos>714000</nanos>
+  <sequence>286</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :precio:precio</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.221804Z</date>
+  <millis>1655044967221</millis>
+  <nanos>804000</nanos>
+  <sequence>287</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.221876Z</date>
+  <millis>1655044967221</millis>
+  <nanos>876000</nanos>
+  <sequence>288</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.221986Z</date>
+  <millis>1655044967221</millis>
+  <nanos>986000</nanos>
+  <sequence>289</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Articulo:Articulo</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.222072Z</date>
+  <millis>1655044967222</millis>
+  <nanos>72000</nanos>
+  <sequence>290</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.222144Z</date>
+  <millis>1655044967222</millis>
+  <nanos>144000</nanos>
+  <sequence>291</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.222215Z</date>
+  <millis>1655044967222</millis>
+  <nanos>215000</nanos>
+  <sequence>292</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Articulo:Articulo</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.222290Z</date>
+  <millis>1655044967222</millis>
+  <nanos>290000</nanos>
+  <sequence>293</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.222357Z</date>
+  <millis>1655044967222</millis>
+  <nanos>357000</nanos>
+  <sequence>294</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.222445Z</date>
+  <millis>1655044967222</millis>
+  <nanos>445000</nanos>
+  <sequence>295</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Marca:Marca</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.222534Z</date>
+  <millis>1655044967222</millis>
+  <nanos>534000</nanos>
+  <sequence>296</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.222603Z</date>
+  <millis>1655044967222</millis>
+  <nanos>603000</nanos>
+  <sequence>297</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.222679Z</date>
+  <millis>1655044967222</millis>
+  <nanos>679000</nanos>
+  <sequence>298</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Marca:Marca, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.222754Z</date>
+  <millis>1655044967222</millis>
+  <nanos>754000</nanos>
+  <sequence>299</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.222832Z</date>
+  <millis>1655044967222</millis>
+  <nanos>832000</nanos>
+  <sequence>300</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.222912Z</date>
+  <millis>1655044967222</millis>
+  <nanos>912000</nanos>
+  <sequence>301</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :idM:idM, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.223013Z</date>
+  <millis>1655044967223</millis>
+  <nanos>13000</nanos>
+  <sequence>302</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.223086Z</date>
+  <millis>1655044967223</millis>
+  <nanos>86000</nanos>
+  <sequence>303</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.223159Z</date>
+  <millis>1655044967223</millis>
+  <nanos>159000</nanos>
+  <sequence>304</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :idM:idM</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.223237Z</date>
+  <millis>1655044967223</millis>
+  <nanos>237000</nanos>
+  <sequence>305</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.223305Z</date>
+  <millis>1655044967223</millis>
+  <nanos>305000</nanos>
+  <sequence>306</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.223399Z</date>
+  <millis>1655044967223</millis>
+  <nanos>399000</nanos>
+  <sequence>307</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :nombre:nombre, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.223518Z</date>
+  <millis>1655044967223</millis>
+  <nanos>518000</nanos>
+  <sequence>308</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.223595Z</date>
+  <millis>1655044967223</millis>
+  <nanos>595000</nanos>
+  <sequence>309</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.223669Z</date>
+  <millis>1655044967223</millis>
+  <nanos>669000</nanos>
+  <sequence>310</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :nombre:nombre</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.223747Z</date>
+  <millis>1655044967223</millis>
+  <nanos>747000</nanos>
+  <sequence>311</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.223814Z</date>
+  <millis>1655044967223</millis>
+  <nanos>814000</nanos>
+  <sequence>312</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.223907Z</date>
+  <millis>1655044967223</millis>
+  <nanos>907000</nanos>
+  <sequence>313</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Articulo:Articulo, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.223985Z</date>
+  <millis>1655044967223</millis>
+  <nanos>985000</nanos>
+  <sequence>314</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.224067Z</date>
+  <millis>1655044967224</millis>
+  <nanos>67000</nanos>
+  <sequence>315</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.224155Z</date>
+  <millis>1655044967224</millis>
+  <nanos>155000</nanos>
+  <sequence>316</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Articulo:Articulo, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.224245Z</date>
+  <millis>1655044967224</millis>
+  <nanos>245000</nanos>
+  <sequence>317</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.224325Z</date>
+  <millis>1655044967224</millis>
+  <nanos>325000</nanos>
+  <sequence>318</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.224401Z</date>
+  <millis>1655044967224</millis>
+  <nanos>401000</nanos>
+  <sequence>319</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :idArt:idArt, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.224509Z</date>
+  <millis>1655044967224</millis>
+  <nanos>509000</nanos>
+  <sequence>320</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.224575Z</date>
+  <millis>1655044967224</millis>
+  <nanos>575000</nanos>
+  <sequence>321</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.224656Z</date>
+  <millis>1655044967224</millis>
+  <nanos>656000</nanos>
+  <sequence>322</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :idArt:idArt</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.224733Z</date>
+  <millis>1655044967224</millis>
+  <nanos>733000</nanos>
+  <sequence>323</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.224805Z</date>
+  <millis>1655044967224</millis>
+  <nanos>805000</nanos>
+  <sequence>324</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.224956Z</date>
+  <millis>1655044967224</millis>
+  <nanos>956000</nanos>
+  <sequence>325</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :categoria:categoria, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.225062Z</date>
+  <millis>1655044967225</millis>
+  <nanos>62000</nanos>
+  <sequence>326</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.225135Z</date>
+  <millis>1655044967225</millis>
+  <nanos>135000</nanos>
+  <sequence>327</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.225207Z</date>
+  <millis>1655044967225</millis>
+  <nanos>207000</nanos>
+  <sequence>328</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :categoria:categoria</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.225314Z</date>
+  <millis>1655044967225</millis>
+  <nanos>314000</nanos>
+  <sequence>329</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.225385Z</date>
+  <millis>1655044967225</millis>
+  <nanos>385000</nanos>
+  <sequence>330</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.225461Z</date>
+  <millis>1655044967225</millis>
+  <nanos>461000</nanos>
+  <sequence>331</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :campaña:campaña, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.225540Z</date>
+  <millis>1655044967225</millis>
+  <nanos>540000</nanos>
+  <sequence>332</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.225610Z</date>
+  <millis>1655044967225</millis>
+  <nanos>610000</nanos>
+  <sequence>333</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.225680Z</date>
+  <millis>1655044967225</millis>
+  <nanos>680000</nanos>
+  <sequence>334</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :campaña:campaña</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.225758Z</date>
+  <millis>1655044967225</millis>
+  <nanos>758000</nanos>
+  <sequence>335</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.225821Z</date>
+  <millis>1655044967225</millis>
+  <nanos>821000</nanos>
+  <sequence>336</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.225897Z</date>
+  <millis>1655044967225</millis>
+  <nanos>897000</nanos>
+  <sequence>337</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :color:color, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.225971Z</date>
+  <millis>1655044967225</millis>
+  <nanos>971000</nanos>
+  <sequence>338</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.226049Z</date>
+  <millis>1655044967226</millis>
+  <nanos>49000</nanos>
+  <sequence>339</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.226125Z</date>
+  <millis>1655044967226</millis>
+  <nanos>125000</nanos>
+  <sequence>340</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :color:color</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.226204Z</date>
+  <millis>1655044967226</millis>
+  <nanos>204000</nanos>
+  <sequence>341</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.226268Z</date>
+  <millis>1655044967226</millis>
+  <nanos>268000</nanos>
+  <sequence>342</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.226342Z</date>
+  <millis>1655044967226</millis>
+  <nanos>342000</nanos>
+  <sequence>343</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :sexo:sexo, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.226415Z</date>
+  <millis>1655044967226</millis>
+  <nanos>415000</nanos>
+  <sequence>344</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.226474Z</date>
+  <millis>1655044967226</millis>
+  <nanos>474000</nanos>
+  <sequence>345</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.226546Z</date>
+  <millis>1655044967226</millis>
+  <nanos>546000</nanos>
+  <sequence>346</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :sexo:sexo</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.226622Z</date>
+  <millis>1655044967226</millis>
+  <nanos>622000</nanos>
+  <sequence>347</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.226686Z</date>
+  <millis>1655044967226</millis>
+  <nanos>686000</nanos>
+  <sequence>348</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.226760Z</date>
+  <millis>1655044967226</millis>
+  <nanos>760000</nanos>
+  <sequence>349</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :precio:precio, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.226835Z</date>
+  <millis>1655044967226</millis>
+  <nanos>835000</nanos>
+  <sequence>350</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.226902Z</date>
+  <millis>1655044967226</millis>
+  <nanos>902000</nanos>
+  <sequence>351</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.226968Z</date>
+  <millis>1655044967226</millis>
+  <nanos>968000</nanos>
+  <sequence>352</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :precio:precio</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.227039Z</date>
+  <millis>1655044967227</millis>
+  <nanos>39000</nanos>
+  <sequence>353</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.227102Z</date>
+  <millis>1655044967227</millis>
+  <nanos>102000</nanos>
+  <sequence>354</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.227168Z</date>
+  <millis>1655044967227</millis>
+  <nanos>168000</nanos>
+  <sequence>355</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Articulo:Articulo</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.227245Z</date>
+  <millis>1655044967227</millis>
+  <nanos>245000</nanos>
+  <sequence>356</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.227315Z</date>
+  <millis>1655044967227</millis>
+  <nanos>315000</nanos>
+  <sequence>357</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.227381Z</date>
+  <millis>1655044967227</millis>
+  <nanos>381000</nanos>
+  <sequence>358</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Articulo:Articulo</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.227457Z</date>
+  <millis>1655044967227</millis>
+  <nanos>457000</nanos>
+  <sequence>359</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.227524Z</date>
+  <millis>1655044967227</millis>
+  <nanos>524000</nanos>
+  <sequence>360</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.227600Z</date>
+  <millis>1655044967227</millis>
+  <nanos>600000</nanos>
+  <sequence>361</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Marca:Marca</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.227668Z</date>
+  <millis>1655044967227</millis>
+  <nanos>668000</nanos>
+  <sequence>362</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.227736Z</date>
+  <millis>1655044967227</millis>
+  <nanos>736000</nanos>
+  <sequence>363</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.227807Z</date>
+  <millis>1655044967227</millis>
+  <nanos>807000</nanos>
+  <sequence>364</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Marca:Marca, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.227880Z</date>
+  <millis>1655044967227</millis>
+  <nanos>880000</nanos>
+  <sequence>365</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.227955Z</date>
+  <millis>1655044967227</millis>
+  <nanos>955000</nanos>
+  <sequence>366</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.228029Z</date>
+  <millis>1655044967228</millis>
+  <nanos>29000</nanos>
+  <sequence>367</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :idM:idM, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.228132Z</date>
+  <millis>1655044967228</millis>
+  <nanos>132000</nanos>
+  <sequence>368</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.228212Z</date>
+  <millis>1655044967228</millis>
+  <nanos>212000</nanos>
+  <sequence>369</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.228282Z</date>
+  <millis>1655044967228</millis>
+  <nanos>282000</nanos>
+  <sequence>370</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :idM:idM</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.228426Z</date>
+  <millis>1655044967228</millis>
+  <nanos>426000</nanos>
+  <sequence>371</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.228553Z</date>
+  <millis>1655044967228</millis>
+  <nanos>553000</nanos>
+  <sequence>372</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.228696Z</date>
+  <millis>1655044967228</millis>
+  <nanos>696000</nanos>
+  <sequence>373</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :nombre:nombre, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.228808Z</date>
+  <millis>1655044967228</millis>
+  <nanos>808000</nanos>
+  <sequence>374</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.228882Z</date>
+  <millis>1655044967228</millis>
+  <nanos>882000</nanos>
+  <sequence>375</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.228955Z</date>
+  <millis>1655044967228</millis>
+  <nanos>955000</nanos>
+  <sequence>376</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :nombre:nombre</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.229031Z</date>
+  <millis>1655044967229</millis>
+  <nanos>31000</nanos>
+  <sequence>377</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.229102Z</date>
+  <millis>1655044967229</millis>
+  <nanos>102000</nanos>
+  <sequence>378</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.229183Z</date>
+  <millis>1655044967229</millis>
+  <nanos>183000</nanos>
+  <sequence>379</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Articulo:Articulo, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.229256Z</date>
+  <millis>1655044967229</millis>
+  <nanos>256000</nanos>
+  <sequence>380</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.229336Z</date>
+  <millis>1655044967229</millis>
+  <nanos>336000</nanos>
+  <sequence>381</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.229417Z</date>
+  <millis>1655044967229</millis>
+  <nanos>417000</nanos>
+  <sequence>382</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Articulo:Articulo, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.229491Z</date>
+  <millis>1655044967229</millis>
+  <nanos>491000</nanos>
+  <sequence>383</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.229580Z</date>
+  <millis>1655044967229</millis>
+  <nanos>580000</nanos>
+  <sequence>384</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.229725Z</date>
+  <millis>1655044967229</millis>
+  <nanos>725000</nanos>
+  <sequence>385</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :idArt:idArt, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.229806Z</date>
+  <millis>1655044967229</millis>
+  <nanos>806000</nanos>
+  <sequence>386</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.229870Z</date>
+  <millis>1655044967229</millis>
+  <nanos>870000</nanos>
+  <sequence>387</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.229937Z</date>
+  <millis>1655044967229</millis>
+  <nanos>937000</nanos>
+  <sequence>388</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :idArt:idArt</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.230101Z</date>
+  <millis>1655044967230</millis>
+  <nanos>101000</nanos>
+  <sequence>389</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.230178Z</date>
+  <millis>1655044967230</millis>
+  <nanos>178000</nanos>
+  <sequence>390</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.230268Z</date>
+  <millis>1655044967230</millis>
+  <nanos>268000</nanos>
+  <sequence>391</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :categoria:categoria, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.230349Z</date>
+  <millis>1655044967230</millis>
+  <nanos>349000</nanos>
+  <sequence>392</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.230445Z</date>
+  <millis>1655044967230</millis>
+  <nanos>445000</nanos>
+  <sequence>393</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.230588Z</date>
+  <millis>1655044967230</millis>
+  <nanos>588000</nanos>
+  <sequence>394</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :categoria:categoria</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.230701Z</date>
+  <millis>1655044967230</millis>
+  <nanos>701000</nanos>
+  <sequence>395</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.230834Z</date>
+  <millis>1655044967230</millis>
+  <nanos>834000</nanos>
+  <sequence>396</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.231016Z</date>
+  <millis>1655044967231</millis>
+  <nanos>16000</nanos>
+  <sequence>397</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :campaña:campaña, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.231180Z</date>
+  <millis>1655044967231</millis>
+  <nanos>180000</nanos>
+  <sequence>398</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.231298Z</date>
+  <millis>1655044967231</millis>
+  <nanos>298000</nanos>
+  <sequence>399</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.231412Z</date>
+  <millis>1655044967231</millis>
+  <nanos>412000</nanos>
+  <sequence>400</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :campaña:campaña</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.231549Z</date>
+  <millis>1655044967231</millis>
+  <nanos>549000</nanos>
+  <sequence>401</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.231658Z</date>
+  <millis>1655044967231</millis>
+  <nanos>658000</nanos>
+  <sequence>402</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.231789Z</date>
+  <millis>1655044967231</millis>
+  <nanos>789000</nanos>
+  <sequence>403</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :color:color, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.231899Z</date>
+  <millis>1655044967231</millis>
+  <nanos>899000</nanos>
+  <sequence>404</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.231995Z</date>
+  <millis>1655044967231</millis>
+  <nanos>995000</nanos>
+  <sequence>405</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.232208Z</date>
+  <millis>1655044967232</millis>
+  <nanos>208000</nanos>
+  <sequence>406</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :color:color</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.232302Z</date>
+  <millis>1655044967232</millis>
+  <nanos>302000</nanos>
+  <sequence>407</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.232393Z</date>
+  <millis>1655044967232</millis>
+  <nanos>393000</nanos>
+  <sequence>408</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.232467Z</date>
+  <millis>1655044967232</millis>
+  <nanos>467000</nanos>
+  <sequence>409</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :sexo:sexo, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.232552Z</date>
+  <millis>1655044967232</millis>
+  <nanos>552000</nanos>
+  <sequence>410</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.232612Z</date>
+  <millis>1655044967232</millis>
+  <nanos>612000</nanos>
+  <sequence>411</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.232682Z</date>
+  <millis>1655044967232</millis>
+  <nanos>682000</nanos>
+  <sequence>412</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :sexo:sexo</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.232751Z</date>
+  <millis>1655044967232</millis>
+  <nanos>751000</nanos>
+  <sequence>413</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.232812Z</date>
+  <millis>1655044967232</millis>
+  <nanos>812000</nanos>
+  <sequence>414</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.232880Z</date>
+  <millis>1655044967232</millis>
+  <nanos>880000</nanos>
+  <sequence>415</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>startElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :precio:precio, attrs: com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@6c2ed0cd</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.232948Z</date>
+  <millis>1655044967232</millis>
+  <nanos>948000</nanos>
+  <sequence>416</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>push</method>
+  <thread>1</thread>
+  <message>State.push</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.233025Z</date>
+  <millis>1655044967233</millis>
+  <nanos>25000</nanos>
+  <sequence>417</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.233103Z</date>
+  <millis>1655044967233</millis>
+  <nanos>103000</nanos>
+  <sequence>418</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :precio:precio</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.233195Z</date>
+  <millis>1655044967233</millis>
+  <nanos>195000</nanos>
+  <sequence>419</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.233259Z</date>
+  <millis>1655044967233</millis>
+  <nanos>259000</nanos>
+  <sequence>420</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.233323Z</date>
+  <millis>1655044967233</millis>
+  <nanos>323000</nanos>
+  <sequence>421</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Articulo:Articulo</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.233391Z</date>
+  <millis>1655044967233</millis>
+  <nanos>391000</nanos>
+  <sequence>422</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.233464Z</date>
+  <millis>1655044967233</millis>
+  <nanos>464000</nanos>
+  <sequence>423</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.233536Z</date>
+  <millis>1655044967233</millis>
+  <nanos>536000</nanos>
+  <sequence>424</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Articulo:Articulo</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.233596Z</date>
+  <millis>1655044967233</millis>
+  <nanos>596000</nanos>
+  <sequence>425</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.233651Z</date>
+  <millis>1655044967233</millis>
+  <nanos>651000</nanos>
+  <sequence>426</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.233711Z</date>
+  <millis>1655044967233</millis>
+  <nanos>711000</nanos>
+  <sequence>427</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Marca:Marca</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.233772Z</date>
+  <millis>1655044967233</millis>
+  <nanos>772000</nanos>
+  <sequence>428</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.233863Z</date>
+  <millis>1655044967233</millis>
+  <nanos>863000</nanos>
+  <sequence>429</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.233937Z</date>
+  <millis>1655044967233</millis>
+  <nanos>937000</nanos>
+  <sequence>430</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Marca:Marca</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.233995Z</date>
+  <millis>1655044967233</millis>
+  <nanos>995000</nanos>
+  <sequence>431</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.234052Z</date>
+  <millis>1655044967234</millis>
+  <nanos>52000</nanos>
+  <sequence>432</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>characters</method>
+  <thread>1</thread>
+  <message>SAXConnector.characters: [C@7d9e8ef7</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.234150Z</date>
+  <millis>1655044967234</millis>
+  <nanos>150000</nanos>
+  <sequence>433</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endElement</method>
+  <thread>1</thread>
+  <message>SAXConnector.startElement: :Tienda:Tienda</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.234210Z</date>
+  <millis>1655044967234</millis>
+  <nanos>210000</nanos>
+  <sequence>434</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext</logger>
+  <level>FINEST</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$State</class>
+  <method>pop</method>
+  <thread>1</thread>
+  <message>State.pop</message>
+</record>
+<record>
+  <date>2022-06-12T14:42:47.234316Z</date>
+  <millis>1655044967234</millis>
+  <nanos>316000</nanos>
+  <sequence>435</sequence>
+  <logger>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</logger>
+  <level>FINER</level>
+  <class>com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector</class>
+  <method>endDocument</method>
+  <thread>1</thread>
+  <message>SAXConnector.endDocument</message>
 </record>
 </log>

@@ -27,7 +27,6 @@ public class testTienda {
 			
 			ArrayList <Marca> marcas = dbman.getMarcasPorTienda(tienda.getNombreTienda());
 		
-			
 			for (int i = 0 ; i < marcas.size() ; i ++ ) {
 				
 				ArrayList <Articulo> art = 

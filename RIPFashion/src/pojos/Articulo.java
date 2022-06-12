@@ -32,6 +32,7 @@ public class Articulo implements Serializable{
 	
 	public Articulo() {
 	
+		super();
 	}
 
 	public Articulo(int idArt, Marca marca,String categoria, String campaña, String color, boolean sexo, int precio) {

@@ -62,5 +62,19 @@
                 </Articulo>
             </Articulo>
         </Marca>
+        <Marca>
+            <idM>11</idM>
+            <nombre>kenzo</nombre>
+            <Articulo>
+                <Articulo>
+                    <idArt>11</idArt>
+                    <categoria>sneakers</categoria>
+                    <campaña>ss22</campaña>
+                    <color>blanco</color>
+                    <sexo>false</sexo>
+                    <precio>100</precio>
+                </Articulo>
+            </Articulo>
+        </Marca>
     </Marca>
 </Tienda>
