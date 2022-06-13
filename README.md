@@ -70,9 +70,16 @@ En el proceso de paso a tablas partiendo del diagrama entidad relación hay que 
 Cada entidad será una tabla. Además cada relación n-m será una nueva tabla que contendrá las claves primarias de las dos entidades a las que hace referencia la relación. 
  
 También hay que tener en cuenta que en las relaciones 1-n, la clave primaria de la entidad con cardinalidad 1 se añade como clave ajena a la tabla de la entidad con cardinalidad n. 
+ 
+ 
+ ## Flujo de la interfaz
+ 
+ 
+ 
+ 
 
 Con todo esto, las tablas que se extraen de nuestro diagrama son las siguientes:
 
 ![tablasER](tablasER.png) 
 
-
+![FlujoInterfaz](FlujoInterfaz.pdf)
